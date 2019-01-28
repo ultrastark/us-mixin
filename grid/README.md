@@ -57,6 +57,14 @@ or with angular, inside the **angular.json** file
 
 ## How to use
 
+When installed, simply use it in your scss file
+
+`In angular, for exemple, you need to import it in every file where you want to use it`
+
+`I recommend you to create a shared.scss file that contain every mixin you want to shared`
+
+**`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
+
 ```
 body {
 
