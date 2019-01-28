@@ -30,29 +30,29 @@ or with angular, inside the **angular.json** file
 **included**
 
 ```
-*  @include sm {}
-*  @include md {}
-*  @include lg {}
-*  @include xl {}
-*  @include edge {}
-*  @include ie {}
-*  @include ios {}
-*  @include safari {}
-*  @include print {}
+@include sm {}
+@include md {}
+@include lg {}
+@include xl {}
+@include edge {}
+@include ie {}
+@include ios {}
+@include safari {}
+@include print {}
 ```
 
 **Not included**
 
 ```
-*  @include notSm {}
-*  @include notMd {}
-*  @include notLg {}
-*  @include notXl {}
-*  @include notEdge {}
-*  @include notIe {}
-*  @include notIos {}
-*  @include notSafari {}
-*  @include notPrint {}
+@include notSm {}
+@include notMd {}
+@include notLg {}
+@include notXl {}
+@include notEdge {}
+@include notIe {}
+@include notIos {}
+@include notSafari {}
+@include notPrint {}
 ```
 
 ## How to use
