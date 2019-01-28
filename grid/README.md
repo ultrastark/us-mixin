@@ -61,7 +61,7 @@ When installed, simply use it in your scss file
 
 `In angular, for exemple, you need to import it in every file where you want to use it`
 
-`I recommend you to create a shared.scss file that contain every mixin you want to shared`
+`I recommend you to create a shared.scss file that contain every mixin you want to share`
 
 **`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
 
@@ -86,3 +86,15 @@ p {
 
 }
 ```
+
+## Authors
+
+- **Raphaël Balet** - _Initial work_ - [Ultrastark](https://ultrastark.ch)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+- [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
