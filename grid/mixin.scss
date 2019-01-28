@@ -1,0 +1,163 @@
+/** According to bootstrap screen size
+* @see https://getbootstrap.com/docs/4.0/layout/grid/
+*/
+
+$sm: 576px;
+$md: 768px;
+$lg: 960px;
+$xl: 1200px;
+
+/**
+
+-- Spectrum --
+
+Every include have is own not (ex: @include notSm {})
+  @include sm {}
+  @include md {}
+  @include lg {}
+  @include xl {}
+  @include edge {}
+  @include ie {}
+  @include ios {}
+  @include safari {}
+  @include print {}
+
+
+-- Exemple --
+
+body {
+
+  @include notIos {
+    width: 100vw;
+  }
+}
+
+p {
+  font-size: 2em;
+
+  @include xl {
+    font-size: 1.5em;
+  }
+
+  @include sm {
+    font-size: 1em;
+  }
+
+}
+
+*/
+
+@mixin sm {
+  @media (max-width: #{$sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin notSm {
+  @media (min-width: #{$sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+@mixin notMd {
+  @media (min-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin notLg {
+  @media (min-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin notXl {
+  @media (min-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin edge {
+  @supports (-ms-accelerator: true) {
+    @content;
+  }
+}
+
+@mixin notEdge {
+  @supports not (-ms-accelerator: true) {
+    @content;
+  }
+}
+
+@mixin ie {
+  // IE10+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin notIe {
+  // IE10+
+  @media not all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin safari {
+  // Safari 10.1+
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      @content;
+    }
+  }
+}
+
+@mixin notSafari {
+  @media all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      @content;
+    }
+  }
+}
+
+@mixin ios {
+  @supports (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+@mixin notIos {
+  @supports not (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin notPrint {
+  @media not print {
+    @content;
+  }
+}
