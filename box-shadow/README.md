@@ -11,7 +11,7 @@ contain scss mixin for box shadow
 In the working repository
 
 ```
-npm -i @ultrastark/us-mixin --save
+npm i @ultrastark/us-mixin --save
 ```
 
 Then import it in you style.scss

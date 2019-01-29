@@ -7,7 +7,7 @@ contain scss mixin for grid and different OS
 In the working repository
 
 ```
-npm -i @ultrastark/us-mixin --save
+npm i @ultrastark/us-mixin --save
 ```
 
 Then import it in you style.scss
