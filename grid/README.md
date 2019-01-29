@@ -7,20 +7,20 @@ contain scss mixin for grid and different OS
 In the working repository
 
 ```
-npm -i us-mixin --save
+npm -i @ultrastark/us-mixin --save
 ```
 
 Then import it in you style.scss
 
 ```
-import 'us-mixin/grid/mixin.scss';
+@import '~@ultrastark/us-mixin/grid/mixin';
 ```
 
 or with angular, inside the **angular.json** file
 
 ```
 "styles": [
-    "node_modules/us-mixin/grid/mixin.scss",
+    "node_modules/@ultrastark/us-mixin/grid/mixin.scss",
     "src/theme/styles.scss"
   ],
 ```

@@ -37,6 +37,7 @@
 */
 
 @mixin box-shadow($elevation: 1, $animation: null) {
+  transition: all 250ms;
   @if $animation {
     transform: translateY(-5px);
     @include box-shadow($elevation);

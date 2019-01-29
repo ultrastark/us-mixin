@@ -17,20 +17,20 @@ contain
 In the working repository
 
 ```
-npm -i us-mixin --save
+npm -i @ultrastark/us-mixin --save
 ```
 
 Then import it in you style.scss
 
 ```
-import 'us-mixin/mixin.scss';
+@import '~@ultrastark/us-mixin/mixin';
 ```
 
 or with angular, inside the **angular.json** file
 
 ```
 "styles": [
-    "node_modules/us-mixin/mixin.scss",
+    "node_modules/@ultrastark/us-mixin/mixin.scss",
     "src/theme/styles.scss"
   ],
 ```
