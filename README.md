@@ -20,19 +20,10 @@ In the working repository
 npm i @ultrastark/us-mixin --save
 ```
 
-Then import it in you style.scss
+Then import it in you style.scss and everywhere where you need it
 
 ```
 @import '~@ultrastark/us-mixin/mixin';
-```
-
-or with angular, inside the **angular.json** file
-
-```
-"styles": [
-    "node_modules/@ultrastark/us-mixin/mixin.scss",
-    "src/theme/styles.scss"
-  ],
 ```
 
 ## List f mixins
