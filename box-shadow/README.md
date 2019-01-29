@@ -2,6 +2,10 @@
 
 contain scss mixin for box shadow
 
+## Example
+
+[See it on codepen](https://codepen.io/rbalet/pen/VgKvyZ)
+
 ## Installing
 
 In the working repository
@@ -25,7 +29,7 @@ or with angular, inside the **angular.json** file
   ],
 ```
 
-## List f mixins
+## List of mixins
 
 **included**
 

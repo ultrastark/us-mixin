@@ -12,6 +12,7 @@ $xl: 1200px;
 -- Spectrum --
 
 Every include have is own not (ex: @include notSm {})
+
   @include sm {}
   @include md {}
   @include lg {}
@@ -21,7 +22,6 @@ Every include have is own not (ex: @include notSm {})
   @include ios {}
   @include safari {}
   @include print {}
-
 
 -- Exemple --
 
