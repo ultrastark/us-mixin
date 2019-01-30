@@ -22,7 +22,7 @@ $colors: (
   ),
 );
 */
-@function color($color-name, $tone: base, $alpha) {
+@function color($color-name, $tone: base, $alpha: false) {
   @if ($alpha) {
     @return rgba(map-get(map-get($colors, $color-name), $tone), var(--alpha));
   }
