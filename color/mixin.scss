@@ -25,7 +25,7 @@ Colors vars have to look like this one, always need at least a 'base'
 
 @function color($color-name: primary, $tone: base, $alpha: false) {
   @if ($alpha) {
-    @return rgba(map-get(map-get($colors, $color-name), $tone), var(--alpha));
+    @return rgba(map-get(map-get($colors, $color-name), $tone), $alpha);
   }
 
   @return map-get(map-get($colors, $color-name), $tone);
