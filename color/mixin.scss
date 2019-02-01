@@ -1,6 +1,10 @@
 /* TODO: Improve this one
 
 Colors vars have to look like this one, always need at least a 'base'
+
+A looking like map must be created and imported with the color mixin
+(Inside the style.scss or the shared file)
+
 $colors: (
   "primary": (
     light: #ffa,
@@ -22,16 +26,18 @@ $colors: (
   ),
 );
 */
-@function color($color-name, $tone: base, $alpha: false) {
+
+@function color($color, $tone: base, $alpha: false) {
   @if ($alpha) {
-    @return rgba(map-get(map-get($colors, $color-name), $tone), var(--alpha));
+    @return rgba(map-get(map-get($colors, $color), $tone), var(--alpha));
   }
 
-  @return map-get(map-get($colors, $color-name), $tone);
+  @return map-get(map-get($colors, $color), $tone);
 }
+
 /* * Sample
 h1 {
   background: color('primary');
-   color: color('primary', 'light');
+  color: color('primary', 'light');
 }
 * */

@@ -1,6 +1,6 @@
 # us-mixin - box-shadow
 
-contain scss mixin for box shadow
+contain scss mixin for box shadow and drop shadow (svg fix)
 
 ## Example
 
@@ -17,12 +17,13 @@ npm i @ultrastark/us-mixin --save
 Then import it in you style.scss and everywhere where you need it
 
 ```
-@import '~@ultrastark/us-mixin/box-shadow/mixin';
+@import '~@ultrastark/us-mixin/shadow/mixin';
 ```
 
 ## List of mixins
 
 **included**
+**Static**
 
 ```
  @include box-shadow();
@@ -31,6 +32,22 @@ Then import it in you style.scss and everywhere where you need it
  @include box-shadow(4);
  @include box-shadow(5);
 ```
+
+**Animated**
+
+```
+@include box-shadow(1,2);
+@include box-shadow(1,3);
+@include box-shadow(1,4);
+@include box-shadow(1,5);
+@include box-shadow(1,6);
+```
+
+**Animated**
+@include box-shadow(2,1);
+
+**Svg fix**
+@include drop-shadow();
 
 ## How to use
 
