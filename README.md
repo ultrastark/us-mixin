@@ -2,15 +2,26 @@
 
 contain
 
-- box-shadow
+- color
+
+  - color-name, tone, alpha
+  - Class generation
+    - bg-{color-name}-{tone}
+    - color-{color-name}-{tone}
+    - border-{color-name}-{tone}
+
+- shadow
+
   - normal
   - with animation
+  - For svg (drop-shadow)
 
 * grid & browser
+
   - sm, md, lg, xl
   - edge, ie, ios, safari, print
 
-**The following explanation help you to import all in one, for a granularity import see the readme inside the child folders**
+  **The following explanation help you to import all in one, for a granularity import see the readme inside each child folders**
 
 ## Installing
 
@@ -28,11 +39,23 @@ Then import it in you style.scss and everywhere where you need it
 
 ## List f mixins
 
-### box-shadow
+### color
+
+color: color();
+
+color : color('secondary', 'light');
+
+color : color('secondary', 'light', 0.5);
+
+### shadow
 
 @include box-shadow();
 
 @include box-shadow(1,5);
+
+@include drop-shadow();
+
+@include drop-shadow(1,5);
 
 ### grid
 
@@ -51,7 +74,16 @@ When installed, simply use it in your scss file
 **`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
 
 ```
-// box-shadow
+// color
+h1 {
+  border: color();
+  color: color('primary', 'light');
+  background: color('secondary', 'light', 0.5);
+}
+<div class="bg-primary color-primary border-primary"></div>
+<div class="bg-secondary-light color-secondary-dark border-default-warning"></div>
+
+// shadow
 .card {
   width: 95px;
   height: 95px;
