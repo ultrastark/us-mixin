@@ -16,7 +16,33 @@ Then import it in you style.scss and everywhere where you need it
 @import '~@ultrastark/us-mixin/color/mixin';
 ```
 
-## List f mixins
+You need to create yourself a color map which have to look like the following (only the **base is needed**)
+It's better to add this one in the main.scss file, (or if you follow the [sass 7-1 pattern]()`@todo` under base/colors).
+
+```
+$colors: (
+  'primary': (
+    light: #ffa,
+    base: #ffb,
+    dark: #ffc,
+  ),
+  'secondary': (
+    light: #ffd,
+    base: #ffe,
+    dark: #fff,
+  ),
+  'default': (
+    success: #28a745,
+    danger: #dc3545,
+    warning: #ffc107,
+    dark: #343a40,
+    light: #fff,
+    muted: #6c757d,
+  ),
+);
+```
+
+## List of mixins
 
 **included**
 

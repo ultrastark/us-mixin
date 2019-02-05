@@ -1,0 +1,43 @@
+/**
+@TODO: Add more animations
+
+-- Exemple --
+
+.logo {
+  @include pulse();
+}
+.logo-once {
+  @include pulse(3s, 2, ease-in-out, false);
+}
+
+.logo-backwards {
+  @include pulse(3s, 2, ease-in-out, backwards);
+}
+
+**/
+
+@mixin pulse($duration: 2.5s, $scale: 1.1, $curve: ease, $mode: infinite) {
+  @keyframes pulse {
+    @if ($mode == infinite) {
+      50% {
+        transform: scale($scale);
+      }
+      100% {
+        transform: scale(1);
+      }
+    } @else {
+      100% {
+        transform: scale($scale);
+      }
+    }
+    0% {
+      transform: scale(1);
+    }
+  }
+
+  @if ($mode == false) {
+    animation: $duration $curve forwards pulse;
+  } @else {
+    animation: $duration $curve $mode pulse;
+  }
+}

@@ -1,6 +1,8 @@
-# us-mixin - grid
+# us-mixin - animation
 
-contain scss mixin for grid and different OS
+contain scss mixin for different kind of animation
+
+`This is an early version. This may change a lot in the future and some mixin could be broken.`
 
 ## Installing
 
@@ -13,38 +15,16 @@ npm i @ultrastark/us-mixin --save
 Then import it in you style.scss and everywhere where you need it
 
 ```
-@import '~@ultrastark/us-mixin/grid/mixin';
+@import '~@ultrastark/us-mixin/animation/mixin';
 ```
 
 ## List of mixins
 
-**included**
+@include pulse(); // Default values : pulse($duration: 2.5s, $scale: 1.1, $curve: ease, $infinite: true)
 
-```
-@include sm {}
-@include md {}
-@include lg {}
-@include xl {}
-@include edge {}
-@include ie {}
-@include ios {}
-@include safari {}
-@include print {}
-```
+@include pulse(3s, 2, ease-in-out, false); // no animation (default forwards)
 
-**Not included**
-
-```
-@include notSm {}
-@include notMd {}
-@include notLg {}
-@include notXl {}
-@include notEdge {}
-@include notIe {}
-@include notIos {}
-@include notSafari {}
-@include notPrint {}
-```
+@include pulse(3s, 2, ease-in-out, backwards);
 
 ## How to use
 
@@ -57,24 +37,8 @@ When installed, simply use it in your scss file
 **`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
 
 ```
-body {
-
-  @include notIos {
-    width: 100vw;
-  }
-}
-
-p {
-  font-size: 2em;
-
-  @include xl {
-    font-size: 1.5em;
-  }
-
-  @include sm {
-    font-size: 1em;
-  }
-
+.logo {
+  @include pulse();
 }
 ```
 
@@ -88,4 +52,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
+- [Glenn McComb](https://glennmccomb.com/articles/creating-smooth-sequential-animations-with-sass/)

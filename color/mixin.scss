@@ -1,5 +1,4 @@
-/* TODO: Improve this one
-
+/*
 Colors vars have to look like this one, always need at least a 'base'
 */
 // $colors: (
@@ -22,6 +21,16 @@ Colors vars have to look like this one, always need at least a 'base'
 //     muted: #6c757d,
 //   ),
 // );
+
+/**
+-- Exemple --
+
+h1 {
+  border: color();
+  color: color('primary', 'light');
+  background: color('secondary', 'light', 0.5);
+}
+**/
 
 @function color($color-name: primary, $tone: base, $alpha: false) {
   @if ($alpha) {
@@ -59,11 +68,3 @@ Colors vars have to look like this one, always need at least a 'base'
     }
   }
 }
-
-/* * Sample
-h1 {
-  border: color();
-  color: color('primary', 'light');
-  background: color('secondary', 'light', 0.5);
-}
-* */

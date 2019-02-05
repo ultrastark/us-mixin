@@ -2,6 +2,11 @@
 
 contain
 
+- animation
+
+  - pulse
+    - duration, scale, curve, mode
+
 - color
 
   - color-name, tone, alpha
@@ -39,6 +44,14 @@ Then import it in you style.scss and everywhere where you need it
 
 ## List f mixins
 
+### animation
+
+@include pulse(); // Default values : pulse($duration: 2.5s, $scale: 1.1, $curve: ease, $infinite: true)
+
+@include pulse(3s, 2, ease-in-out, false); // no animation (default forwards)
+
+@include pulse(3s, 2, ease-in-out, backwards);
+
 ### color
 
 color: color();
@@ -53,7 +66,7 @@ color : color('secondary', 'light', 0.5);
 
 @include box-shadow(1,5);
 
-@include drop-shadow();
+@include drop-shadow(); //For svg shadows
 
 @include drop-shadow(1,5);
 
@@ -74,6 +87,18 @@ When installed, simply use it in your scss file
 **`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
 
 ```
+// Shadow
+.logo {
+  @include pulse();
+}
+.logo-once {
+  @include pulse(3s, 2, ease-in-out, false);
+}
+
+.logo-backwards {
+  @include pulse(3s, 2, ease-in-out, backwards);
+}
+
 // color
 h1 {
   border: color();
