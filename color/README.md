@@ -19,6 +19,13 @@ Then import it in you style.scss and everywhere where you need it
 You need to create yourself a color map which have to look like the following (only the **base is needed**)
 It's better to add this one in the main.scss file, (or if you follow the [sass 7-1 pattern]()`@todo` under base/colors).
 
+**And before you import the mixin**
+ex:
+
+@import 'base/colors';
+
+@import '~@ultrastark/us-mixin/mixin';
+
 ```
 $colors: (
   'primary': (

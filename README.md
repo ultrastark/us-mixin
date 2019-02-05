@@ -42,6 +42,8 @@ Then import it in you style.scss and everywhere where you need it
 @import '~@ultrastark/us-mixin/mixin';
 ```
 
+If you use the color mixin, you need another step: [README.md](https://github.com/ultrastark/us-mixin/tree/master/color)
+
 ## List f mixins
 
 ### animation
