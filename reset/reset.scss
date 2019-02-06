@@ -1,0 +1,42 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+button:focus,
+input:focus,
+textarea:focus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+[type='submit'] {
+  appearance: none;
+}
+
+// Custom css class
+
+.noScroll {
+  // used by js func
+  overflow: hidden;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
