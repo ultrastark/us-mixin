@@ -68,9 +68,11 @@ color : color('secondary', 'light', 0.5);
 
 @include box-shadow(1,5);
 
+@include box-shadow(1,5,#dc3545); // Red shadow
+
 @include drop-shadow(); //For svg shadows
 
-@include drop-shadow(1,5);
+@include drop-shadow(1,5,#dc3545));
 
 ### grid
 
