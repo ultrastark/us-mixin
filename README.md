@@ -57,9 +57,7 @@ If you want to use the `reset mixin`, you need to import it into the style.scss
 
 @include pulse(); // Default values : pulse($duration: 2.5s, $scale: 1.1, $curve: ease, $infinite: true)
 
-@include pulse(3s, 2, ease-in-out, false); // no animation (default forwards)
-
-@include pulse(3s, 2, ease-in-out, backwards);
+@include spin(); // Default values : spin($velocity: 1.5s, $curve: ease, \$mode: infinite)
 
 ### color
 

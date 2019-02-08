@@ -20,11 +20,17 @@ Then import it in you style.scss and everywhere where you need it
 
 ## List of mixins
 
+**pulse**
 @include pulse(); // Default values : pulse($duration: 2.5s, $scale: 1.1, $curve: ease, $infinite: true)
 
 @include pulse(3s, 2, ease-in-out, false); // no animation (default forwards)
 
 @include pulse(3s, 2, ease-in-out, backwards);
+
+**spin**
+@include spin(); // Default values : spin($velocity: 1.5s, $curve: ease, \$mode: infinite)
+
+@include spin(3s, ease-in-out, false); // no animation (default forwards)
 
 ## How to use
 
@@ -39,6 +45,7 @@ When installed, simply use it in your scss file
 ```
 .logo {
   @include pulse();
+  @include spin();
 }
 ```
 

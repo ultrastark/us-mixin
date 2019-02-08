@@ -4,14 +4,24 @@ html {
   height: 100%;
 }
 
-a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+menu,
+ul a {
   text-decoration: none;
   cursor: pointer;
 }
 
-li,
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 

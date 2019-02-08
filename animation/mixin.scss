@@ -2,17 +2,23 @@
 @TODO: Add more animations
 
 -- Exemple --
+// pulse(duration, scale, curve, mode)
+// spin(velocity, curve, mode)
 
 .logo {
   @include pulse();
+  @include spin();
 }
 .logo-once {
   @include pulse(3s, 2, ease-in-out, false);
+  @include pulse(3s, ease-in-out, false);
 }
 
 .logo-backwards {
   @include pulse(3s, 2, ease-in-out, backwards);
+  @include pulse(3s, ease-in-out, backwards);
 }
+
 
 **/
 
@@ -39,5 +45,19 @@
     animation: $duration $curve forwards pulse;
   } @else {
     animation: $duration $curve $mode pulse;
+  }
+}
+
+@mixin spin($velocity: 1.5s, $curve: ease, $mode: infinite) {
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @if ($mode == false) {
+    animation: spin $velocity $curve forwards;
+  } @else {
+    animation: spin $velocity $curve $mode;
   }
 }
