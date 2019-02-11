@@ -1,26 +1,6 @@
 /*
 Colors vars have to look like this one, always need at least a 'base'
 
-$colors: (
-  'primary': (
-    light: #ffa,
-    base: #ffb,
-    dark: #ffc,
-  ),
-  'secondary': (
-    light: #ffd,
-    base: #ffe,
-    dark: #fff,
-  ),
-  'default': (
-    success: #28a745,
-    danger: #dc3545,
-    warning: #ffc107,
-    dark: #343a40,
-    light: #fff,
-    muted: #6c757d,
-  ),
-);
 
 -- Exemple --
 
@@ -30,6 +10,27 @@ h1 {
   background: color('secondary', 'light', 0.5);
 }
 */
+
+$colors: (
+  'primary': (
+    light: #ffa,
+    base: #feca05,
+    dark: #ffc,
+  ),
+  'secondary': (
+    light: #ffd,
+    base: #e53e51,
+    dark: #fff,
+  ),
+  'default': (
+    success: #28a745,
+    danger: #dc3545,
+    warning: #ffc107,
+    dark: #2d2d2d,
+    light: #fff,
+    muted: #6c757d,
+  ),
+);
 
 @function color($color-name: primary, $tone: base, $alpha: false) {
   @if ($alpha) {

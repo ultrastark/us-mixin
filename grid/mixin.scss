@@ -2,94 +2,92 @@
 * @see https://getbootstrap.com/docs/4.0/layout/grid/
 */
 
+$xs: 576px;
 $sm: 576px;
 $md: 768px;
 $lg: 960px;
 $xl: 1200px;
+$xxl: 1500px;
 
-/**
-
--- Spectrum --
-
-Every include have is own not (ex: @include notSm {})
-
-  @include sm {};
-  @include md {};
-  @include lg {};
-  @include xl {};
-  @include edge {};
-  @include ie {};
-  @include ios {};
-  @include safari {};
-  @include print {};
-
--- Exemple --
-
-body {
-
-  @include notIos {
-    width: 100vw;
+@mixin xs {
+  @media (max-width: #{$xs - 1px}) {
+    @content;
   }
 }
 
-p {
-  font-size: 2em;
-
-  @include xl {
-    font-size: 1.5em;
+@mixin xsOnly {
+  @media (max-width: #{$xs - 1px}) {
+    @content;
   }
-
-  @include sm {
-    font-size: 1em;
-  }
-
 }
-
-*/
 
 @mixin sm {
-  @media (max-width: #{$sm - 1px}) {
-    @content;
-  }
-}
-
-@mixin notSm {
-  @media (min-width: #{$sm - 1px}) {
-    @content;
-  }
-}
-
-@mixin md {
   @media (max-width: #{$md - 1px}) {
     @content;
   }
 }
 
-@mixin notMd {
-  @media (min-width: #{$md - 1px}) {
+@mixin smUp {
+  @media (min-width: #{$sm - 1px}) {
     @content;
   }
 }
 
-@mixin lg {
+@mixin smOnly {
+  @media (max-width: #{$md - 1px}) and (min-width: #{$sm - 1px}) {
+    @content;
+  }
+}
+
+@mixin md {
   @media (max-width: #{$lg - 1px}) {
     @content;
   }
 }
 
-@mixin notLg {
-  @media (min-width: #{$lg - 1px}) {
+@mixin mdUp {
+  @media (min-width: #{$md - 1px}) {
     @content;
   }
 }
 
-@mixin xl {
+@mixin mdOnly {
+  @media (min-width: #{$md - 1px}) and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg {
   @media (max-width: #{$xl - 1px}) {
     @content;
   }
 }
 
-@mixin notXl {
+@mixin lgUp {
+  @media (min-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin lgOnly {
+  @media (min-width: #{$lg - 1px}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xlUp {
+  @media (min-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xlOnly {
   @media (min-width: #{$xl - 1px}) {
     @content;
   }

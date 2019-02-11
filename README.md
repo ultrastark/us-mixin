@@ -1,11 +1,24 @@
 # us-mixin
 
+**Breaking change from v0.1.1 to v0.2.0**
+
+grid - "not" doesn't exist any more, replaced by "Up" and "Only"
+
+grid - every mixin have been moved to be like bootstrap
+
+ex: @include sm {} was from 0 to 576px, is now from 0 to 768px
+
 contain
 
 - animation
 
   - pulse
     - duration, scale, curve, mode
+
+- browser
+
+  - edge, ie, ios, safari, print
+  - notEdge, notIe, notIos, notSafari, notPrint
 
 - color
 
@@ -21,10 +34,11 @@ contain
   - with animation
   - For svg (drop-shadow)
 
-* grid & browser
+* grid
 
   - sm, md, lg, xl
-  - edge, ie, ios, safari, print
+  - smUp, mdUp, lgUp, xlUp
+  - xsOnly, smOnly, mdOnly, lgOnly, xlOnly
 
   **The following explanation help you to import all in one, for a granularity import see the readme inside each child folders**
 
@@ -51,13 +65,17 @@ If you want to use the `reset mixin`, you need to import it into the style.scss
 @import '~@ultrastark/us-mixin/reset/reset';
 ```
 
-## List f mixins
+## List of mixins
 
 ### animation
 
 @include pulse(); // Default values : pulse($duration: 2.5s, $scale: 1.1, $curve: ease, $infinite: true)
 
 @include spin(); // Default values : spin($velocity: 1.5s, $curve: ease, \$mode: infinite)
+
+### browser
+
+@include edge, ie, ios, safari, print { };
 
 ### color
 
@@ -83,8 +101,6 @@ color : color('secondary', 'light', 0.5);
 
 @include sm, md, lg, xl { };
 
-@include edge, ie, ios, safari, print { };
-
 ## How to use
 
 When installed, simply use it in your scss file
@@ -106,6 +122,17 @@ When installed, simply use it in your scss file
 
 .logo-backwards {
   @include pulse(3s, 2, ease-in-out, backwards);
+}
+
+// browser
+body {
+  @include ie {
+    display: none;
+  }
+
+  @include notIos {
+    width: 100vw;
+  }
 }
 
 // color
@@ -131,13 +158,6 @@ h1 {
 }
 
 // grid
-body {
-
-  @include notIos {
-    width: 100vw;
-  }
-}
-
 p {
   font-size: 2em;
 

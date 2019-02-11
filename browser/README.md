@@ -1,6 +1,6 @@
 # us-mixin - grid
 
-contain scss mixin for grid and different OS
+contain scss mixin for different browser
 
 ## Installing
 
@@ -13,26 +13,25 @@ npm i @ultrastark/us-mixin --save
 Then import it in you style.scss and everywhere where you need it
 
 ```
-@import '~@ultrastark/us-mixin/grid/mixin';
+@import '~@ultrastark/us-mixin/browser/mixin';
 ```
 
 ## List of mixins
 
 ```
-@include xs {}
-@include sm {}
-@include md {}
-@include lg {}
-@include xl {}
+@include edge {}
+@include ie {}
+@include ios {}
+@include safari {}
+@include print {}
 ```
 
-**Every mixin have is own up and only**
+**Every mixin have is own not**
 Exemple
 
 ```
-@include xs {}
-@include xsUp {}
-@include xsOnly {}
+@include ie {}
+@include notIe {}
 ```
 
 ## How to use
@@ -46,18 +45,16 @@ When installed, simply use it in your scss file
 **`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
 
 ```
-p {
-  font-size: 2em;
-
-  @include xl {
-    font-size: 1.5em;
+body {
+  @include ie {
+    display: none;
   }
 
-  @include sm {
-    font-size: 1em;
+  @include notIos {
+    width: 100vw;
   }
-
 }
+
 ```
 
 ## Authors

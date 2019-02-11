@@ -49,6 +49,7 @@
 }
 
 @mixin spin($velocity: 1.5s, $curve: ease, $mode: infinite) {
+  // @TODO: Finish it
   @keyframes spin {
     100% {
       transform: rotate(360deg);

@@ -1,0 +1,66 @@
+@mixin edge {
+  @supports (-ms-accelerator: true) {
+    @content;
+  }
+}
+
+@mixin notEdge {
+  @supports not (-ms-accelerator: true) {
+    @content;
+  }
+}
+
+@mixin ie {
+  // IE10+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin notIe {
+  // IE10+
+  @media not all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin safari {
+  // Safari 10.1+
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      @content;
+    }
+  }
+}
+
+@mixin notSafari {
+  @media all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      @content;
+    }
+  }
+}
+
+@mixin ios {
+  @supports (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+@mixin notIos {
+  @supports not (-webkit-overflow-scrolling: touch) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+@mixin notPrint {
+  @media not print {
+    @content;
+  }
+}
