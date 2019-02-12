@@ -33,7 +33,7 @@ $color-lighten: 12% !default;
 $color-opacity: 0.3 !default;
 
 // @TODO Create a loop for that
-$colors: (
+$us-colors: (
   primary: (
     base: $primary,
     contrast: #fff,
@@ -100,7 +100,7 @@ $colors: (
 ) !default;
 
 // Init class
-@each $color, $tones in $colors {
+@each $color, $tones in $us-colors {
   @each $tone, $value in $tones {
     @if ($tone == 'base') {
       // bg-primary for base color
@@ -131,8 +131,8 @@ $colors: (
 // Mixin
 @function color($color-name: primary, $tone: base, $alpha: false) {
   @if ($alpha) {
-    @return rgba(map-get(map-get($colors, $color-name), $tone), $alpha);
+    @return rgba(map-get(map-get($us-colors, $color-name), $tone), $alpha);
   }
 
-  @return map-get(map-get($colors, $color-name), $tone);
+  @return map-get(map-get($us-colors, $color-name), $tone);
 }
