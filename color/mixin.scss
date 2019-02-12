@@ -113,6 +113,9 @@ $us-colors: (
       .border-#{$color} {
         border-color: $value !important;
       }
+      .afterNBefore-#{$color}-#{$tone} {
+        border-color: $value !important;
+      }
     } @else {
       // bg-primary-light for shade
       .bg-#{$color}-#{$tone} {
@@ -122,6 +125,9 @@ $us-colors: (
         color: $value;
       }
       .border-#{$color}-#{$tone} {
+        border-color: $value;
+      }
+      .afterNBefore-#{$color}-#{$tone} {
         border-color: $value;
       }
     }

@@ -1,11 +1,16 @@
 # Changelog
 
-## [0.2.3] - 2019-02-12
+## [0.2.4] - 2019-02-12
 
-### Changer
+### Added
 
 - Color
-- Colors map is now us-colors (so we can use bootstrap at the same time)
+  - afterNBefore class (for ::after and ::before colors)
+
+### Changed
+
+- Color
+  - Colors map is now us-colors (so we can use bootstrap at the same time)
 
 ## [0.2.2] - 2019-02-12
 
