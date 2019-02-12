@@ -67,4 +67,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
+- @TODO

@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.2] - 2019-02-12
+
+## Add
+
+- Color
+  - contrast
+  - tint
+  - shade
+
 ## [0.2.0] - 2019-02-11
 
 ## Changed

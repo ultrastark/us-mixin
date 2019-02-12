@@ -16,38 +16,33 @@ Then import it in you style.scss and everywhere where you need it
 @import '~@ultrastark/us-mixin/color/mixin';
 ```
 
-You need to create yourself a color map which have to look like the following (only the **base is needed**)
+A default color map was already created, you have to change the color variable before the import (only the **base is needed**)
 It's better to add this one in the main.scss file, (or if you follow the [sass 7-1 pattern]()`@todo` under base/colors).
 
 **And before you import the mixin**
 ex:
 
+```
+// 'base/colors.scss'
+
+$primary: #3880ff;
+$secondary: #0cd1e8;
+$tertiary: #7044ff;
+$success: #10dc60;
+$warning: #ffce00;
+$danger: #f04141;
+$light: #f4f5f8;
+$medium: #989aa2;
+$dark: #222428;
+
+$color-darken: 12%;
+$color-lighten: 12%;
+$color-opacity: 0.3;
+```
+
 @import 'base/colors';
 
-@import '~@ultrastark/us-mixin/mixin';
-
-```
-$colors: (
-  'primary': (
-    light: #ffa,
-    base: #ffb,
-    dark: #ffc,
-  ),
-  'secondary': (
-    light: #ffd,
-    base: #ffe,
-    dark: #fff,
-  ),
-  'default': (
-    success: #28a745,
-    danger: #dc3545,
-    warning: #ffc107,
-    dark: #343a40,
-    light: #fff,
-    muted: #6c757d,
-  ),
-);
-```
+@import '~@ultrastark/us-mixin/color/mixin';
 
 ## List of mixins
 
@@ -90,4 +85,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- [Bootstrap Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
+- [Ionic Theme](https://github.com/ionic-team/ionic/blob/master/core/src/themes/ionic.theme.default.scss)
