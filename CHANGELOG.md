@@ -1,8 +1,15 @@
 # Changelog
 
+## [0.2.3] - 2019-02-12
+
+### Changer
+
+- Color
+- Colors map is now us-colors (so we can use bootstrap at the same time)
+
 ## [0.2.2] - 2019-02-12
 
-## Add
+### Added
 
 - Color
   - contrast
@@ -11,7 +18,7 @@
 
 ## [0.2.0] - 2019-02-11
 
-## Changed
+### Changed
 
 - Grid
   - Separated in to folder
