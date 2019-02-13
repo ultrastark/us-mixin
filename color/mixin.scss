@@ -113,8 +113,14 @@ $us-colors: (
       .border-#{$color} {
         border-color: $value !important;
       }
-      .afterNBefore-#{$color}-#{$tone} {
-        border-color: $value !important;
+      .fill-#{$color} {
+        fill: $value !important;
+      }
+      .afterNBefore-#{$color} {
+        &::before,
+        &::after {
+          background-color: $value !important;
+        }
       }
     } @else {
       // bg-primary-light for shade
@@ -127,8 +133,14 @@ $us-colors: (
       .border-#{$color}-#{$tone} {
         border-color: $value;
       }
+      .fill-#{$color}-#{$tone} {
+        fill: $value;
+      }
       .afterNBefore-#{$color}-#{$tone} {
-        border-color: $value;
+        &::before,
+        &::after {
+          background-color: $value;
+        }
       }
     }
   }
