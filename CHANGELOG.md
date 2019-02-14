@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.7] - 2019-02-14
+
+### Added
+
+- Browser
+  - @include chrome mixin
+
+### Changer
+
+- Browser
+  - IE works now from version 6+ (was 9+)
+
 ## [0.2.5] - 2019-02-13
 
 ### Added
