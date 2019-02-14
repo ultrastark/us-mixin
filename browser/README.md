@@ -19,6 +19,7 @@ Then import it in you style.scss and everywhere where you need it
 ## List of mixins
 
 ```
+@include chrome {}
 @include edge {}
 @include ie {}
 @include ios {}

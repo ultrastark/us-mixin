@@ -75,7 +75,7 @@ If you want to use the `reset mixin`, you need to import it into the style.scss
 
 ### browser
 
-@include edge, ie, ios, safari, print { };
+@include chrome edge, ie, ios, safari, print { };
 
 ### color
 

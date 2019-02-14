@@ -1,3 +1,17 @@
+// @TODO: Test the not mixin
+
+@mixin chrome {
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    @content;
+  }
+}
+
+@mixin notChrome {
+  @media not all and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    @content;
+  }
+}
+
 @mixin edge {
   @supports (-ms-accelerator: true) {
     @content;
@@ -19,7 +33,7 @@
 
 @mixin notIe {
   // IE10+
-  @media not all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  @media not all and (-ms-high-contrast: none), not all and (-ms-high-contrast: active) {
     @content;
   }
 }
