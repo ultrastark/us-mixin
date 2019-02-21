@@ -1,14 +1,6 @@
 /*
 Copy from Ionic Theme
 
-// Default Colors
-// -------------------------------------------------------------------------------------------
-// Color map should provide
-// - base: main color to be used.
-// - contrast: Color that will provide readable text against the base color
-// - shade: 12% darker version of the base color (mix with black)
-// - tint: 10% lighter version of the base color (mix with white)
-
 -- Exemple --
 
 h1 {
@@ -106,6 +98,9 @@ $us-colors: (
       // bg-primary for base color
       .bg-#{$color} {
         background-color: $value !important; // Override bootstrap value
+        * {
+          color: map-get(map-get($us-colors, $color), contrast);
+        }
       }
       .color-#{$color} {
         color: $value !important;
@@ -126,6 +121,9 @@ $us-colors: (
       // bg-primary-light for shade
       .bg-#{$color}-#{$tone} {
         background-color: $value;
+        * {
+          color: map-get(map-get($us-colors, $color), contrast);
+        }
       }
       .color-#{$color}-#{$tone} {
         color: $value;

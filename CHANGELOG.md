@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.8] - 2019-02-21
+
+### Added
+
+- Colors
+  - bg now have his contrast as default color
+
 ## [0.2.7] - 2019-02-14
 
 ### Added
