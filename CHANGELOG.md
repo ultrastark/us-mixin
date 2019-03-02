@@ -1,5 +1,22 @@
 # Changelog
 
+## [0.3.0] - 2019-03-02
+
+### Added
+
+- Utilities
+  - customize-row
+
+### Changed
+
+- mixins
+  - Every mixins inside mixins folder
+
+### Deleted
+
+- Global
+  - Readme
+
 ## [0.2.8] - 2019-02-21
 
 ### Added
@@ -14,7 +31,7 @@
 - Browser
   - @include chrome mixin
 
-### Changer
+### Changed
 
 - Browser
   - IE works now from version 6+ (was 9+)
