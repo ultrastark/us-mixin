@@ -1,14 +1,64 @@
 # us-mixin
 
-**Breaking change from v0.1.1 to v0.2.0**
+## Table of contents
 
-grid - "not" doesn't exist any more, replaced by "Up" and "Only"
+- [us-mixin](#us-mixin)
+  - [Table of contents](#table-of-contents)
+  - [What's included](#whats-included)
+  - [Quick start](#quick-start)
+  - [List of mixins](#list-of-mixins)
+  - [Mixins presentation](#mixins-presentation)
+    - [animation](#animation)
+    - [browser](#browser)
+    - [color](#color)
+    - [shadow](#shadow)
+    - [grid](#grid)
+  - [How to use](#how-to-use)
+  - [Authors](#authors)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
 
-grid - every mixin have been moved to be like bootstrap
+## What's included
 
-ex: @include sm {} was from 0 to 576px, is now from 0 to 768px
+```
+us-mixin/
+├── mixin.scss
+├── utilities.scss
+├── mixins/
+│   ├── animations.scss
+│   ├── browser.scss
+│   ├── color.scss
+│   ├── grid.scss
+│   └── shadow.scss
+└── utilities
+    ├── customize-row.scss
+    └── reset.scss
+```
 
-contain
+## Quick start
+
+In the working repository
+
+```
+npm i @ultrastark/us-mixin@latest --save
+```
+
+Then import it in you style.scss and where you need it
+
+```
+@import '~@ultrastark/us-mixin/mixin';
+```
+
+**Attention**
+If you use the `color mixin`, you need another step: [README.md](https://github.com/ultrastark/us-mixin/tree/master/color)
+
+If you want to use the `reset mixin`, you need to import it into the style.scss
+
+```
+@import '~@ultrastark/us-mixin/reset/reset';
+```
+
+## List of mixins
 
 - animation
 
@@ -34,7 +84,7 @@ contain
   - with animation
   - For svg (drop-shadow)
 
-* grid
+- grid
 
   - sm, md, lg, xl
   - smUp, mdUp, lgUp, xlUp
@@ -42,30 +92,7 @@ contain
 
   **The following explanation help you to import all in one, for a granularity import see the readme inside each child folders**
 
-## Installing
-
-In the working repository
-
-```
-npm i @ultrastark/us-mixin@latest --save
-```
-
-Then import it in you style.scss and everywhere where you need it
-
-```
-@import '~@ultrastark/us-mixin/mixin';
-```
-
-**Attention**
-If you use the `color mixin`, you need another step: [README.md](https://github.com/ultrastark/us-mixin/tree/master/color)
-
-If you want to use the `reset mixin`, you need to import it into the style.scss
-
-```
-@import '~@ultrastark/us-mixin/reset/reset';
-```
-
-## List of mixins
+## Mixins presentation
 
 ### animation
 
@@ -182,4 +209,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- @see readme inside child folder
+- @see the wiki

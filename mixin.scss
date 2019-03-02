@@ -1,5 +1,5 @@
-@import './animation/mixin';
-@import './shadow/mixin';
-@import './grid/mixin';
-@import './browser/mixin';
-@import './color/mixin';
+@import './mixins/animation';
+@import './mixins/shadow';
+@import './mixins/grid';
+@import './mixins/browser';
+@import './mixins/color';
