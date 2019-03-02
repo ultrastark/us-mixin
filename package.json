@@ -20,6 +20,9 @@
     "#USER",
     "/"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org "
+  },
   "_resolved": "https://registry.npmjs.org/@ultrastark/us-mixin/-/us-mixin-0.1.1.tgz",
   "_shasum": "5a005bd98c9a324914e2015005e1a0f497461fed",
   "_spec": "@ultrastark/us-mixin",
