@@ -139,7 +139,7 @@ When installed, simply use it in your scss file
 **`@todo`** [`See the exemple`](https://github.com/rbalet/us-mixin)
 
 ```
-// Shadow
+// Animation
 .logo {
   @include pulse();
 }
