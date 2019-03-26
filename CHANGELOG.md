@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2] - 2019-03-26
+
+### Changed
+
+- color
+  - Let the user set tint, shad, contrast and trans color directly
+
 ## [0.3.0] - 2019-03-02
 
 ### Added
