@@ -64,6 +64,14 @@ $us-colors: ();
   $tint: null;
   $trans: null;
 
+  $map: map-merge(
+    $map,
+    (
+      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+    )
+  );
+  $us-colors: map-merge($us-colors, $map);
+
   @each $key, $color in $values {
     @if ($key) {
       @if ($key == 'base') {
@@ -92,14 +100,6 @@ $us-colors: ();
   @if ($trans == null) {
     $trans: transparentize($base, $color-opacity);
   }
-
-  $map: map-merge(
-    $map,
-    (
-      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
-    )
-  );
-  $us-colors: map-merge($us-colors, $map);
 }
 
 // Init class
@@ -109,9 +109,6 @@ $us-colors: ();
       // bg-primary for base color
       .bg-#{$color} {
         background-color: $value !important; // Override bootstrap value
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
       }
       .color-#{$color} {
         color: $value !important;
@@ -132,9 +129,6 @@ $us-colors: ();
       // bg-primary-light for shade
       .bg-#{$color}-#{$tone} {
         background-color: $value;
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
       }
       .color-#{$color}-#{$tone} {
         color: $value;

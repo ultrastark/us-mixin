@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4] - 2019-04-02
+
+### Changed
+
+ - color
+   - Remove auto contrast
+
 ## [0.3.3] - 2019-04-02
 
 ### Changed
