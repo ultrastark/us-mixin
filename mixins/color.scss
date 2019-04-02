@@ -64,14 +64,6 @@ $us-colors: ();
   $tint: null;
   $trans: null;
 
-  $map: map-merge(
-    $map,
-    (
-      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
-    )
-  );
-  $us-colors: map-merge($us-colors, $map);
-
   @each $key, $color in $values {
     @if ($key) {
       @if ($key == 'base') {
@@ -100,6 +92,14 @@ $us-colors: ();
   @if ($trans == null) {
     $trans: transparentize($base, $color-opacity);
   }
+
+  $map: map-merge(
+    $map,
+    (
+      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+    )
+  );
+  $us-colors: map-merge($us-colors, $map);
 }
 
 // Init class
