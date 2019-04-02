@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3] - 2019-04-02
+
+### Changed
+
+ - reset
+   - Remove pointer
+
 ## [0.3.2] - 2019-03-26
 
 ### Changed
