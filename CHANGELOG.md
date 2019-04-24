@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.3.6] - 2019-24-04
+## [0.4.0] - 2019-24-04
 
 ### Added
 
@@ -8,9 +8,17 @@
    - customize-bg
    - color
 
+### Removed (BREAKING CHANGE)
+
  - mixins
    - color
      - Utilities logic
+
+## [0.3.6] - 2019-24-04
+
+### Changed (Contain BUG)
+  - mixins
+    - color
 
 ## [0.3.4] - 2019-04-02
 
