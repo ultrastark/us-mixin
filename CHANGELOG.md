@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6] - 2019-24-04
+
+### Added
+
+ - utilities
+   - customize-bg
+
 ## [0.3.4] - 2019-04-02
 
 ### Changed
