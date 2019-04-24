@@ -9,8 +9,11 @@ h1 {
 
 // Mixin
 @function color($color-name: primary, $tone: base, $alpha: false) {
-  @if ($alpha) {
-    @return rgba(map-get(map-get($us-colors, $color-name), $tone), $alpha);
+  @if variable-exists(us-colors) {
+    @if ($alpha) {
+      @return rgba(map-get(map-get($us-colors, $color-name), $tone), $alpha);
+    }
+    @return map-get(map-get($us-colors, $color-name), $tone);
   }
-  @return map-get(map-get($us-colors, $color-name), $tone);
+  @return null
 }

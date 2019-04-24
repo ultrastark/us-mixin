@@ -2,6 +2,14 @@
 
 ## [0.4.1] - 2019-24-04
 
+### Fix
+
+ - utilities
+   - color
+     - Ctrl variable existence
+
+## [0.4.1] - 2019-24-04
+
 ### Added
 
  - utilities
