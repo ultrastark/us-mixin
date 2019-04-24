@@ -1,22 +1,16 @@
 # Changelog
 
-## [0.3.7] - 2019-24-04
-
-### Added
-
- - utilities
-   - color
-
- - mixins
-   - color
-     - Utilities logic
-
 ## [0.3.6] - 2019-24-04
 
 ### Added
 
  - utilities
    - customize-bg
+   - color
+
+ - mixins
+   - color
+     - Utilities logic
 
 ## [0.3.4] - 2019-04-02
 
