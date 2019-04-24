@@ -48,16 +48,12 @@ Then import it in you style.scss and where you need it
 
 ```
 @import '~@ultrastark/us-mixin/mixin';
+@import '~@ultrastark/us-mixin/utilities';
 ```
 
 **Attention**
 If you use the `color mixin`, you need another step: [README.md](https://github.com/ultrastark/us-mixin/tree/master/color)
 
-If you want to use the `reset mixin`, you need to import it into the style.scss
-
-```
-@import '~@ultrastark/us-mixin/reset/reset';
-```
 
 ## List of mixins
 
