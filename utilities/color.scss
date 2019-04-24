@@ -101,6 +101,11 @@ $us-colors: ();
       // bg-primary for base color
       .bg-#{$color} {
         background-color: $value !important; // Override bootstrap value
+        &.contrast-content {
+          * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
       }
       .color-#{$color} {
         color: $value !important;
@@ -121,6 +126,11 @@ $us-colors: ();
       // bg-primary-light for shade
       .bg-#{$color}-#{$tone} {
         background-color: $value;
+        &.contrast-content {
+          * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
       }
       .color-#{$color}-#{$tone} {
         color: $value;

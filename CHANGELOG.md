@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1] - 2019-24-04
+
+### Added
+
+ - utilities
+   - color
+     - contrast-content
+
 ## [0.4.0] - 2019-24-04
 
 ### Added

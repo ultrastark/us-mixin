@@ -53,7 +53,7 @@ Then import it in you style.scss and where you need it
 ```
 
 **Attention**
-If you use the `color mixin`, you need another step: [README.md](https://github.com/ultrastark/us-mixin/tree/master/color)
+If you use the `color mixin`, you need another step: [wiki](https://github.com/ultrastark/us-mixin/wiki/color)
 
 
 ## List of mixins
