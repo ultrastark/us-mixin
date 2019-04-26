@@ -45,15 +45,21 @@ In the working repository
 npm i @ultrastark/us-mixin@latest --save
 ```
 
-Then import it in you style.scss and where you need it
+Then import in the following order in you main.scss style and where you need it
 
 ```
+@import 'myColor.scss';
 @import '~@ultrastark/us-mixin/mixin';
 @import '~@ultrastark/us-mixin/utilities';
 ```
 
+**Note**
+- myColor.scss and us-mixin/mixin have to be imported in every scss file that needs they mixins
+- us-mixin/utilities should be imported **only once**. If not, it's gonna create useless classes
+- mixin and utilities work good together but you could only use one of the both if you need it
+
 **Attention**
-If you use the `color mixin`, you need another step: [wiki](https://github.com/ultrastark/us-mixin/wiki/color)
+If you use the `color mixin` and want custom color, you need another step: [wiki](https://github.com/ultrastark/us-mixin/wiki/color)
 
 
 ## List of mixins

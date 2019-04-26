@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.3] - 2019-26-04
+
+### Fix
+
+ - global
+   - color
+     - Re-enable the color mixin
+
+  - utilities
+    - Import now the mixin to be able to work even if not imported by the user
+
 ## [0.4.2] - 2019-24-04
 
 ### Fix

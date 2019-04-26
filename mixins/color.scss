@@ -7,13 +7,103 @@ h1 {
 }
 */
 
+$us-color-settings: (
+  primary: (
+    base: #3880ff,
+  ),
+  secondary: (
+    base: #0cd1e8,
+  ),
+  tertiary: (
+    base: #7044ff,
+  ),
+  success: (
+    base: #10dc60,
+  ),
+  warning: (
+    base: #ffce00,
+  ),
+  danger: (
+    base: #f04141,
+  ),
+  light: (
+    base: #f4f5f8,
+  ),
+  medium: (
+    base: #989aa2,
+  ),
+  dark: (
+    base: #222428,
+  ),
+) !default;
+
+$color-darken: 12% !default;
+$color-lighten: 12% !default;
+$color-opacity: 0.3 !default;
+
+$us-colors: ();
+
+@function createColourMap($base, $contrast, $shade, $tint, $trans) {
+  $map: (
+    base: $base,
+    contrast: $contrast,
+    shade: $shade,
+    tint: $tint,
+    trans: $trans,
+  );
+  @return $map;
+}
+
+@each $keys, $values in $us-color-settings {
+  $map: ();
+  $base: #000;
+  $contrast: null;
+  $shade: null;
+  $tint: null;
+  $trans: null;
+
+  @each $key, $color in $values {
+    @if ($key) {
+      @if ($key == 'base') {
+        $base: $color;
+      } @else if ($key == 'contrast') {
+        $contrast: $color;
+      } @else if ($key == 'shade') {
+        $shade: $color;
+      } @else if ($key == 'tint') {
+        $tint: $color;
+      } @else if ($key == 'trans') {
+        $trans: $color;
+      }
+    }
+  }
+
+  $map: map-merge(
+    $map,
+    (
+      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+    )
+  );
+  $us-colors: map-merge($us-colors, $map);
+
+  @if ($contrast == null) {
+    $contrast: #fff;
+  }
+  @if ($shade == null) {
+    $shade: darken($base, $color-darken);
+  }
+  @if ($tint == null) {
+    $tint: lighten($base, $color-lighten);
+  }
+  @if ($trans == null) {
+    $trans: transparentize($base, $color-opacity);
+  }
+}
+
 // Mixin
 @function color($color-name: primary, $tone: base, $alpha: false) {
-  @if variable-exists(us-colors) {
-    @if ($alpha) {
-      @return rgba(map-get(map-get($us-colors, $color-name), $tone), $alpha);
-    }
-    @return map-get(map-get($us-colors, $color-name), $tone);
+  @if ($alpha) {
+    @return rgba(map-get(map-get($us-colors, $color-name), $tone), $alpha);
   }
-  @return null
+  @return map-get(map-get($us-colors, $color-name), $tone);
 }
