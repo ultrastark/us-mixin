@@ -57,11 +57,11 @@
   transition: all 250ms;
   @if $animation {
     transform: translateY(-5px);
-    @include box-shadow($elevation);
+    @include box-shadow($elevation, null, $color);
     &:hover,
     &.active,
     &.focus {
-      @include box-shadow($animation);
+      @include box-shadow($animation, null, $color);
     }
   } @else {
     @if $elevation == 1 {
@@ -83,11 +83,11 @@
   transition: all 250ms;
   @if $animation {
     transform: translateY(-5px);
-    @include drop-shadow($elevation);
+    @include drop-shadow($elevation, null, $color);
     &:hover,
     &.active,
     &.focus {
-      @include drop-shadow($animation);
+      @include drop-shadow($animation, null, $color);
     }
   } @else {
     @if $elevation == 1 {

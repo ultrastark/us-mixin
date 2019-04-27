@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.4] - 2019-27-04
+
+### Fix
+
+ - mixins
+   - shadow
+     - Fix colors
+
 ## [0.4.3] - 2019-26-04
 
 ### Fix

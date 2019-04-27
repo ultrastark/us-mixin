@@ -3,7 +3,6 @@
   "_id": "@ultrastark/us-mixin@0.1.1",
   "_inBundle": false,
   "_integrity": "sha512-rIMa+Nj3EMdBB0y3DPk9o7bgparQ9L0oJ6a2nEf0wCt97RS3DPpNf2wTzsBpYk9I6TtUGjL3MO4aWj0TiZ8ppw==",
-  "_location": "/@ultrastark/us-mixin",
   "_phantomChildren": {},
   "_requested": {
     "type": "tag",
@@ -47,5 +46,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.4.3"
+  "version": "0.4.4"
 }
