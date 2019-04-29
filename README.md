@@ -94,7 +94,7 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
   - smUp, mdUp, lgUp, xlUp
   - xsOnly, smOnly, mdOnly, lgOnly, xlOnly
 
-  **The following explanation help you to import all in one, for a granularity import see the readme inside each child folders**
+  **The following explanation help you to import all in one, for a granularity import see the [wiki](https://github.com/ultrastark/us-mixin/wiki)**
 
 ## Mixins presentation
 
