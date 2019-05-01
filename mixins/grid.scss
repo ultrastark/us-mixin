@@ -2,21 +2,21 @@
 * @see https://getbootstrap.com/docs/4.0/layout/grid/
 */
 
-$xs: 576px;
+$xs: 0px;
 $sm: 576px;
 $md: 768px;
-$lg: 960px;
+$lg: 992px;
 $xl: 1200px;
 $xxl: 1500px;
 
 @mixin xs {
-  @media (max-width: #{$xs - 1px}) {
+  @media (max-width: #{$sm - 1px}) {
     @content;
   }
 }
 
 @mixin xsOnly {
-  @media (max-width: #{$xs - 1px}) {
+  @media (max-width: #{$sm - 1px}) {
     @content;
   }
 }

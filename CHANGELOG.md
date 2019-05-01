@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.6] - 2019-01-05
+
+### Fix
+
+ - Grid
+   - Fix xs and lg value
+
+## [0.4.5] - 2019-30-04
+
+### Fix
+
+ - Global
+   - Remove git file
+
 ## [0.4.4] - 2019-27-04
 
 ### Fix
