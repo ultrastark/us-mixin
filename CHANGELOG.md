@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.7] - 2019-05-24
+
+### Add
+
+ - Utilities
+   - Colors
+     - stroke (stroke-$colorName)
+
 ## [0.4.6] - 2019-01-05
 
 ### Fix
