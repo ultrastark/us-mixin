@@ -78,14 +78,6 @@ $us-colors: ();
     }
   }
 
-  $map: map-merge(
-    $map,
-    (
-      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
-    )
-  );
-  $us-colors: map-merge($us-colors, $map);
-
   @if ($contrast == null) {
     $contrast: #fff;
   }
@@ -98,6 +90,14 @@ $us-colors: ();
   @if ($trans == null) {
     $trans: transparentize($base, $color-opacity);
   }
+
+  $map: map-merge(
+    $map,
+    (
+      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+    )
+  );
+  $us-colors: map-merge($us-colors, $map);
 }
 
 // Mixin

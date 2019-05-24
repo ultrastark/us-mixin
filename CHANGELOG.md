@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.8] - 2019-05-24
+
+### Fix
+
+ - Mixins
+   - Colors
+     - tint, shade, trans auto generation
+
 ## [0.4.7] - 2019-05-24
 
 ### Add
