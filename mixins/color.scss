@@ -69,7 +69,6 @@ $us-colors: ();
 }
 
 @each $keys, $values in $us-color-global {
-  $map: ();
   $base: #000;
   $contrast: null;
   $shade: null;
@@ -105,13 +104,12 @@ $us-colors: ();
     $trans: transparentize($base, $color-opacity);
   }
 
-  $map: map-merge(
-    $map,
+  $us-colors: map-merge(
+    $us-colors,
     (
       $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
     )
   );
-  $us-colors: map-merge($us-colors, $map);
 }
 
 // Mixin
