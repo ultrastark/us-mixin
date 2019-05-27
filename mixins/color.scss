@@ -7,6 +7,7 @@ h1 {
 }
 */
 
+// Normally will be overwritten by the user
 $us-color-settings: (
   primary: (
     base: #3880ff,
@@ -16,15 +17,6 @@ $us-color-settings: (
   ),
   tertiary: (
     base: #7044ff,
-  ),
-  success: (
-    base: #10dc60,
-  ),
-  warning: (
-    base: #ffce00,
-  ),
-  danger: (
-    base: #f04141,
   ),
   light: (
     base: #f4f5f8,
@@ -36,6 +28,28 @@ $us-color-settings: (
     base: #222428,
   ),
 ) !default;
+
+// Default color used by bootstrap
+$us-color-default: (
+  danger: (
+    shade: #cc0000,
+    base: #ff4444,
+  ),
+  warning: (
+    shade: #ff8800,
+    base: #ffbb33,
+  ),
+  success: (
+    shade: #007e33,
+    base: #00c851,
+  ),
+  info: (
+    shade: #33b5e5,
+    base: #0099cc,
+  ),
+) !default;
+
+$us-color-global: map-merge($us-color-default, $us-color-settings) !default;
 
 $color-darken: 12% !default;
 $color-lighten: 12% !default;
@@ -54,7 +68,7 @@ $us-colors: ();
   @return $map;
 }
 
-@each $keys, $values in $us-color-settings {
+@each $keys, $values in $us-color-global {
   $map: ();
   $base: #000;
   $contrast: null;

@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.9] - 2019-05-27
+
+### Enhance
+
+ - Mixins
+   - Colors
+     - add granularity color settings and merge map (default success, warning, danger and info)
+
 ## [0.4.8] - 2019-05-24
 
 ### Fix
