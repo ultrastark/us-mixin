@@ -34,18 +34,22 @@ $us-color-default: (
   danger: (
     shade: #cc0000,
     base: #ff4444,
+    contrast: #fff,
   ),
   warning: (
     shade: #ff8800,
     base: #ffbb33,
+    contrast: #000,
   ),
   success: (
     shade: #007e33,
     base: #00c851,
+    contrast: #fff,
   ),
   info: (
     shade: #33b5e5,
     base: #0099cc,
+    contrast: #fff,
   ),
 ) !default;
 
