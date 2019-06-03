@@ -81,6 +81,9 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
     - bg-{color-name}-{tone}
     - color-{color-name}-{tone}
     - border-{color-name}-{tone}
+    - fill-{color-name}-{tone}
+    - stroke-{color-name}-{tone}
+    - afterNBefore-{color-name}-{tone}
 
 - shadow
 
@@ -130,7 +133,9 @@ color : color('secondary', 'light', 0.5);
 
 ### grid
 
-@include sm, md, lg, xl { };
+@include xs, sm, md, lg, xl , xxl { };
+@include smUp, mdUp, ... {};
+@include xsOnly, smOnly, ... {};
 
 ## How to use
 

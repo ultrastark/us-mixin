@@ -92,3 +92,9 @@ $xxl: 1500px;
     @content;
   }
 }
+
+@mixin xxlUp {
+  @media (min-width: #{$xxl - 1px}) {
+    @content;
+  }
+}

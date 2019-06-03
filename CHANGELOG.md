@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.12] - 2019-06-02
+
+### Enhance
+
+ - README
+
+### Add
+
+ - Mixins
+  - Grid
+    - Add xxlUp
+
 ## [0.4.11] - 2019-05-29
 
 ### Enhance
