@@ -2,7 +2,7 @@
 
 // Default class
 .bg-white {
-  background-color: #fff;
+  background-color: #fff !important;
   &.contrast-content {
     * {
       color: #000;
@@ -11,7 +11,7 @@
 }
 
 .bg-black {
-  background-color: #000;
+  background-color: #000 !important;
   &.contrast-content {
     * {
       color: #fff;
