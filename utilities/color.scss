@@ -1,4 +1,24 @@
 // Init class
+
+// Default class
+.bg-white {
+  background-color: #fff;
+  &.contrast-content {
+    * {
+      color: #000;
+    }
+  }
+}
+
+.bg-black {
+  background-color: #000;
+  &.contrast-content {
+    * {
+      color: #fff;
+    }
+  }
+}
+
 @each $color, $tones in $us-colors {
   @each $tone, $value in $tones {
     @if ($tone == 'base') {
