@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.18] - 2019-06-11
+
+### Enhance
+
+ - Mixins
+   - color
+     - Add black & white base color inside the loop
+
+### Add
+ - Utilities
+   - customize-bg
+     - bg-full
+     - bg-fixed
+
 ## [0.4.17] - 2019-06-08
 
 ### Add
