@@ -1,6 +1,6 @@
 # Changelog
 
-## [0.4.18] - 2019-06-11
+## [0.4.19] - 2019-06-11
 
 ### Enhance
 
@@ -11,7 +11,7 @@
 ### Add
  - Utilities
    - customize-bg
-     - bg-full
+     - bg-container
      - bg-fixed
 
 ## [0.4.17] - 2019-06-08
