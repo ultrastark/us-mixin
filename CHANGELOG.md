@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.23] - 2019-06-14
+
+### Add
+
+ - Utilities
+   - reset
+     - Add cursor-pointer
+
 ## [0.4.22] - 2019-06-14
 
 ### Optimize

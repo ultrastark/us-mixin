@@ -35,6 +35,10 @@ textarea:focus {
 
 // Custom css class
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .noScroll {
   // used by js func
   overflow: hidden;
