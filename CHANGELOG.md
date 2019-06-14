@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.22] - 2019-06-14
+
+### Optimize
+
+ - Utilities
+   - color
+     - Remove unused
+
 ## [0.4.21] - 2019-06-11
 
 ### Enhance
