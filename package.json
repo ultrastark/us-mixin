@@ -1,6 +1,6 @@
 {
   "name": "@ultrastark/us-mixin",
-  "version": "0.4.24",
+  "version": "0.4.25",
   "description": "mixin container",
   "main": "index.js",
   "scripts": {
