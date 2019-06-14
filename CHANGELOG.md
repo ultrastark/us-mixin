@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.4.26] - 2019-06-14
+
+### Enhance
+
+ - Utilities
+   - colors
+     - Add color on color contrast
+     - Add !important on every color
+
 ## [0.4.25] - 2019-06-14
 
 ### Add

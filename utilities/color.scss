@@ -8,6 +8,7 @@
       .hover-bg-#{$color}:hover {
         background-color: $value !important; // Override bootstrap value
         &.contrast-content {
+          color: map-get(map-get($us-colors, $color), contrast);
           * {
             color: map-get(map-get($us-colors, $color), contrast);
           }
@@ -41,8 +42,9 @@
       // bg-primary-light for shade
       .bg-#{$color}-#{$tone},
       .hover-bg-#{$color}-#{$tone}:hover {
-        background-color: $value;
+        background-color: $value !important;
         &.contrast-content {
+          color: map-get(map-get($us-colors, $color), contrast);
           * {
             color: map-get(map-get($us-colors, $color), contrast);
           }
@@ -50,25 +52,25 @@
       }
       .color-#{$color}-#{$tone},
       .hover-color-#{$color}-#{$tone}:hover {
-        color: $value;
+        color: $value !important;
       }
       .border-#{$color}-#{$tone},
       .hover-border-#{$color}-#{$tone}:hover {
-        border-color: $value;
+        border-color: $value !important;
       }
       .fill-#{$color}-#{$tone},
       .hover-fill-#{$color}-#{$tone}:hover {
-        fill: $value;
+        fill: $value !important;
       }
       .stroke-#{$color}-#{$tone},
       .hover-stroke-#{$color}-#{$tone}:hover {
-        fill: $value;
+        fill: $value !important;
       }
       .afterNBefore-#{$color}-#{$tone},
       .hover-afterNBefore-#{$color}-#{$tone}:hover {
         &::before,
         &::after {
-          background-color: $value;
+          background-color: $value !important;
         }
       }
     }
