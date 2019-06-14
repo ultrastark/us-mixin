@@ -4,7 +4,8 @@
   @each $tone, $value in $tones {
     @if ($tone == 'base') {
       // bg-primary for base color
-      .bg-#{$color} {
+      .bg-#{$color},
+      .hover-bg-#{$color}:hover {
         background-color: $value !important; // Override bootstrap value
         &.contrast-content {
           * {
@@ -12,19 +13,25 @@
           }
         }
       }
-      .color-#{$color} {
+
+      .color-#{$color},
+      .hover-color-#{$color}:hover {
         color: $value !important;
       }
-      .border-#{$color} {
+      .border-#{$color},
+      .hover-border-#{$color}:hover {
         border-color: $value !important;
       }
-      .fill-#{$color} {
+      .fill-#{$color},
+      .hover-fill-#{$color}:hover {
         fill: $value !important;
       }
-      .stroke-#{$color} {
+      .stroke-#{$color},
+      .hover-stroke-#{$color}:hover {
         color: $value !important;
       }
-      .afterNBefore-#{$color} {
+      .afterNBefore-#{$color},
+      .hover-afterNBefore-#{$color}:hover {
         &::before,
         &::after {
           background-color: $value !important;
@@ -32,7 +39,8 @@
       }
     } @else {
       // bg-primary-light for shade
-      .bg-#{$color}-#{$tone} {
+      .bg-#{$color}-#{$tone},
+      .hover-bg-#{$color}-#{$tone}:hover {
         background-color: $value;
         &.contrast-content {
           * {
@@ -40,19 +48,24 @@
           }
         }
       }
-      .color-#{$color}-#{$tone} {
+      .color-#{$color}-#{$tone},
+      .hover-color-#{$color}-#{$tone}:hover {
         color: $value;
       }
-      .border-#{$color}-#{$tone} {
+      .border-#{$color}-#{$tone},
+      .hover-border-#{$color}-#{$tone}:hover {
         border-color: $value;
       }
-      .fill-#{$color}-#{$tone} {
+      .fill-#{$color}-#{$tone},
+      .hover-fill-#{$color}-#{$tone}:hover {
         fill: $value;
       }
-      .stroke-#{$color}-#{$tone} {
+      .stroke-#{$color}-#{$tone},
+      .hover-stroke-#{$color}-#{$tone}:hover {
         fill: $value;
       }
-      .afterNBefore-#{$color}-#{$tone} {
+      .afterNBefore-#{$color}-#{$tone},
+      .hover-afterNBefore-#{$color}-#{$tone}:hover {
         &::before,
         &::after {
           background-color: $value;

@@ -85,6 +85,10 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
     - stroke-{color-name}-{tone}
     - afterNBefore-{color-name}-{tone}
 
+    // Hover generation
+    - bg-hover-{color-name}-{tone}
+
+
 - shadow
 
   - normal

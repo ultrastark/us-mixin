@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.24] - 2019-06-14
+
+### Add
+
+ - Utilities
+   - colors
+     - Add hover color class
+
 ## [0.4.23] - 2019-06-14
 
 ### Add

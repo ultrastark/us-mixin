@@ -35,6 +35,10 @@ textarea:focus {
 
 // Custom css class
 
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
