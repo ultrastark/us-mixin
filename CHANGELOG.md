@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.27] - 2019-06-18
+
+### Add
+
+ - Utilities
+   - reset
+     - Add truncate
+
 ## [0.4.26] - 2019-06-14
 
 ### Enhance
