@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.28] - 2019-06-24
+
+### Optimize
+
+- Mixins
+   - colors
+     - Error handling
+
 ## [0.4.27] - 2019-06-18
 
 ### Add
