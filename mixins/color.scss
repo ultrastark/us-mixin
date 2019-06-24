@@ -127,5 +127,8 @@ $us-colors: ();
   @if ($alpha) {
     @return rgba(map-get(map-get($us-colors, $color-name), $tone), $alpha);
   }
+  @if (map-get($us-colors, $color-name) == null) {
+    @error "#{$color-name} isn't set inside us-color-settings";
+  }
   @return map-get(map-get($us-colors, $color-name), $tone);
 }
