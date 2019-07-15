@@ -23,7 +23,6 @@ button,
 button:focus,
 input:focus,
 textarea:focus {
-  border: none;
   background-color: transparent;
   outline: none;
   cursor: pointer;
@@ -35,9 +34,6 @@ textarea:focus {
 
 // Custom css class
 // TODO: put those in separate scss file
-.transition {
-  transition: all 0.3s ease-in-out;
-}
 
 .cursor-pointer {
   cursor: pointer;
@@ -46,11 +42,6 @@ textarea:focus {
 .noScroll {
   // used by js func
   overflow: hidden;
-}
-
-.hidden {
-  opacity: 0;
-  pointer-events: none;
 }
 
 .truncate {

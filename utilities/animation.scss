@@ -1,0 +1,44 @@
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.transition {
+  transition: all 0.3s ease-in-out;
+}
+
+.grayscale-out {
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.grayscale-in {
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(0);
+
+  &:hover {
+    filter: grayscale(100);
+  }
+}
+
+.brightness-out {
+  transition: all 0.3s ease-in-out;
+  filter: brightness(100);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.brightness-in {
+  transition: all 0.3s ease-in-out;
+  filter: brightness(0);
+
+  &:hover {
+    filter: grayscale(100);
+  }
+}

@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.4.29] - 2019-07-15
+
+### Remove
+
+- Utilities
+  - reset
+    - remove border none on button
+
+### Add
+- Utilities
+  - Animation
+
 ## [0.4.28] - 2019-06-24
 
 ### Optimize
