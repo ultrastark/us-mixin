@@ -30,7 +30,7 @@
   filter: brightness(100);
 
   &:hover {
-    filter: grayscale(0);
+    filter: brightness(0);
   }
 }
 
@@ -39,6 +39,6 @@
   filter: brightness(0);
 
   &:hover {
-    filter: grayscale(100);
+    filter: brightness(100);
   }
 }
