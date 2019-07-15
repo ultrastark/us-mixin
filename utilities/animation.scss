@@ -42,3 +42,147 @@
     filter: brightness(100);
   }
 }
+
+.blur-out {
+  transition: all 0.3s ease-in-out;
+  filter: blur(100);
+
+  &:hover {
+    filter: blur(0);
+  }
+}
+
+.blur-in {
+  transition: all 0.3s ease-in-out;
+  filter: blur(0);
+
+  &:hover {
+    filter: blur(100);
+  }
+}
+
+.contrast-out {
+  transition: all 0.3s ease-in-out;
+  filter: contrast(100);
+
+  &:hover {
+    filter: contrast(0);
+  }
+}
+
+.contrast-in {
+  transition: all 0.3s ease-in-out;
+  filter: contrast(0);
+
+  &:hover {
+    filter: contrast(100);
+  }
+}
+
+.drop-shadow-out {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(100);
+
+  &:hover {
+    filter: drop-shadow(0);
+  }
+}
+
+.drop-shadow-in {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(0);
+
+  &:hover {
+    filter: drop-shadow(100);
+  }
+}
+
+.hue-rotate-out {
+  transition: all 0.3s ease-in-out;
+  filter: hue-rotate(100);
+
+  &:hover {
+    filter: hue-rotate(0);
+  }
+}
+
+.hue-rotate-in {
+  transition: all 0.3s ease-in-out;
+  filter: hue-rotate(0);
+
+  &:hover {
+    filter: hue-rotate(100);
+  }
+}
+
+.invert-out {
+  transition: all 0.3s ease-in-out;
+  filter: invert(100);
+
+  &:hover {
+    filter: invert(0);
+  }
+}
+
+.invert-in {
+  transition: all 0.3s ease-in-out;
+  filter: invert(0);
+
+  &:hover {
+    filter: invert(100);
+  }
+}
+
+.opacity-out {
+  transition: all 0.3s ease-in-out;
+  filter: opacity(100);
+
+  &:hover {
+    filter: opacity(0);
+  }
+}
+
+.opacity-in {
+  transition: all 0.3s ease-in-out;
+  filter: opacity(0);
+
+  &:hover {
+    filter: opacity(100);
+  }
+}
+
+.saturate-out {
+  transition: all 0.3s ease-in-out;
+  filter: saturate(100);
+
+  &:hover {
+    filter: saturate(0);
+  }
+}
+
+.saturate-in {
+  transition: all 0.3s ease-in-out;
+  filter: saturate(0);
+
+  &:hover {
+    filter: saturate(100);
+  }
+}
+
+.sepia-out {
+  transition: all 0.3s ease-in-out;
+  filter: sepia(100);
+
+  &:hover {
+    filter: sepia(0);
+  }
+}
+
+.sepia-in {
+  transition: all 0.3s ease-in-out;
+  filter: sepia(0);
+
+  &:hover {
+    filter: sepia(100);
+  }
+}
