@@ -78,7 +78,7 @@
       }
       .gradient-#{$color}-#{$tone}-rotate {
         background-image: linear-gradient(
-          200deg,
+          $gradient-rotation,
           map-get(map-get($us-colors, $color), base),
           $value
         );

@@ -64,6 +64,7 @@ $us-color-global: map-merge($us-color-default, $us-color-settings) !default;
 $color-darken: 12% !default;
 $color-lighten: 12% !default;
 $color-opacity: 0.3 !default;
+$gradient-rotation: 200deg !default;
 
 $us-colors: ();
 
@@ -84,13 +85,6 @@ $us-colors: ();
   $shade: null;
   $tint: null;
   $trans: null;
-
-  $us-colors: map-merge(
-    $us-colors,
-    (
-      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
-    )
-  );
 
   @each $key, $color in $values {
     @if ($key) {
@@ -120,6 +114,13 @@ $us-colors: ();
   @if ($trans == null) {
     $trans: transparentize($base, $color-opacity);
   }
+
+  $us-colors: map-merge(
+    $us-colors,
+    (
+      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+    )
+  );
 }
 
 // Mixin
