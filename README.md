@@ -84,6 +84,8 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
     - fill-{color-name}-{tone}
     - stroke-{color-name}-{tone}
     - afterNBefore-{color-name}-{tone}
+    - gradient-{color-name}-{tone}
+    - gradient-{color-name}-{tone}-rotate
 
     // Hover generation
     - bg-hover-{color-name}-{tone}
