@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.34] - 2019-07-22
+
+### Enhance
+
+- Utilities
+  - color
+    - add : gradient-#{\$color}-#{\$tone} and gradient-#{\$color}-#{\$tone}-rotate
+
 ## [0.4.33] - 2019-07-15
 
 ### Enhance

@@ -73,6 +73,16 @@
           background-color: $value !important;
         }
       }
+      .gradient-#{$color}-#{$tone} {
+        background-image: linear-gradient(map-get(map-get($us-colors, $color), base), $value);
+      }
+      .gradient-#{$color}-#{$tone}-rotate {
+        background-image: linear-gradient(
+          200deg,
+          map-get(map-get($us-colors, $color), base),
+          $value
+        );
+      }
     }
   }
 }

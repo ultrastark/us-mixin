@@ -85,6 +85,13 @@ $us-colors: ();
   $tint: null;
   $trans: null;
 
+  $us-colors: map-merge(
+    $us-colors,
+    (
+      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+    )
+  );
+
   @each $key, $color in $values {
     @if ($key) {
       @if ($key == 'base') {
@@ -113,13 +120,6 @@ $us-colors: ();
   @if ($trans == null) {
     $trans: transparentize($base, $color-opacity);
   }
-
-  $us-colors: map-merge(
-    $us-colors,
-    (
-      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
-    )
-  );
 }
 
 // Mixin
