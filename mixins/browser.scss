@@ -7,13 +7,13 @@
 }
 
 @mixin edge {
-  @supports (-ms-accelerator: true) {
+  @supports (-ms-ime-align: auto) {
     @content;
   }
 }
 
 @mixin notEdge {
-  @supports not (-ms-accelerator: true) {
+  @supports not (-ms-ime-align: auto) {
     @content;
   }
 }
