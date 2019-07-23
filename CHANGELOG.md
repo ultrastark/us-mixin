@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.35] - 2019-07-22
+
+### Fix
+
+- Mixins
+  - browser
+    - edge support
+
 ## [0.4.34] - 2019-07-22
 
 ### Enhance
