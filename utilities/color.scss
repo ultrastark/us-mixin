@@ -20,6 +20,10 @@
           }
         }
         &.contrast-all {
+          color: map-get(map-get($us-colors, $color), contrast);
+          * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
           *::selection {
             background-color: $value;
             color: map-get(map-get($us-colors, $color), contrast);
@@ -78,6 +82,10 @@
           }
         }
         &.contrast-all {
+          color: map-get(map-get($us-colors, $color), contrast);
+          * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
           *::selection {
             background-color: $value;
             color: map-get(map-get($us-colors, $color), contrast);
