@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.4.38] - 2019-07-22
+
+### Add
+
+- Utilities
+  - color / .bg-#{\$color}
+    - .contrast-all
+    - .contrast-selection
+
 ## [0.4.37] - 2019-07-22
 
 ### Add

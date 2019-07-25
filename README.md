@@ -7,6 +7,7 @@
   - [What's included](#whats-included)
   - [Quick start](#quick-start)
   - [List of mixins](#list-of-mixins)
+  - [List of generated classes](#list-of-generated-classes)
   - [Mixins presentation](#mixins-presentation)
     - [animation](#animation)
     - [browser](#browser)
@@ -77,20 +78,7 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
 
 - color
 
-  - color-name, tone, alpha
-  - Class generation
-    - bg-{color-name}-{tone}
-    - color-{color-name}-{tone}
-    - border-{color-name}-{tone}
-    - fill-{color-name}-{tone}
-    - stroke-{color-name}-{tone}
-    - afterNBefore-{color-name}-{tone}
-    - gradient-{color-name}-{tone}
-    - gradient-{color-name}-{tone}-rotate
-
-    // Hover generation
-    - bg-hover-{color-name}-{tone}
-
+  - color(color-name, tone, alpha)
 
 - shadow
 
@@ -105,6 +93,45 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
   - xsOnly, smOnly, mdOnly, lgOnly, xlOnly
 
   **The following explanation help you to import all in one, for a granularity import see the [wiki](https://github.com/ultrastark/us-mixin/wiki)**
+
+## List of generated classes
+
+  - animation
+
+    - hidden
+    - transition
+    - grayscale-out - in
+    - brightness-out - in
+    - blur-out - in
+    - contrast-out - in
+    - drop-shadow-out - in
+    - hue-rotate-out - in
+    - invert-out - in
+    - opacity-out - in
+    - saturate-out - in
+    - sepia-out - in
+
+  - color
+
+    - bg-{color-name}-{tone}
+      - contrast-content
+      - contrast-selection
+      - contrast-all
+    - color-{color-name}-{tone}
+    - border-{color-name}-{tone}
+    - fill-{color-name}-{tone}
+    - stroke-{color-name}-{tone}
+    - afterNBefore-{color-name}-{tone}
+    - gradient-{color-name}-{tone}
+    - gradient-{color-name}-{tone}-rotate
+
+    // Hover generation
+    - bg-hover-{color-name}-{tone}
+
+  - reset
+    - cursor-pointer
+    - noScroll
+    - truncate
 
 ## Mixins presentation
 
@@ -185,7 +212,7 @@ h1 {
   background: color('secondary', 'light', 0.5);
 }
 <div class="bg-primary color-primary border-primary"></div>
-<div class="bg-secondary-light color-secondary-dark border-default-warning"></div>
+<div class="bg-secondary-light color-secondary-dark border-default-warning contrast-all"></div>
 
 // shadow
 .card {

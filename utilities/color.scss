@@ -13,6 +13,18 @@
             color: map-get(map-get($us-colors, $color), contrast);
           }
         }
+        &.contrast-selection {
+          *::selection {
+            background-color: $value;
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
+        &.contrast-all {
+          *::selection {
+            background-color: $value;
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
       }
 
       .color-#{$color},
@@ -56,6 +68,18 @@
         &.contrast-content {
           color: map-get(map-get($us-colors, $color), contrast);
           * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
+        &.contrast-selection {
+          *::selection {
+            background-color: $value;
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
+        &.contrast-all {
+          *::selection {
+            background-color: $value;
             color: map-get(map-get($us-colors, $color), contrast);
           }
         }
