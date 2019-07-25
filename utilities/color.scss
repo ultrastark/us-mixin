@@ -38,6 +38,16 @@
           background-color: $value !important;
         }
       }
+      .selection-#{$color} {
+        *::selection {
+          background-color: $value;
+        }
+        &.contrast-selection {
+          *::selection {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
+      }
     } @else {
       // bg-primary-light for shade
       .bg-#{$color}-#{$tone},
@@ -82,6 +92,16 @@
           map-get(map-get($us-colors, $color), base),
           $value
         );
+      }
+      .selection-#{$color}-#{$tone} {
+        *::selection {
+          background-color: $value;
+        }
+        &.contrast-selection {
+          *::selection {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
+        }
       }
     }
   }

@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.37] - 2019-07-22
+
+### Add
+
+- Utilities
+  - color
+    - .selection-#{\$color} + .contrast-selection
+
 ## [0.4.35] - 2019-07-22
 
 ### Fix
