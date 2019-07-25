@@ -33,9 +33,11 @@ $us-color-settings: (
 $us-color-default: (
   'white': (
     base: #fff,
+    contrast: #000,
   ),
   'black': (
     base: #000,
+    contrast: #fff,
   ),
   danger: (
     shade: #cc0000,

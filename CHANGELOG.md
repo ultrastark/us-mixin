@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.39] - 2019-07-22
+
+### Enhance
+
+- Utilities
+  - $us-color-default
+    - add white and black contrast
+
 ## [0.4.38] - 2019-07-22
 
 ### Add
