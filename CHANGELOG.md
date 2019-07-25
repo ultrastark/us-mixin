@@ -1,6 +1,14 @@
 # Changelog
 
-## [0.4.39] - 2019-07-22
+## [0.4.39] - 2019-07-25
+
+### Fix
+
+- Utilities
+  - colors
+    - contrast-all
+
+## [0.4.39] - 2019-07-25
 
 ### Enhance
 
@@ -8,7 +16,7 @@
   - $us-color-default
     - add white and black contrast
 
-## [0.4.38] - 2019-07-22
+## [0.4.38] - 2019-07-25
 
 ### Add
 
@@ -17,7 +25,7 @@
     - .contrast-all
     - .contrast-selection
 
-## [0.4.37] - 2019-07-22
+## [0.4.37] - 2019-07-25
 
 ### Add
 
