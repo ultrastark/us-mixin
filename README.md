@@ -36,6 +36,7 @@ us-mixin/
     ├── color.scss
     ├── customize-bg.scss
     ├── customize-row.scss
+    ├── grid.scss (bootstrap copy)
     └── reset.scss
 ```
 
@@ -127,6 +128,9 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
 
     // Hover generation
     - bg-hover-{color-name}-{tone}
+
+  - grid
+    - [bootstrap grid](https://getbootstrap.com/docs/4.0/layout/grid/)
 
   - reset
     - cursor-pointer

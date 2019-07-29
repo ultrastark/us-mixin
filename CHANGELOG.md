@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.42] - 2019-07-29
+
+### Add
+
+- Utilities
+  - grid (copy from bootstrap)
+
 ## [0.4.41] - 2019-07-25
 
 ### Fix
