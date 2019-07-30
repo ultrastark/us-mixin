@@ -1,0 +1,30 @@
+.xs-none {
+  @include xs {
+    display: none;
+  }
+}
+.sm-none {
+  @include sm {
+    display: none;
+  }
+}
+.md-none {
+  @include md {
+    display: none;
+  }
+}
+.lg-none {
+  @include lg {
+    display: none;
+  }
+}
+.xl-none {
+  @include xl {
+    display: none;
+  }
+}
+.xxl-none {
+  @include xxl {
+    display: none;
+  }
+}
