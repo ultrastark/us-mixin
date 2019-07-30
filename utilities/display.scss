@@ -23,3 +23,8 @@
     display: none;
   }
 }
+.xxl-none {
+  @include xxlUp {
+    display: none;
+  }
+}
