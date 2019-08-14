@@ -1,4 +1,12 @@
 # Changelog
+## [0.4.47] - 2019-08-14
+
+### Add
+
+- Utilities
+  - animation
+    - visible class inside hidden
+
 ## [0.4.46] - 2019-07-30
 
 ### Add

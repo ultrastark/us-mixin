@@ -101,6 +101,7 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
   - animation
 
     - hidden
+      - visible
     - transition
     - grayscale-out - in
     - brightness-out - in
