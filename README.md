@@ -102,6 +102,7 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
 
     - hidden
       - visible
+    - hidden-no-height
     - transition
     - grayscale-out - in
     - brightness-out - in

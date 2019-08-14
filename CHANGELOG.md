@@ -1,4 +1,12 @@
 # Changelog
+## [0.4.48] - 2019-08-14
+
+### Add
+
+- Utilities
+  - animation
+    - hidden-no-height
+
 ## [0.4.47] - 2019-08-14
 
 ### Add
