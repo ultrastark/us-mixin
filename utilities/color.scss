@@ -88,10 +88,12 @@
         .bg-inherit {
           background-color: $value !important;
         }
-        &.hover-color-contrast:hover {
+        &.hover-contrast:hover {
           color: map-get(map-get($us-colors, $color), contrast);
+          fill: map-get(map-get($us-colors, $color), contrast);
           * {
             color: map-get(map-get($us-colors, $color), contrast);
+            fill: map-get(map-get($us-colors, $color), contrast);
           }
         }
       }
@@ -191,10 +193,12 @@
           background-color: $value !important;
         }
 
-        &.hover-color-contrast:hover {
+        &.hover-contrast:hover {
           color: map-get(map-get($us-colors, $color), contrast);
+          fill: map-get(map-get($us-colors, $color), contrast);
           * {
             color: map-get(map-get($us-colors, $color), contrast);
+            fill: map-get(map-get($us-colors, $color), contrast);
           }
         }
       }
