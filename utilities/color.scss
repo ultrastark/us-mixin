@@ -74,6 +74,10 @@
             background-color: $value !important;
           }
         }
+        &.bg-inherit,
+        .bg-inherit {
+          background-color: $value !important;
+        }
       }
     } @else {
       // bg-primary-light for shade
@@ -155,6 +159,10 @@
           &::after {
             background-color: $value !important;
           }
+        }
+        &.bg-inherit,
+        .bg-inherit {
+          background-color: $value !important;
         }
       }
     }
