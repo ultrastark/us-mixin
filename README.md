@@ -126,6 +126,7 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
     - fill-{color-name}-{tone}
     - stroke-{color-name}-{tone}
     - afterNBefore-{color-name}-{tone}
+    - inner-{color-name}-{tone}
     - gradient-{color-name}-{tone}
     - gradient-{color-name}-{tone}-rotate
 

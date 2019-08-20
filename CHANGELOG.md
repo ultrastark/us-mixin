@@ -1,4 +1,12 @@
 # Changelog
+## [0.4.49] - 2019-08-20
+
+### Add
+
+- Utilities
+  - colors
+    - inner-{color}
+
 ## [0.4.48] - 2019-08-14
 
 ### Add
