@@ -65,6 +65,13 @@
         }
       }
       .inner-#{$color} {
+        color: $value !important;
+        border-color: $value !important;
+        fill: $value !important;
+        &::before,
+        &::after {
+          background-color: $value !important;
+        }
         * {
           color: $value !important;
           border-color: $value !important;
@@ -151,6 +158,13 @@
         }
       }
       .inner-#{$color}-#{$tone} {
+        color: $value !important;
+        border-color: $value !important;
+        fill: $value !important;
+        &::before,
+        &::after {
+          background-color: $value !important;
+        }
         * {
           color: $value !important;
           border-color: $value !important;
