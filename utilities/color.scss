@@ -34,6 +34,9 @@
       .color-#{$color},
       .hover-color-#{$color}:hover {
         color: $value !important;
+        * {
+          color: $value !important;
+        }
       }
       .border-#{$color},
       .hover-border-#{$color}:hover {
@@ -65,17 +68,17 @@
         }
       }
       .inner-#{$color} {
-        color: $value !important;
-        border-color: $value !important;
-        fill: $value !important;
+        color: $value;
+        border-color: $value;
+        fill: $value;
         &::before,
         &::after {
           background-color: $value !important;
         }
         * {
-          color: $value !important;
-          border-color: $value !important;
-          fill: $value !important;
+          color: $value;
+          border-color: $value;
+          fill: $value;
           &::before,
           &::after {
             background-color: $value !important;
@@ -84,6 +87,12 @@
         &.bg-inherit,
         .bg-inherit {
           background-color: $value !important;
+        }
+        &.hover-color-contrast:hover {
+          color: map-get(map-get($us-colors, $color), contrast);
+          * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
         }
       }
     } @else {
@@ -117,6 +126,9 @@
       .color-#{$color}-#{$tone},
       .hover-color-#{$color}-#{$tone}:hover {
         color: $value !important;
+        * {
+          color: $value !important;
+        }
       }
       .border-#{$color}-#{$tone},
       .hover-border-#{$color}-#{$tone}:hover {
@@ -158,17 +170,17 @@
         }
       }
       .inner-#{$color}-#{$tone} {
-        color: $value !important;
-        border-color: $value !important;
-        fill: $value !important;
+        color: $value;
+        border-color: $value;
+        fill: $value;
         &::before,
         &::after {
           background-color: $value !important;
         }
         * {
-          color: $value !important;
-          border-color: $value !important;
-          fill: $value !important;
+          color: $value;
+          border-color: $value;
+          fill: $value;
           &::before,
           &::after {
             background-color: $value !important;
@@ -177,6 +189,13 @@
         &.bg-inherit,
         .bg-inherit {
           background-color: $value !important;
+        }
+
+        &.hover-color-contrast:hover {
+          color: map-get(map-get($us-colors, $color), contrast);
+          * {
+            color: map-get(map-get($us-colors, $color), contrast);
+          }
         }
       }
     }
