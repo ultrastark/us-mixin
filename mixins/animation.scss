@@ -62,3 +62,20 @@
     animation: spin $velocity $curve $mode;
   }
 }
+
+@mixin fade($velocity: 1s, $curve: linear, $mode: infinite) {
+  @keyframes fade {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.25;
+    }
+  }
+
+  @if ($mode == false) {
+    animation: fade $velocity $curve forwards;
+  } @else {
+    animation: fade $velocity $curve $mode;
+  }
+}

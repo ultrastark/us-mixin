@@ -3,6 +3,14 @@
 
 ### Add
 
+- Mixins
+  - animation
+    - fade
+
+## [0.4.54] - 2019-09-02
+
+### Add
+
 - Utilities
   - colors
     - inner-bg-{color}

@@ -153,6 +153,8 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
 
 @include spin(); // Default values : spin($velocity: 1.5s, $curve: ease, \$mode: infinite)
 
+@include fade(); // Default values : spin($velocity: 1s, $curve: linear, \$mode: infinite)
+
 ### browser
 
 @include chrome edge, ie, ios, safari, print { };
