@@ -1,4 +1,12 @@
 # Changelog
+## [0.4.54] - 2019-09-02
+
+### Add
+
+- Utilities
+  - colors
+    - inner-bg-{color}
+
 ## [0.4.53] - 2019-08-20
 
 ### Add

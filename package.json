@@ -1,7 +1,7 @@
 {
   "name": "@ultrastark/us-mixin",
-  "version": "0.4.53",
-  "description": "mixin container",
+  "version": "0.4.54",
+  "description": "Contain scss mixin and divers utilities",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

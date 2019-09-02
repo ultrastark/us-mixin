@@ -15,8 +15,8 @@
         }
         &.contrast-selection {
           *::selection {
-            background-color: $value;
             color: map-get(map-get($us-colors, $color), contrast);
+            background-color: $value;
           }
         }
         &.contrast-all {
@@ -25,8 +25,8 @@
             color: map-get(map-get($us-colors, $color), contrast);
           }
           *::selection {
-            background-color: map-get(map-get($us-colors, $color), contrast);
             color: $value;
+            background-color: map-get(map-get($us-colors, $color), contrast);
           }
         }
       }
@@ -65,6 +65,11 @@
           *::selection {
             color: map-get(map-get($us-colors, $color), contrast);
           }
+        }
+      }
+      .inner-bg-#{$color} {
+        .item-bg {
+          background-color: $value;
         }
       }
       .inner-#{$color} {
@@ -110,8 +115,8 @@
         }
         &.contrast-selection {
           *::selection {
-            background-color: $value;
             color: map-get(map-get($us-colors, $color), contrast);
+            background-color: $value;
           }
         }
         &.contrast-all {
@@ -120,8 +125,8 @@
             color: map-get(map-get($us-colors, $color), contrast);
           }
           *::selection {
-            background-color: map-get(map-get($us-colors, $color), contrast);
             color: $value;
+            background-color: map-get(map-get($us-colors, $color), contrast);
           }
         }
       }
@@ -169,6 +174,11 @@
           *::selection {
             color: map-get(map-get($us-colors, $color), contrast);
           }
+        }
+      }
+      .inner-bg-#{$color}-#{$tone} {
+        .item-bg {
+          background-color: $value;
         }
       }
       .inner-#{$color}-#{$tone} {
