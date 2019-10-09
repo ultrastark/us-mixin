@@ -1,6 +1,14 @@
 # Changelog
 ## [0.4.56] - 2019-09-27
 
+### Enhance
+
+- utilities
+  - color
+    - add global variables
+
+## [0.4.56] - 2019-09-27
+
 ### Add
 
 - utilities

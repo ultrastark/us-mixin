@@ -1,5 +1,15 @@
 // Init class
 
+// Create global variable
+:root {
+  @each $keys, $values in $us-colors {
+    @each $key, $color in $values {
+      --#{$keys}-#{$key}: #{$color};
+    }
+  }
+}
+
+// Create classes
 @each $color, $tones in $us-colors {
   @each $tone, $value in $tones {
     @if ($tone == 'base') {
