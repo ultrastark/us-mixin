@@ -34,7 +34,7 @@ $xxl: 1500px;
 }
 
 @mixin smOnly {
-  @media (max-width: #{$md - 1px}) and (min-width: #{$sm - 1px}) {
+  @media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
     @content;
   }
 }
@@ -52,7 +52,7 @@ $xxl: 1500px;
 }
 
 @mixin mdOnly {
-  @media (min-width: #{$md - 1px}) and (max-width: #{$lg - 1px}) {
+  @media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
     @content;
   }
 }
@@ -70,7 +70,7 @@ $xxl: 1500px;
 }
 
 @mixin lgOnly {
-  @media (min-width: #{$lg - 1px}) and (max-width: #{$xl - 1px}) {
+  @media (min-width: #{$lg}) and (max-width: #{$xl - 1px}) {
     @content;
   }
 }
