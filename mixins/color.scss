@@ -150,7 +150,7 @@ $us-colors: ();
     $light: lighten($base, $color-light);
   }
   @if ($lighter == null) {
-    $light: lighten($base, $color-lighter);
+    $lighter: lighten($base, $color-lighter);
   }
   @if ($lightest == null) {
     $lightest: lighten($base, $color-lightest);

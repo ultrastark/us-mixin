@@ -1,4 +1,18 @@
 # Changelog
+## [0.5.1] - 2019-10-21
+
+### Fix
+
+- mixins
+  - color
+    - lighter if $light = to $lighter =
+
+### Enhance
+
+- utilities
+  - color
+    - remove the -base from --color-tone glob variables
+
 ## [0.5.0] - 2019-10-21
 
 ### Enhance
