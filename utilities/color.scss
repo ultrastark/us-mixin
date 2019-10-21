@@ -3,11 +3,11 @@
 // Create global variable
 :root {
   @each $color, $tones in $us-colors {
-    @each $tones, $value in $values {
+    @each $tone, $value in $tones {
       @if #{$tone} == 'base' {
         --#{$color}: #{$value};
       } @else {
-        --#{$color}-#{$tones}: #{$value};
+        --#{$color}-#{$tone}: #{$value};
       }
     }
   }
