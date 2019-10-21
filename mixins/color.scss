@@ -40,22 +40,22 @@ $us-color-default: (
     contrast: #fff,
   ),
   danger: (
-    shade: #cc0000,
+    dark: #cc0000,
     base: #ff4444,
     contrast: #fff,
   ),
   warning: (
-    shade: #ff8800,
+    dark: #ff8800,
     base: #ffbb33,
     contrast: #000,
   ),
   success: (
-    shade: #007e33,
+    dark: #007e33,
     base: #00c851,
     contrast: #fff,
   ),
   info: (
-    shade: #33b5e5,
+    dark: #33b5e5,
     base: #0099cc,
     contrast: #fff,
   ),
@@ -63,19 +63,37 @@ $us-color-default: (
 
 $us-color-global: map-merge($us-color-default, $us-color-settings) !default;
 
-$color-darken: 12% !default;
-$color-lighten: 12% !default;
+$color-dark: 12% !default;
+$color-darker: 15% !default;
+$color-darkest: 18% !default;
+$color-light: 12% !default;
+$color-lighter: 15% !default;
+$color-lightest: 18% !default;
 $color-opacity: 0.3 !default;
 $gradient-rotation: 200deg !default;
 
 $us-colors: ();
 
-@function createColourMap($base, $contrast, $shade, $tint, $trans) {
+@function createColourMap(
+  $base,
+  $contrast,
+  $dark,
+  $darker,
+  $darkest,
+  $light,
+  $lighter,
+  $lightest,
+  $trans
+) {
   $map: (
     base: $base,
     contrast: $contrast,
-    shade: $shade,
-    tint: $tint,
+    dark: $dark,
+    darker: $darker,
+    darkest: $darkest,
+    light: $light,
+    lighter: $lighter,
+    lightest: $lightest,
     trans: $trans,
   );
   @return $map;
@@ -84,8 +102,12 @@ $us-colors: ();
 @each $keys, $values in $us-color-global {
   $base: #000;
   $contrast: null;
-  $shade: null;
-  $tint: null;
+  $dark: null;
+  $darker: null;
+  $darkest: null;
+  $light: null;
+  $lighter: null;
+  $lightest: null;
   $trans: null;
 
   @each $key, $color in $values {
@@ -94,10 +116,18 @@ $us-colors: ();
         $base: $color;
       } @else if ($key == 'contrast') {
         $contrast: $color;
-      } @else if ($key == 'shade') {
-        $shade: $color;
-      } @else if ($key == 'tint') {
-        $tint: $color;
+      } @else if ($key == 'dark') {
+        $dark: $color;
+      } @else if ($key == 'darker') {
+        $darker: $color;
+      } @else if ($key == 'darkest') {
+        $darkest: $color;
+      } @else if ($key == 'light') {
+        $light: $color;
+      } @else if ($key == 'lighter') {
+        $lighter: $color;
+      } @else if ($key == 'lightest') {
+        $lightest: $color;
       } @else if ($key == 'trans') {
         $trans: $color;
       }
@@ -107,11 +137,23 @@ $us-colors: ();
   @if ($contrast == null) {
     $contrast: #fff;
   }
-  @if ($shade == null) {
-    $shade: darken($base, $color-darken);
+  @if ($dark == null) {
+    $dark: darken($base, $color-dark);
   }
-  @if ($tint == null) {
-    $tint: lighten($base, $color-lighten);
+  @if ($darker == null) {
+    $darker: darken($base, $color-darker);
+  }
+  @if ($darkest == null) {
+    $darkest: darken($base, $color-darkest);
+  }
+  @if ($light == null) {
+    $light: lighten($base, $color-light);
+  }
+  @if ($lighter == null) {
+    $light: lighten($base, $color-lighter);
+  }
+  @if ($lightest == null) {
+    $lightest: lighten($base, $color-lightest);
   }
   @if ($trans == null) {
     $trans: transparentize($base, $color-opacity);
@@ -120,7 +162,18 @@ $us-colors: ();
   $us-colors: map-merge(
     $us-colors,
     (
-      $keys: createColourMap($base, $contrast, $shade, $tint, $trans),
+      $keys:
+        createColourMap(
+          $base,
+          $contrast,
+          $dark,
+          $darker,
+          $darkest,
+          $light,
+          $lighter,
+          $lightest,
+          $trans
+        ),
     )
   );
 }

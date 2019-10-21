@@ -1,4 +1,13 @@
 # Changelog
+## [0.5.0] - 2019-10-21
+
+### Enhance
+
+- utilities
+  - color
+    - remove : tint - shade
+    - add : light - lighter - lightest - dark - darker - darkest
+
 ## [0.4.59] - 2019-10-21
 
 ### Remove
