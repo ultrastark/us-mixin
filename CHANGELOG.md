@@ -1,4 +1,12 @@
 # Changelog
+## [0.4.59] - 2019-10-21
+
+### Remove
+
+- utilities
+  - grid
+    - remove it, for a better bootstrap co integration.
+
 ## [0.4.58] - 2019-10-09
 
 ### Fix
