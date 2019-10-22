@@ -1,4 +1,12 @@
 # Changelog
+## [0.5.4] - 2019-10-22
+
+### Fix
+
+- mixins
+  - color
+    - on isDeep true, not activate isDeeper
+
 ## [0.5.3] - 2019-10-22
 
 ### Optimize

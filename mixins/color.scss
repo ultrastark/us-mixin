@@ -96,7 +96,7 @@ $us-colors: ();
       trans: $trans,
     );
     @return $map;
-  } @else if (isDeepest == true) {
+  } @else if (isDeepest == true and isDeeper == true) {
     $map: (
       base: $base,
       contrast: $contrast,
