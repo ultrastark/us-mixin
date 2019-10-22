@@ -1,4 +1,18 @@
 # Changelog
+## [0.5.3] - 2019-10-22
+
+### Optimize
+
+- mixins
+  - color
+    - remove white and black tones
+
+### Enhance
+
+- mixins
+  - color
+    - add the ability to remove darkest and darker colors
+
 ## [0.5.2] - 2019-10-21
 
 ### Fix
