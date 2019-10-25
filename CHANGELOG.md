@@ -1,4 +1,12 @@
 # Changelog
+## [0.5.5] - 2019-10-25
+
+### Enhance
+
+- mixins
+  - shadow
+    - add 0 and 0.5
+
 ## [0.5.4] - 2019-10-22
 
 ### Fix
