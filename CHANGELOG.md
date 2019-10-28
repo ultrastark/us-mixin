@@ -1,4 +1,12 @@
 # Changelog
+## [0.5.6] - 2019-10-28
+
+### Enhance
+
+- utilities
+  - customize-bg
+    - fix bg-fixed for IOS (temporary fix)
+
 ## [0.5.5] - 2019-10-25
 
 ### Enhance
