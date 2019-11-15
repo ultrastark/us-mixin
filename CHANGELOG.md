@@ -1,4 +1,12 @@
 # Changelog
+## [0.5.7] - 2019-11-15
+
+### Enhance
+
+- mixins
+  - shadow
+    - add box-shadow
+
 ## [0.5.6] - 2019-10-28
 
 ### Enhance
