@@ -1,6 +1,16 @@
 # Changelog
 ## [0.7.0] - 2019-11-15
 
+### Optimize
+
+- utilities
+  - colors
+    - Use global var
+    - remove the main if else
+
+
+## [0.7.0] - 2019-11-15
+
 ### Add
 
 - colors

@@ -16,213 +16,120 @@ $isUsingDarkTheme: false !default;
 
 @mixin generateClass($color, $tone, $value, $dark: '') {
   @if ($tone == 'base') {
-    // bg-primary for base color
-    .#{$dark}bg-#{$color},
-    .#{$dark}hover-bg-#{$color}:hover {
-      background-color: $value !important; // Override bootstrap value
-      &.contrast-content {
-        color: map-get(map-get($us-colors, $color), contrast);
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-      &.contrast-selection {
-        *::selection {
-          color: map-get(map-get($us-colors, $color), contrast);
-          background-color: $value;
-        }
-      }
-      &.contrast-all {
-        color: map-get(map-get($us-colors, $color), contrast);
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
-        *::selection {
-          color: $value;
-          background-color: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-    }
-
-    .#{$dark}color-#{$color},
-    .#{$dark}hover-color-#{$color}:hover {
-      color: $value !important;
-      * {
-        color: $value !important;
-      }
-    }
-    .#{$dark}border-#{$color},
-    .#{$dark}hover-border-#{$color}:hover {
-      border-color: $value !important;
-    }
-    .#{$dark}fill-#{$color},
-    .#{$dark}hover-fill-#{$color}:hover {
-      fill: $value !important;
-    }
-    .#{$dark}stroke-#{$color},
-    .#{$dark}hover-stroke-#{$color}:hover {
-      color: $value !important;
-    }
-    .#{$dark}afterNBefore-#{$color},
-    .#{$dark}hover-afterNBefore-#{$color}:hover {
-      &::before,
-      &::after {
-        background-color: $value !important;
-      }
-    }
-    .#{$dark}selection-#{$color} {
-      *::selection {
-        background-color: $value;
-      }
-      &.contrast-selection {
-        *::selection {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-    }
-    .#{$dark}inner-bg-#{$color} {
-      .item-bg {
-        background-color: $value;
-      }
-    }
-    .#{$dark}inner-#{$color} {
-      color: $value;
-      border-color: $value;
-      fill: $value;
-      &::before,
-      &::after {
-        background-color: $value !important;
-      }
-      * {
-        color: $value;
-        border-color: $value;
-        fill: $value;
-        &::before,
-        &::after {
-          background-color: $value !important;
-        }
-      }
-      &.bg-inherit,
-      .bg-inherit {
-        background-color: $value !important;
-      }
-      &.hover-contrast:hover {
-        color: map-get(map-get($us-colors, $color), contrast);
-        fill: map-get(map-get($us-colors, $color), contrast);
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-          fill: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-    }
+    $tone: '';
   } @else {
-    // bg-primary-light for shade
-    .#{$dark}bg-#{$color}-#{$tone},
-    .#{$dark}hover-bg-#{$color}-#{$tone}:hover {
-      background-color: $value !important;
-      &.contrast-content {
-        color: map-get(map-get($us-colors, $color), contrast);
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-      &.contrast-selection {
-        *::selection {
-          color: map-get(map-get($us-colors, $color), contrast);
-          background-color: $value;
-        }
-      }
-      &.contrast-all {
-        color: map-get(map-get($us-colors, $color), contrast);
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
-        *::selection {
-          color: $value;
-          background-color: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-    }
-    .#{$dark}color-#{$color}-#{$tone},
-    .#{$dark}hover-color-#{$color}-#{$tone}:hover {
-      color: $value !important;
-      * {
-        color: $value !important;
-      }
-    }
-    .#{$dark}border-#{$color}-#{$tone},
-    .#{$dark}hover-border-#{$color}-#{$tone}:hover {
-      border-color: $value !important;
-    }
-    .#{$dark}fill-#{$color}-#{$tone},
-    .#{$dark}hover-fill-#{$color}-#{$tone}:hover {
-      fill: $value !important;
-    }
-    .#{$dark}stroke-#{$color}-#{$tone},
-    .#{$dark}hover-stroke-#{$color}-#{$tone}:hover {
-      fill: $value !important;
-    }
-    .#{$dark}afterNBefore-#{$color}-#{$tone},
-    .#{$dark}hover-afterNBefore-#{$color}-#{$tone}:hover {
-      &::before,
-      &::after {
-        background-color: $value !important;
-      }
-    }
-    .#{$dark}gradient-#{$color}-#{$tone} {
-      background-image: linear-gradient(map-get(map-get($us-colors, $color), base), $value);
-    }
-    .#{$dark}gradient-#{$color}-#{$tone}-rotate {
-      background-image: linear-gradient(
-        $gradient-rotation,
-        map-get(map-get($us-colors, $color), base),
-        $value
-      );
-    }
-    .#{$dark}selection-#{$color}-#{$tone} {
-      *::selection {
-        background-color: $value;
-      }
-      &.contrast-selection {
-        *::selection {
-          color: map-get(map-get($us-colors, $color), contrast);
-        }
-      }
-    }
-    .#{$dark}inner-bg-#{$color}-#{$tone} {
-      .item-bg {
-        background-color: $value;
-      }
-    }
-    .#{$dark}inner-#{$color}-#{$tone} {
-      color: $value;
-      border-color: $value;
-      fill: $value;
-      &::before,
-      &::after {
-        background-color: $value !important;
-      }
-      * {
-        color: $value;
-        border-color: $value;
-        fill: $value;
-        &::before,
-        &::after {
-          background-color: $value !important;
-        }
-      }
-      &.bg-inherit,
-      .bg-inherit {
-        background-color: $value !important;
-      }
+    $tone: '-' + $tone;
+  }
 
-      &.hover-contrast:hover {
-        color: map-get(map-get($us-colors, $color), contrast);
-        fill: map-get(map-get($us-colors, $color), contrast);
-        * {
-          color: map-get(map-get($us-colors, $color), contrast);
-          fill: map-get(map-get($us-colors, $color), contrast);
-        }
+  $colorUsed: var(--#{$color}#{$tone});
+  $colorContrast: var(--#{$color}-contrast);
+
+  // bg-primary-light for shade
+  .#{$dark}bg-#{$color}#{$tone},
+  .#{$dark}hover-bg-#{$color}#{$tone}:hover {
+    background-color: $colorUsed !important;
+    &.contrast-content {
+      color: $colorContrast;
+      * {
+        color: $colorContrast;
+      }
+    }
+    &.contrast-selection {
+      *::selection {
+        color: $colorContrast;
+        background-color: $colorUsed;
+      }
+    }
+    &.contrast-all {
+      color: $colorContrast;
+      * {
+        color: $colorContrast;
+      }
+      *::selection {
+        color: $colorUsed;
+        background-color: $colorContrast;
+      }
+    }
+  }
+  .#{$dark}color-#{$color}#{$tone},
+  .#{$dark}hover-color-#{$color}#{$tone}:hover {
+    color: $colorUsed !important;
+    * {
+      color: $colorUsed !important;
+    }
+  }
+  .#{$dark}border-#{$color}#{$tone},
+  .#{$dark}hover-border-#{$color}#{$tone}:hover {
+    border-color: $colorUsed !important;
+  }
+  .#{$dark}fill-#{$color}#{$tone},
+  .#{$dark}hover-fill-#{$color}#{$tone}:hover {
+    fill: $colorUsed !important;
+  }
+  .#{$dark}stroke-#{$color}#{$tone},
+  .#{$dark}hover-stroke-#{$color}#{$tone}:hover {
+    fill: $colorUsed !important;
+  }
+  .#{$dark}afterNBefore-#{$color}#{$tone},
+  .#{$dark}hover-afterNBefore-#{$color}#{$tone}:hover {
+    &::before,
+    &::after {
+      background-color: $colorUsed !important;
+    }
+  }
+  .#{$dark}gradient-#{$color}#{$tone} {
+    background-image: linear-gradient(map-get(map-get($us-colors, $color), base), $value);
+  }
+  .#{$dark}gradient-#{$color}#{$tone}-rotate {
+    background-image: linear-gradient(
+      $gradient-rotation,
+      map-get(map-get($us-colors, $color), base),
+      $value
+    );
+  }
+  .#{$dark}selection-#{$color}#{$tone} {
+    *::selection {
+      background-color: $colorUsed;
+    }
+    &.contrast-selection {
+      *::selection {
+        color: $colorContrast;
+      }
+    }
+  }
+  .#{$dark}inner-bg-#{$color}#{$tone} {
+    .item-bg {
+      background-color: $colorUsed;
+    }
+  }
+  .#{$dark}inner-#{$color}#{$tone} {
+    color: $colorUsed;
+    border-color: $colorUsed;
+    fill: $colorUsed;
+    &::before,
+    &::after {
+      background-color: $colorUsed !important;
+    }
+    * {
+      color: $colorUsed;
+      border-color: $colorUsed;
+      fill: $colorUsed;
+      &::before,
+      &::after {
+        background-color: $colorUsed !important;
+      }
+    }
+    &.bg-inherit,
+    .bg-inherit {
+      background-color: $colorUsed !important;
+    }
+
+    &.hover-contrast:hover {
+      color: $colorContrast;
+      fill: $colorContrast;
+      * {
+        color: $colorContrast;
+        fill: $colorContrast;
       }
     }
   }
@@ -232,10 +139,14 @@ $isUsingDarkTheme: false !default;
 @each $color, $tones in $us-colors {
   @each $tone, $value in $tones {
     @include generateClass($color, $tone, $value);
+  }
+}
 
-    // Add dark theme
-    @if ($isUsingDarkTheme) {
-      @media (prefers-color-scheme: dark) {
+// Add dark theme
+@if ($isUsingDarkTheme) {
+  @media (prefers-color-scheme: dark) {
+    @each $color, $tones in $us-colors {
+      @each $tone, $value in $tones {
         @include generateClass($color, $tone, $value, 'dark-');
       }
     }
