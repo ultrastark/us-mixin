@@ -1,4 +1,11 @@
 # Changelog
+## [0.7.0] - 2019-11-15
+
+### Add
+
+- colors
+  - Dark Theme
+
 ## [0.5.7] - 2019-11-15
 
 ### Enhance
