@@ -1,6 +1,6 @@
 {
   "name": "@ultrastark/us-mixin",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Contain scss mixin and divers utilities",
   "main": "index.js",
   "scripts": {

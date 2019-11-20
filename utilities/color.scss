@@ -30,8 +30,18 @@ $isUsingDarkTheme: false !default;
     background-color: $colorUsed !important;
     &.contrast-content {
       color: $colorContrast;
-      * {
+      *:not(.contrast-content),
+      *:not(.contrast-all) {
+        // not influanced by parent
         color: $colorContrast;
+      }
+    }
+    &.contrast-content-important {
+      color: $colorContrast !important;
+      *:not(.contrast-content),
+      *:not(.contrast-all) {
+        // not influanced by parent
+        color: $colorContrast !important;
       }
     }
     &.contrast-selection {
@@ -42,7 +52,8 @@ $isUsingDarkTheme: false !default;
     }
     &.contrast-all {
       color: $colorContrast;
-      * {
+      *:not(.contrast-content),
+      *:not(.contrast-all) {
         color: $colorContrast;
       }
       *::selection {
