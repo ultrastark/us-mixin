@@ -30,7 +30,7 @@ $us-color-settings: (
 ) !default;
 
 // Default color used by bootstrap
-$us-color-default: (
+$us-color-base: (
   'white': (
     base: #fff,
     contrast: #000,
@@ -39,6 +39,9 @@ $us-color-default: (
     base: #000,
     contrast: #fff,
   ),
+) !default;
+
+$us-color-status: (
   danger: (
     dark: #cc0000,
     base: #ff4444,
@@ -61,7 +64,10 @@ $us-color-default: (
   ),
 ) !default;
 
-$us-color-global: map-merge($us-color-default, $us-color-settings) !default;
+$us-color-global: map-merge(
+  map-merge($us-color-status, $us-color-base),
+  $us-color-settings
+) !default;
 
 $color-light: 12% !default;
 $color-lighter: 15% !default;
@@ -96,7 +102,7 @@ $us-colors: ();
       trans: $trans,
     );
     @return $map;
-  } @else if (isDeepest == true and isDeeper == true) {
+  } @else if ($isDeepest == true and $isDeeper == true) {
     $map: (
       base: $base,
       contrast: $contrast,
@@ -109,7 +115,7 @@ $us-colors: ();
       trans: $trans,
     );
     @return $map;
-  } @else if (isDeeper == true) {
+  } @else if ($isDeeper == true) {
     $map: (
       base: $base,
       contrast: $contrast,
