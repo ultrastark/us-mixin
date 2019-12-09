@@ -1,4 +1,12 @@
 # Changelog
+## [0.8.1] - 2019-12-09
+
+### fix
+
+- mixins
+  - shadow
+    - important variable
+
 ## [0.8.0] - 2019-12-09
 
 ### add
