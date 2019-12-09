@@ -1,4 +1,13 @@
 # Changelog
+## [0.8.0] - 2019-12-09
+
+### add
+
+- mixins
+  - shadow
+    - global transition variable
+    - better with material design
+
 ## [0.7.3] - 2019-11-21
 
 ### add
