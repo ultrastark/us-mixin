@@ -1,4 +1,12 @@
 # Changelog
+## [0.8.2] - 2019-12-11
+
+### fix
+
+- utilities
+  - color
+    - stroke : wrong attribute
+
 ## [0.8.1] - 2019-12-09
 
 ### fix

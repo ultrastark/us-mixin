@@ -79,7 +79,7 @@ $isUsingDarkTheme: false !default;
   }
   .#{$dark}stroke-#{$color}#{$tone},
   .#{$dark}hover-stroke-#{$color}#{$tone}:hover {
-    fill: $colorUsed !important;
+    stroke: $colorUsed !important;
   }
   .#{$dark}afterNBefore-#{$color}#{$tone},
   .#{$dark}hover-afterNBefore-#{$color}#{$tone}:hover {
