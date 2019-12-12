@@ -1,6 +1,14 @@
 # Changelog
 ## [0.8.2] - 2019-12-11
 
+### add
+
+- mixins
+  - shadow
+    - presOnClick effect
+
+## [0.8.2] - 2019-12-11
+
 ### fix
 
 - utilities
