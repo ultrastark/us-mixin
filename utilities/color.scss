@@ -123,6 +123,12 @@ $isUsingDarkTheme: false !default;
       fill: $colorUsed !important;
     }
   }
+  .#{$dark}inner-stroke-#{$color}#{$tone}-important {
+    stroke: $colorUsed !important;
+    * {
+      stroke: $colorUsed !important;
+    }
+  }
   .#{$dark}inner-#{$color}#{$tone} {
     color: $colorUsed;
     border-color: $colorUsed;
