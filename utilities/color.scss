@@ -36,6 +36,7 @@ $isUsingDarkTheme: false !default;
         color: $colorContrast;
       }
     }
+
     &.contrast-content-important {
       color: $colorContrast !important;
       *:not(.contrast-content),
@@ -60,6 +61,20 @@ $isUsingDarkTheme: false !default;
         color: $colorUsed;
         background-color: $colorContrast;
       }
+    }
+  }
+  .active {
+    &.active-color-#{$color}#{$tone},
+    .active-color-#{$color}#{$tone} {
+      color: $colorUsed !important;
+    }
+    &.active-fill-#{$color}#{$tone},
+    .active-fill-#{$color}#{$tone} {
+      fill: $colorUsed !important;
+    }
+    &.active-stroke-#{$color}#{$tone},
+    .active-stroke-#{$color}#{$tone} {
+      stroke: $colorUsed !important;
     }
   }
   .#{$dark}color-#{$color}#{$tone},
@@ -125,7 +140,7 @@ $isUsingDarkTheme: false !default;
   }
   .#{$dark}inner-stroke-#{$color}#{$tone}-important {
     stroke: $colorUsed !important;
-    *:not(.keep-stroke) {
+    * {
       stroke: $colorUsed !important;
     }
   }
@@ -137,7 +152,7 @@ $isUsingDarkTheme: false !default;
     &::after {
       background-color: $colorUsed !important;
     }
-    *:not(.keep-color) {
+    * {
       color: $colorUsed;
       border-color: $colorUsed;
       fill: $colorUsed;

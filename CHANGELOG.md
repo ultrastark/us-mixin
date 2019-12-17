@@ -1,4 +1,13 @@
 # Changelog
+## [0.8.7] - 2019-12-17
+
+### add
+
+- utilities
+  - color
+    - active logic
+
+
 ## [0.8.4] - 2019-12-17
 
 ### add
