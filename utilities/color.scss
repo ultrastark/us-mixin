@@ -125,7 +125,7 @@ $isUsingDarkTheme: false !default;
   }
   .#{$dark}inner-stroke-#{$color}#{$tone}-important {
     stroke: $colorUsed !important;
-    * {
+    *:not(.keep-stroke) {
       stroke: $colorUsed !important;
     }
   }
@@ -137,7 +137,7 @@ $isUsingDarkTheme: false !default;
     &::after {
       background-color: $colorUsed !important;
     }
-    * {
+    *:not(.keep-color) {
       color: $colorUsed;
       border-color: $colorUsed;
       fill: $colorUsed;
