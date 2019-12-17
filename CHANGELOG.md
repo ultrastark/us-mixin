@@ -1,4 +1,12 @@
 # Changelog
+## [0.8.4] - 2019-12-17
+
+### add
+
+- utilities
+  - color
+    - inner-x-important
+
 ## [0.8.2] - 2019-12-11
 
 ### add

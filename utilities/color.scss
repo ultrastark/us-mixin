@@ -113,6 +113,16 @@ $isUsingDarkTheme: false !default;
       background-color: $colorUsed;
     }
   }
+  .#{$dark}inner-#{$color}#{$tone}-important {
+    color: $colorUsed !important;
+    border-color: $colorUsed !important;
+    fill: $colorUsed !important;
+    * {
+      color: $colorUsed !important;
+      border-color: $colorUsed !important;
+      fill: $colorUsed !important;
+    }
+  }
   .#{$dark}inner-#{$color}#{$tone} {
     color: $colorUsed;
     border-color: $colorUsed;
