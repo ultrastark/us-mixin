@@ -32,7 +32,7 @@ $isUsingDarkTheme: false !default;
       color: $colorContrast;
       *:not(.contrast-content),
       *:not(.contrast-all) {
-        // not influanced by parent
+        // not influenced by parent
         color: $colorContrast;
       }
     }
@@ -41,7 +41,7 @@ $isUsingDarkTheme: false !default;
       color: $colorContrast !important;
       *:not(.contrast-content),
       *:not(.contrast-all) {
-        // not influanced by parent
+        // not influenced by parent
         color: $colorContrast !important;
       }
     }
