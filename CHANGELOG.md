@@ -1,4 +1,25 @@
 # Changelog
+## [0.8.9] - 2020-02-03
+
+## fix 
+
+  - mixins
+    - shadow
+      - drop-shadow
+
+
+## [0.8.8] - 2020-01-28
+
+## enhance 
+
+  - README
+
+### add
+
+- utilities
+  - color
+    - active logic
+
 ## [0.8.7] - 2019-12-17
 
 ### add
