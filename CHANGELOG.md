@@ -1,4 +1,12 @@
 # Changelog
+## [0.8.10] - 2020-02-06
+
+## add 
+
+  - utilities
+    - keyframes
+
+
 ## [0.8.9] - 2020-02-03
 
 ## fix 
