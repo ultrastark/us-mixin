@@ -7,7 +7,7 @@ More infos and example under https://docs.ultrastark.ch/docs/en/projects/us-mixi
 ## 1.0.0 Release
 **Attention**
 * **us-mixin/mixin** doesn't need colors anymore (the `color()` have been remove in favor of the global variable (ex: `var(--primary)`)
-
+* A lot of default variables have been added to the us-mixin colors look [here](https://docs.ultrastark.ch/docs/projects/us-mixin/classes/color) form more informations
 
 ## Quick start
 
