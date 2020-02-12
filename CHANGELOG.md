@@ -1,4 +1,13 @@
 # Changelog
+## [1.0.0] - 2020-02-12
+
+## change
+  - Colors
+    - Remove mixin
+    - Enhance global variable generation
+    - Enhance dark mode
+    - Optimize way to import
+
 ## [0.8.12] - 2020-02-06
 
 ## add 

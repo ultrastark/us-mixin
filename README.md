@@ -2,6 +2,13 @@
 
 More infos and example under https://docs.ultrastark.ch/docs/en/projects/us-mixin/description/
 
+**This repository is a beta version an may change in the future**
+
+## 1.0.0 Release
+**Attention**
+* **us-mixin/mixin** doesn't need colors anymore (the `color()` have been remove in favor of the global variable (ex: `var(--primary)`)
+
+
 ## Quick start
 
 In the working repository
@@ -19,7 +26,7 @@ Then import in the following order in you main.scss style and where you need it
 ```
 
 **Note**
-- myColor.scss and us-mixin/mixin have to be imported in every scss file that needs they mixins
+- `us-mixin/mixin` have to be imported in every scss file that needs they mixins
 - us-mixin/utilities should be imported **only once**. If not, it's gonna create useless classes
 - mixin and utilities work good together but you could only use one of the both if you need it
 
