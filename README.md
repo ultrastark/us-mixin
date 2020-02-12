@@ -14,13 +14,13 @@ More infos and example under https://docs.ultrastark.ch/docs/en/projects/us-mixi
 In the working repository
 
 ```
-npm i @ultrastark/us-mixin@latest --save
+npm i @ultrastark/us-mixin@latest
 ```
 
 Then import in the following order in you main.scss style and where you need it
 
-```
-@import 'myColor.scss';
+```scss
+@import 'myColor.scss'; //https://docs.ultrastark.ch/docs/projects/us-mixin/classes/color#installing
 @import '~@ultrastark/us-mixin/mixin';
 @import '~@ultrastark/us-mixin/utilities';
 ```
