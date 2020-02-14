@@ -8,8 +8,18 @@
     display: none !important;
   }
 }
+@include smUp {
+  .smUp-none {
+    display: none !important;
+  }
+}
 @include md {
   .md-none {
+    display: none !important;
+  }
+}
+@include mdUp {
+  .mdUp-none {
     display: none !important;
   }
 }
@@ -18,8 +28,18 @@
     display: none !important;
   }
 }
+@include lgUp {
+  .lgUp-none {
+    display: none !important;
+  }
+}
 @include xl {
   .xl-none {
+    display: none !important;
+  }
+}
+@include xlUp {
+  .xlUp-none {
     display: none !important;
   }
 }
