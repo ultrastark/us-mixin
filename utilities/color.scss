@@ -144,14 +144,10 @@
     }
   }
   .#{$dark}gradient-#{$color}#{$tone} {
-    background-image: linear-gradient(var(--#{$color}));
+    background-image: linear-gradient(var(--#{$color}), $value);
   }
   .#{$dark}gradient-#{$color}#{$tone}-rotate {
-    background-image: linear-gradient(
-      $gradient-rotation,
-      var(--#{$color}),
-      $value
-    );
+    background-image: linear-gradient($gradient-rotation, var(--#{$color}), $value);
   }
   .#{$dark}selection-#{$color}#{$tone} {
     *::selection {
@@ -280,18 +276,20 @@
     }
 
     :root {
-      @each $tone, $value in createColourMap(
-        $base,
-        $contrast,
-        $dark,
-        $darker,
-        $darkest,
-        $light,
-        $lighter,
-        $lightest,
-        $trans
-      ) {
-
+      @each $tone,
+        $value
+          in createColourMap(
+            $base,
+            $contrast,
+            $dark,
+            $darker,
+            $darkest,
+            $light,
+            $lighter,
+            $lightest,
+            $trans
+          )
+      {
         // Create root variables
         @if #{$tone} == 'base' {
           --#{$keys}: #{$value};
@@ -304,7 +302,8 @@
 
         @if ($isUsingDarkTheme) {
           @media (prefers-color-scheme: dark) {
-            body { // Keep priority on dark theme
+            body {
+              // Keep priority on dark theme
               @include generateClass($keys, $tone, $value, 'dark-');
             }
           }
@@ -327,7 +326,12 @@ $gradient-rotation: 200deg !default;
 $isDeeper: true !default; // create lighter and darker
 $isDeepest: true !default; // create lightest and darkest
 
-$us-color-settings: map-remove((x:x), x) !default; // overriden by the user
+$us-color-settings: map-remove(
+  (
+    x: x,
+  ),
+  x
+) !default; // overriden by the user
 $use-default-colors-map: true !default;
 $use-default-default-map: true !default;
 $use-default-base-map: true !default;
@@ -337,9 +341,14 @@ $use-default-status-map: true !default;
 $isUsingDarkTheme: false !default;
 
 @if $use-default-colors-map {
-  $temp-map: map-remove((x:x), x); // empty map
+  $temp-map: map-remove(
+    (
+      x: x,
+    ),
+    x
+  ); // empty map
   @if $use-default-default-map {
-  // Normally will be overwritten by the user
+    // Normally will be overwritten by the user
     $us-color-default: (
       'primary': (
         'base': #3880ff,
@@ -410,7 +419,7 @@ $isUsingDarkTheme: false !default;
       'disabled': (
         'base': #e0e0e0,
         'contrast': #ababab,
-      )
+      ),
     );
     $temp-map: map-merge($temp-map, $us-color-status);
   }
