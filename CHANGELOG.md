@@ -1,4 +1,11 @@
 # Changelog
+## [1.1.0] - 2020-02-19
+
+## add
+  - Mixins
+    - neumorphism
+
+
 ## [1.0.1] - 2020-02-14
 
 ## add

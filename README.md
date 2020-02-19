@@ -4,7 +4,10 @@ More infos and example under https://docs.ultrastark.ch/docs/en/projects/us-mixi
 
 **This repository is a beta version an may change in the future**
 
-## 1.0.0 Release
+## 1.1.0 Release
+**neumorphism**
+same use as box-shadow mixin -> https://docs.ultrastark.ch/docs/projects/us-mixin/mixins/neumorphism
+
 **Attention**
 * **us-mixin/mixin** doesn't need colors anymore (the `color()` have been remove in favor of the global variable (ex: `var(--primary)`)
 * A lot of default variables have been added to the us-mixin colors look [here](https://docs.ultrastark.ch/docs/projects/us-mixin/classes/color) form more informations
