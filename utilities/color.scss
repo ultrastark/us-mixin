@@ -302,10 +302,14 @@
 
         @if ($isUsingDarkTheme) {
           @media (prefers-color-scheme: dark) {
-            body {
+            body:not(.dark-mode):not(.light-mode) {
               // Keep priority on dark theme
               @include generateClass($keys, $tone, $value, 'dark-');
             }
+          }
+          // For changing color-scheme purpose
+          body.dark-mode {
+            @include generateClass($keys, $tone, $value, 'dark-');
           }
         }
       }

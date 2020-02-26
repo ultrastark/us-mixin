@@ -3,11 +3,17 @@
 */
 
 $xs: 0px;
+// xs
 $sm: 576px;
+// sm
 $md: 768px;
+// md
 $lg: 992px;
+// lg
 $xl: 1200px;
+// xl
 $xxl: 1500px;
+// xxl
 
 @mixin xs {
   @media (max-width: #{$sm - 1px}) {

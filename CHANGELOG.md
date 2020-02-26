@@ -1,4 +1,11 @@
 # Changelog
+## [1.1.1] - 2020-02-26
+
+## add
+  - utilities
+    - color
+      - Ability to change color-scheme trough js
+
 ## [1.1.0] - 2020-02-19
 
 ## add
