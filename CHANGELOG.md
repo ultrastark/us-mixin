@@ -3,6 +3,13 @@
 
 ## add
   - utilities
+    - animation
+      - whitewash-in, whitewash-out
+
+## [1.1.2] - 2020-02-26
+
+## add
+  - utilities
     - color
       - Ability to change color-scheme trough js
 

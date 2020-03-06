@@ -37,6 +37,24 @@
   }
 }
 
+.whitewash-in {
+  transition: all 0.3s ease-in-out;
+  filter: brightness(0) invert(1);
+
+  &:hover {
+    filter: brightness(100%) invert(0);
+  }
+}
+
+.whitewash-out {
+  transition: all 0.3s ease-in-out;
+  filter: brightness(100%) invert(0);
+
+  &:hover {
+    filter: brightness(0) invert(1);
+  }
+}
+
 .brightness-out {
   transition: all 0.3s ease-in-out;
   filter: brightness(100%);
