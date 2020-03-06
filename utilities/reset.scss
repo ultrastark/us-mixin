@@ -50,3 +50,10 @@ textarea:focus {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.scrollbar-hidden {
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  -ms-overflow-style: none;
+}

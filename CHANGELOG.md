@@ -1,5 +1,12 @@
 # Changelog
-## [1.1.2] - 2020-02-26
+## [1.1.4] - 2020-03-06
+
+## add
+  - utilities
+    - reset
+      - scrollbar-hidden
+
+## [1.1.3] - 2020-03-06
 
 ## add
   - utilities
