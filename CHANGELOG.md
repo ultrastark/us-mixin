@@ -1,4 +1,11 @@
 # Changelog
+## [1.1.5] - 2020-04-17
+
+## add
+  - utilities
+    - reset
+      - a : color inherit
+
 ## [1.1.4] - 2020-03-06
 
 ## add
