@@ -1,6 +1,6 @@
 # us-mixin
 
-More infos and example under https://docs.ultrastark.ch/docs/en/projects/us-mixin/description/
+More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/description
 
 **This repository is a beta version an may change in the future**
 
