@@ -1,42 +1,42 @@
 # Changelog
 ## [1.1.5] - 2020-04-17
 
-## add
+### add
   - utilities
     - reset
       - a : color inherit
 
 ## [1.1.4] - 2020-03-06
 
-## add
+### add
   - utilities
     - reset
       - scrollbar-hidden
 
 ## [1.1.3] - 2020-03-06
 
-## add
+### add
   - utilities
     - animation
       - whitewash-in, whitewash-out
 
 ## [1.1.2] - 2020-02-26
 
-## add
+### add
   - utilities
     - color
       - Ability to change color-scheme trough js
 
 ## [1.1.0] - 2020-02-19
 
-## add
+### add
   - Mixins
     - neumorphism
 
 
 ## [1.0.1] - 2020-02-14
 
-## add
+### add
   - Utilities
     - display
       - [size]Up-none
@@ -44,7 +44,7 @@
 
 ## [1.0.0] - 2020-02-12
 
-## change
+### change
   - Colors
     - Remove mixin
     - Enhance global variable generation
@@ -53,7 +53,7 @@
 
 ## [0.8.12] - 2020-02-06
 
-## add 
+### add 
 
   - utilities
     - keyframes
@@ -61,7 +61,7 @@
 
 ## [0.8.9] - 2020-02-03
 
-## fix 
+### fix 
 
   - mixins
     - shadow
@@ -158,7 +158,7 @@
 
 ## [0.7.0] - 2019-11-15
 
-### Add
+### add
 
 - colors
   - Dark Theme
@@ -189,7 +189,7 @@
 
 ## [0.5.4] - 2019-10-22
 
-### Fix
+### fix
 
 - mixins
   - color
@@ -211,7 +211,7 @@
 
 ## [0.5.2] - 2019-10-21
 
-### Fix
+### fix
 
 - mixins
   - color
@@ -242,7 +242,7 @@
 
 ## [0.4.58] - 2019-10-09
 
-### Fix
+### fix
 
 - mixins
   - grid
@@ -258,14 +258,14 @@
 
 ## [0.4.56] - 2019-09-27
 
-### Add
+### add
 
 - utilities
   - font
 
 ## [0.4.54] - 2019-09-02
 
-### Add
+### add
 
 - Mixins
   - animation
@@ -273,7 +273,7 @@
 
 ## [0.4.54] - 2019-09-02
 
-### Add
+### add
 
 - Utilities
   - colors
@@ -281,7 +281,7 @@
 
 ## [0.4.53] - 2019-08-20
 
-### Add
+### add
 
 - Utilities
   - colors
@@ -289,7 +289,7 @@
 
 ## [0.4.48] - 2019-08-14
 
-### Add
+### add
 
 - Utilities
   - animation
@@ -297,7 +297,7 @@
 
 ## [0.4.47] - 2019-08-14
 
-### Add
+### add
 
 - Utilities
   - animation
@@ -305,21 +305,21 @@
 
 ## [0.4.46] - 2019-07-30
 
-### Add
+### add
 
 - Utilities
   - display
 
 ## [0.4.42] - 2019-07-29
 
-### Add
+### add
 
 - Utilities
   - grid (copy from bootstrap)
 
 ## [0.4.41] - 2019-07-25
 
-### Fix
+### fix
 
 - Utilities
   - colors
@@ -335,7 +335,7 @@
 
 ## [0.4.38] - 2019-07-25
 
-### Add
+### add
 
 - Utilities
   - color / .bg-#{\$color}
@@ -344,7 +344,7 @@
 
 ## [0.4.37] - 2019-07-25
 
-### Add
+### add
 
 - Utilities
   - color
@@ -352,7 +352,7 @@
 
 ## [0.4.35] - 2019-07-22
 
-### Fix
+### fix
 
 - Mixins
   - browser
@@ -382,7 +382,7 @@
   - reset
     - remove border none on button
 
-### Add
+### add
 - Utilities
   - Animation
 
@@ -396,7 +396,7 @@
 
 ## [0.4.27] - 2019-06-18
 
-### Add
+### add
 
  - Utilities
    - reset
@@ -413,7 +413,7 @@
 
 ## [0.4.25] - 2019-06-14
 
-### Add
+### add
 
  - Utilities
    - colors
@@ -421,7 +421,7 @@
 
 ## [0.4.23] - 2019-06-14
 
-### Add
+### add
 
  - Utilities
    - reset
@@ -443,7 +443,7 @@
    - color
      - Add black & white base color inside the loop
 
-### Add
+### add
  - Utilities
    - customize-bg
      - bg-container
@@ -451,7 +451,7 @@
 
 ## [0.4.17] - 2019-06-08
 
-### Add
+### add
 
  - Mixins
    - color
@@ -471,7 +471,7 @@
 
  - README
 
-### Add
+### add
 
  - Mixins
   - Grid
@@ -503,7 +503,7 @@
 
 ## [0.4.8] - 2019-05-24
 
-### Fix
+### fix
 
  - Mixins
    - Colors
@@ -511,7 +511,7 @@
 
 ## [0.4.7] - 2019-05-24
 
-### Add
+### add
 
  - Utilities
    - Colors
@@ -519,21 +519,21 @@
 
 ## [0.4.6] - 2019-01-05
 
-### Fix
+### fix
 
  - Grid
    - Fix xs and lg value
 
 ## [0.4.5] - 2019-30-04
 
-### Fix
+### fix
 
  - Global
    - Remove git file
 
 ## [0.4.4] - 2019-27-04
 
-### Fix
+### fix
 
  - mixins
    - shadow
@@ -541,7 +541,7 @@
 
 ## [0.4.3] - 2019-26-04
 
-### Fix
+### fix
 
  - global
    - color
@@ -552,7 +552,7 @@
 
 ## [0.4.2] - 2019-24-04
 
-### Fix
+### fix
 
  - utilities
    - color
@@ -560,7 +560,7 @@
 
 ## [0.4.1] - 2019-24-04
 
-### Added
+### added
 
  - utilities
    - color
@@ -568,7 +568,7 @@
 
 ## [0.4.0] - 2019-24-04
 
-### Added
+### added
 
  - utilities
    - customize-bg
@@ -582,39 +582,39 @@
 
 ## [0.3.6] - 2019-24-04
 
-### Changed (Contain BUG)
+### changed (Contain BUG)
   - mixins
     - color
 
 ## [0.3.4] - 2019-04-02
 
-### Changed
+### changed
 
  - color
    - Remove auto contrast
 
 ## [0.3.3] - 2019-04-02
 
-### Changed
+### changed
 
  - reset
    - Remove pointer
 
 ## [0.3.2] - 2019-03-26
 
-### Changed
+### changed
 
 - color
   - Let the user set tint, shad, contrast and trans color directly
 
 ## [0.3.0] - 2019-03-02
 
-### Added
+### added
 
 - Utilities
   - customize-row
 
-### Changed
+### changed
 
 - mixins
   - Every mixins inside mixins folder
@@ -626,38 +626,38 @@
 
 ## [0.2.8] - 2019-02-21
 
-### Added
+### added
 
 - Colors
   - bg now have his contrast as default color
 
 ## [0.2.7] - 2019-02-14
 
-### Added
+### added
 
 - Browser
   - @include chrome mixin
 
-### Changed
+### changed
 
 - Browser
   - IE works now from version 6+ (was 9+)
 
 ## [0.2.5] - 2019-02-13
 
-### Added
+### added
 
 - Color
   - afterNBefore class (for ::after and ::before colors)
 
-### Changed
+### changed
 
 - Color
   - Colors map is now us-colors (so we can use bootstrap at the same time)
 
 ## [0.2.2] - 2019-02-12
 
-### Added
+### added
 
 - Color
   - contrast
@@ -666,7 +666,7 @@
 
 ## [0.2.0] - 2019-02-11
 
-### Changed
+### changed
 
 - Grid
   - Separated in to folder
@@ -678,7 +678,7 @@
 - Grid
   - "not" features for grid mixin
 
-### Added
+### added
 
 - Grid
   - [grid]Only and [grid]Up mixin
@@ -687,7 +687,7 @@
 
 ## [0.1.1] - 2019-02-08
 
-### Added
+### added
 
 - Mixins/animation
 
@@ -698,7 +698,7 @@
 
 ## [0.1.0] - 2019-02-06
 
-### Added
+### added
 
 - Mixins
 
