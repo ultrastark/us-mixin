@@ -4,6 +4,9 @@ More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/d
 
 **This repository is a beta version an may change in the future**
 
+## 1.2.0 Release
+`hover-color-primary` should now be written `hover:color-primary`
+
 ## 1.1.0 Release
 **neumorphism**
 same use as box-shadow mixin -> https://docs.ultrastark.ch/docs/projects/us-mixin/mixins/neumorphism
