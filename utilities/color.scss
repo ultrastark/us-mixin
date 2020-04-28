@@ -66,7 +66,7 @@
 
   // bg-primary-light for shade
   .#{$dark}bg-#{$color}#{$tone},
-  .#{$dark}hover-bg-#{$color}#{$tone}:hover {
+  .#{$dark}hover\:bg-#{$color}#{$tone}:hover {
     background-color: $colorUsed !important;
     &.contrast-content {
       color: $colorContrast;
@@ -118,26 +118,26 @@
     }
   }
   .#{$dark}color-#{$color}#{$tone},
-  .#{$dark}hover-color-#{$color}#{$tone}:hover {
+  .#{$dark}hover\:color-#{$color}#{$tone}:hover {
     color: $colorUsed !important;
     * {
       color: $colorUsed !important;
     }
   }
   .#{$dark}border-#{$color}#{$tone},
-  .#{$dark}hover-border-#{$color}#{$tone}:hover {
+  .#{$dark}hover\:border-#{$color}#{$tone}:hover {
     border-color: $colorUsed !important;
   }
   .#{$dark}fill-#{$color}#{$tone},
-  .#{$dark}hover-fill-#{$color}#{$tone}:hover {
+  .#{$dark}hover\:fill-#{$color}#{$tone}:hover {
     fill: $colorUsed !important;
   }
   .#{$dark}stroke-#{$color}#{$tone},
-  .#{$dark}hover-stroke-#{$color}#{$tone}:hover {
+  .#{$dark}hover\:stroke-#{$color}#{$tone}:hover {
     stroke: $colorUsed !important;
   }
   .#{$dark}afterNBefore-#{$color}#{$tone},
-  .#{$dark}hover-afterNBefore-#{$color}#{$tone}:hover {
+  .#{$dark}hover\:afterNBefore-#{$color}#{$tone}:hover {
     &::before,
     &::after {
       background-color: $colorUsed !important;
@@ -202,7 +202,7 @@
       background-color: $colorUsed !important;
     }
 
-    &.hover-contrast:hover {
+    &.hover\:contrast:hover {
       color: $colorContrast;
       fill: $colorContrast;
       * {
