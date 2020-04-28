@@ -1,48 +1,59 @@
 # Changelog
-## [1.1.5] - 2020-04-17
+## v1.2.0 - 2020-04-28
+
+### add
+  - utilities
+    - grid system (only col, row from bootstrap) 
+
+### enhance
+  - utilities
+    - color
+      - hover:bg-primary instead of hover-bg-primary
+
+## v1.1.5 - 2020-04-17
 
 ### add
   - utilities
     - reset
       - a : color inherit
 
-## [1.1.4] - 2020-03-06
+## v1.1.4 - 2020-03-06
 
 ### add
   - utilities
     - reset
       - scrollbar-hidden
 
-## [1.1.3] - 2020-03-06
+## v1.1.3 - 2020-03-06
 
 ### add
   - utilities
     - animation
       - whitewash-in, whitewash-out
 
-## [1.1.2] - 2020-02-26
+## v1.1.2 - 2020-02-26
 
 ### add
   - utilities
     - color
       - Ability to change color-scheme trough js
 
-## [1.1.0] - 2020-02-19
+## v1.1.0 - 2020-02-19
 
 ### add
   - Mixins
     - neumorphism
 
 
-## [1.0.1] - 2020-02-14
+## v1.0.1 - 2020-02-14
 
 ### add
   - Utilities
     - display
-      - [size]Up-none
+      - vsizeUp-none
 
 
-## [1.0.0] - 2020-02-12
+## v1.0.0 - 2020-02-12
 
 ### change
   - Colors
@@ -51,7 +62,7 @@
     - Enhance dark mode
     - Optimize way to import
 
-## [0.8.12] - 2020-02-06
+## v0.8.12 - 2020-02-06
 
 ### add 
 
@@ -59,7 +70,7 @@
     - keyframes
 
 
-## [0.8.9] - 2020-02-03
+## v0.8.9 - 2020-02-03
 
 ### fix 
 
@@ -68,7 +79,7 @@
       - drop-shadow
 
 
-## [0.8.8] - 2020-01-28
+## v0.8.8 - 2020-01-28
 
 ## enhance 
 
@@ -80,7 +91,7 @@
   - color
     - active logic
 
-## [0.8.7] - 2019-12-17
+## v0.8.7 - 2019-12-17
 
 ### add
 
@@ -89,7 +100,7 @@
     - active logic
 
 
-## [0.8.4] - 2019-12-17
+## v0.8.4 - 2019-12-17
 
 ### add
 
@@ -97,7 +108,7 @@
   - color
     - inner-x-important
 
-## [0.8.2] - 2019-12-11
+## v0.8.2 - 2019-12-11
 
 ### add
 
@@ -105,7 +116,7 @@
   - shadow
     - presOnClick effect
 
-## [0.8.2] - 2019-12-11
+## v0.8.2 - 2019-12-11
 
 ### fix
 
@@ -113,7 +124,7 @@
   - color
     - stroke : wrong attribute
 
-## [0.8.1] - 2019-12-09
+## v0.8.1 - 2019-12-09
 
 ### fix
 
@@ -121,7 +132,7 @@
   - shadow
     - important variable
 
-## [0.8.0] - 2019-12-09
+## v0.8.0 - 2019-12-09
 
 ### add
 
@@ -130,7 +141,7 @@
     - global transition variable
     - better with material design
 
-## [0.7.3] - 2019-11-21
+## v0.7.3 - 2019-11-21
 
 ### add
 
@@ -138,7 +149,7 @@
   - grid
     - range (sm-md, sm-lg, ...)
 
-## [0.7.2] - 2019-11-20
+## v0.7.2 - 2019-11-20
 
 ### add
 
@@ -146,7 +157,7 @@
   - colors
     - contrast-content-important
 
-## [0.7.1] - 2019-11-20
+## v0.7.1 - 2019-11-20
 
 ### Optimize
 
@@ -156,14 +167,14 @@
     - remove the main if else
 
 
-## [0.7.0] - 2019-11-15
+## v0.7.0 - 2019-11-15
 
 ### add
 
 - colors
   - Dark Theme
 
-## [0.5.7] - 2019-11-15
+## v0.5.7 - 2019-11-15
 
 ### Enhance
 
@@ -171,7 +182,7 @@
   - shadow
     - add box-shadow
 
-## [0.5.6] - 2019-10-28
+## v0.5.6 - 2019-10-28
 
 ### Enhance
 
@@ -179,7 +190,7 @@
   - customize-bg
     - fix bg-fixed for IOS (temporary fix)
 
-## [0.5.5] - 2019-10-25
+## v0.5.5 - 2019-10-25
 
 ### Enhance
 
@@ -187,7 +198,7 @@
   - shadow
     - add 0 and 0.5
 
-## [0.5.4] - 2019-10-22
+## v0.5.4 - 2019-10-22
 
 ### fix
 
@@ -195,7 +206,7 @@
   - color
     - on isDeep true, not activate isDeeper
 
-## [0.5.3] - 2019-10-22
+## v0.5.3 - 2019-10-22
 
 ### Optimize
 
@@ -209,7 +220,7 @@
   - color
     - add the ability to remove darkest and darker colors
 
-## [0.5.2] - 2019-10-21
+## v0.5.2 - 2019-10-21
 
 ### fix
 
@@ -223,7 +234,7 @@
   - color
     - remove the -base from --color-tone glob variables
 
-## [0.5.0] - 2019-10-21
+## v0.5.0 - 2019-10-21
 
 ### Enhance
 
@@ -232,7 +243,7 @@
     - remove : tint - shade
     - add : light - lighter - lightest - dark - darker - darkest
 
-## [0.4.59] - 2019-10-21
+## v0.4.59 - 2019-10-21
 
 ### Remove
 
@@ -240,7 +251,7 @@
   - grid
     - remove it, for a better bootstrap co integration.
 
-## [0.4.58] - 2019-10-09
+## v0.4.58 - 2019-10-09
 
 ### fix
 
@@ -248,7 +259,7 @@
   - grid
     - fix xOnly size
 
-## [0.4.57] - 2019-10-09
+## v0.4.57 - 2019-10-09
 
 ### Enhance
 
@@ -256,14 +267,14 @@
   - color
     - add global variables
 
-## [0.4.56] - 2019-09-27
+## v0.4.56 - 2019-09-27
 
 ### add
 
 - utilities
   - font
 
-## [0.4.54] - 2019-09-02
+## v0.4.54 - 2019-09-02
 
 ### add
 
@@ -271,7 +282,7 @@
   - animation
     - fade
 
-## [0.4.54] - 2019-09-02
+## v0.4.54 - 2019-09-02
 
 ### add
 
@@ -279,7 +290,7 @@
   - colors
     - inner-bg-{color}
 
-## [0.4.53] - 2019-08-20
+## v0.4.53 - 2019-08-20
 
 ### add
 
@@ -287,7 +298,7 @@
   - colors
     - inner-{color}
 
-## [0.4.48] - 2019-08-14
+## v0.4.48 - 2019-08-14
 
 ### add
 
@@ -295,7 +306,7 @@
   - animation
     - hidden-no-height
 
-## [0.4.47] - 2019-08-14
+## v0.4.47 - 2019-08-14
 
 ### add
 
@@ -303,21 +314,21 @@
   - animation
     - visible class inside hidden
 
-## [0.4.46] - 2019-07-30
+## v0.4.46 - 2019-07-30
 
 ### add
 
 - Utilities
   - display
 
-## [0.4.42] - 2019-07-29
+## v0.4.42 - 2019-07-29
 
 ### add
 
 - Utilities
   - grid (copy from bootstrap)
 
-## [0.4.41] - 2019-07-25
+## v0.4.41 - 2019-07-25
 
 ### fix
 
@@ -325,7 +336,7 @@
   - colors
     - contrast-all
 
-## [0.4.39] - 2019-07-25
+## v0.4.39 - 2019-07-25
 
 ### Enhance
 
@@ -333,7 +344,7 @@
   - $us-color-default
     - add white and black contrast
 
-## [0.4.38] - 2019-07-25
+## v0.4.38 - 2019-07-25
 
 ### add
 
@@ -342,7 +353,7 @@
     - .contrast-all
     - .contrast-selection
 
-## [0.4.37] - 2019-07-25
+## v0.4.37 - 2019-07-25
 
 ### add
 
@@ -350,7 +361,7 @@
   - color
     - .selection-#{\$color} + .contrast-selection
 
-## [0.4.35] - 2019-07-22
+## v0.4.35 - 2019-07-22
 
 ### fix
 
@@ -358,7 +369,7 @@
   - browser
     - edge support
 
-## [0.4.34] - 2019-07-22
+## v0.4.34 - 2019-07-22
 
 ### Enhance
 
@@ -366,7 +377,7 @@
   - color
     - add : gradient-#{\$color}-#{\$tone} and gradient-#{\$color}-#{\$tone}-rotate
 
-## [0.4.33] - 2019-07-15
+## v0.4.33 - 2019-07-15
 
 ### Enhance
 
@@ -374,7 +385,7 @@
   - reset
     - a:hover text decoration none
 
-## [0.4.32] - 2019-07-15
+## v0.4.32 - 2019-07-15
 
 ### Remove
 
@@ -386,7 +397,7 @@
 - Utilities
   - Animation
 
-## [0.4.28] - 2019-06-24
+## v0.4.28 - 2019-06-24
 
 ### Optimize
 
@@ -394,7 +405,7 @@
    - colors
      - Error handling
 
-## [0.4.27] - 2019-06-18
+## v0.4.27 - 2019-06-18
 
 ### add
 
@@ -402,7 +413,7 @@
    - reset
      - Add truncate
 
-## [0.4.26] - 2019-06-14
+## v0.4.26 - 2019-06-14
 
 ### Enhance
 
@@ -411,7 +422,7 @@
      - Add color on color contrast
      - Add !important on every color
 
-## [0.4.25] - 2019-06-14
+## v0.4.25 - 2019-06-14
 
 ### add
 
@@ -419,7 +430,7 @@
    - colors
      - Add hover color class
 
-## [0.4.23] - 2019-06-14
+## v0.4.23 - 2019-06-14
 
 ### add
 
@@ -427,7 +438,7 @@
    - reset
      - Add cursor-pointer
 
-## [0.4.22] - 2019-06-14
+## v0.4.22 - 2019-06-14
 
 ### Optimize
 
@@ -435,7 +446,7 @@
    - color
      - Remove unused
 
-## [0.4.21] - 2019-06-11
+## v0.4.21 - 2019-06-11
 
 ### Enhance
 
@@ -449,7 +460,7 @@
      - bg-container
      - bg-fixed
 
-## [0.4.17] - 2019-06-08
+## v0.4.17 - 2019-06-08
 
 ### add
 
@@ -457,7 +468,7 @@
    - color
      - Add black & white base color
 
-## [0.4.14] - 2019-06-06
+## v0.4.14 - 2019-06-06
 
 ### Enhance
 
@@ -465,7 +476,7 @@
    - reset
      - body -> margin: 0;
 
-## [0.4.12] - 2019-06-02
+## v0.4.12 - 2019-06-02
 
 ### Enhance
 
@@ -477,7 +488,7 @@
   - Grid
     - Add xxlUp
 
-## [0.4.11] - 2019-05-29
+## v0.4.11 - 2019-05-29
 
 ### Enhance
 
@@ -485,7 +496,7 @@
    - Colors
      - us-color-default: add default contrast color
 
-## [0.4.10] - 2019-05-27
+## v0.4.10 - 2019-05-27
 
 ### Optimize
 
@@ -493,7 +504,7 @@
    - Colors
      - remove unused variable
 
-## [0.4.9] - 2019-05-27
+## v0.4.9 - 2019-05-27
 
 ### Enhance
 
@@ -501,7 +512,7 @@
    - Colors
      - add granularity color settings and merge map (default success, warning, danger and info)
 
-## [0.4.8] - 2019-05-24
+## v0.4.8 - 2019-05-24
 
 ### fix
 
@@ -509,7 +520,7 @@
    - Colors
      - tint, shade, trans auto generation
 
-## [0.4.7] - 2019-05-24
+## v0.4.7 - 2019-05-24
 
 ### add
 
@@ -517,21 +528,21 @@
    - Colors
      - stroke (stroke-$colorName)
 
-## [0.4.6] - 2019-01-05
+## v0.4.6 - 2019-01-05
 
 ### fix
 
  - Grid
    - Fix xs and lg value
 
-## [0.4.5] - 2019-30-04
+## v0.4.5 - 2019-30-04
 
 ### fix
 
  - Global
    - Remove git file
 
-## [0.4.4] - 2019-27-04
+## v0.4.4 - 2019-27-04
 
 ### fix
 
@@ -539,7 +550,7 @@
    - shadow
      - Fix colors
 
-## [0.4.3] - 2019-26-04
+## v0.4.3 - 2019-26-04
 
 ### fix
 
@@ -550,7 +561,7 @@
   - utilities
     - Import now the mixin to be able to work even if not imported by the user
 
-## [0.4.2] - 2019-24-04
+## v0.4.2 - 2019-24-04
 
 ### fix
 
@@ -558,7 +569,7 @@
    - color
      - Ctrl variable existence
 
-## [0.4.1] - 2019-24-04
+## v0.4.1 - 2019-24-04
 
 ### added
 
@@ -566,7 +577,7 @@
    - color
      - contrast-content
 
-## [0.4.0] - 2019-24-04
+## v0.4.0 - 2019-24-04
 
 ### added
 
@@ -580,34 +591,34 @@
    - color
      - Utilities logic
 
-## [0.3.6] - 2019-24-04
+## v0.3.6 - 2019-24-04
 
 ### changed (Contain BUG)
   - mixins
     - color
 
-## [0.3.4] - 2019-04-02
+## v0.3.4 - 2019-04-02
 
 ### changed
 
  - color
    - Remove auto contrast
 
-## [0.3.3] - 2019-04-02
+## v0.3.3 - 2019-04-02
 
 ### changed
 
  - reset
    - Remove pointer
 
-## [0.3.2] - 2019-03-26
+## v0.3.2 - 2019-03-26
 
 ### changed
 
 - color
   - Let the user set tint, shad, contrast and trans color directly
 
-## [0.3.0] - 2019-03-02
+## v0.3.0 - 2019-03-02
 
 ### added
 
@@ -624,14 +635,14 @@
 - Global
   - Readme
 
-## [0.2.8] - 2019-02-21
+## v0.2.8 - 2019-02-21
 
 ### added
 
 - Colors
   - bg now have his contrast as default color
 
-## [0.2.7] - 2019-02-14
+## v0.2.7 - 2019-02-14
 
 ### added
 
@@ -643,7 +654,7 @@
 - Browser
   - IE works now from version 6+ (was 9+)
 
-## [0.2.5] - 2019-02-13
+## v0.2.5 - 2019-02-13
 
 ### added
 
@@ -655,7 +666,7 @@
 - Color
   - Colors map is now us-colors (so we can use bootstrap at the same time)
 
-## [0.2.2] - 2019-02-12
+## v0.2.2 - 2019-02-12
 
 ### added
 
@@ -664,7 +675,7 @@
   - tint
   - shade
 
-## [0.2.0] - 2019-02-11
+## v0.2.0 - 2019-02-11
 
 ### changed
 
@@ -681,11 +692,11 @@
 ### added
 
 - Grid
-  - [grid]Only and [grid]Up mixin
+  - vgridOnly and vgridUp mixin
   - xs
   - xxl (up to 1'500px)
 
-## [0.1.1] - 2019-02-08
+## v0.1.1 - 2019-02-08
 
 ### added
 
@@ -696,7 +707,7 @@
 - Helpers/reset
   - reset margin bottom to 0
 
-## [0.1.0] - 2019-02-06
+## v0.1.0 - 2019-02-06
 
 ### added
 
