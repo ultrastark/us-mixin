@@ -1,4 +1,12 @@
 # Changelog
+## v1.2.2 - 2020-05-13
+
+### add
+  - utilities
+    - colors
+      - add active:, focus:, visited:, focus-within: 
+
+
 ## v1.2.0 - 2020-04-28
 
 ### add

@@ -66,7 +66,11 @@
 
   // bg-primary-light for shade
   .#{$dark}bg-#{$color}#{$tone},
-  .#{$dark}hover\:bg-#{$color}#{$tone}:hover {
+  .#{$dark}active\:bg-#{$color}#{$tone}:active,
+  .#{$dark}hover\:bg-#{$color}#{$tone}:hover,
+  .#{$dark}focus\:bg-#{$color}#{$tone}:focus,
+  .#{$dark}visited\:bg-#{$color}#{$tone}:visited,
+  .#{$dark}focus-within\:bg-#{$color}#{$tone}:focus-within {
     background-color: $colorUsed !important;
     &.contrast-content {
       color: $colorContrast;
@@ -118,26 +122,46 @@
     }
   }
   .#{$dark}color-#{$color}#{$tone},
-  .#{$dark}hover\:color-#{$color}#{$tone}:hover {
+  .#{$dark}active\:color-#{$color}#{$tone}:active,
+  .#{$dark}hover\:color-#{$color}#{$tone}:hover,
+  .#{$dark}focus\:color-#{$color}#{$tone}:focus,
+  .#{$dark}visited\:color-#{$color}#{$tone}:visited,
+  .#{$dark}focus-within\:color-#{$color}#{$tone}:focus-within {
     color: $colorUsed !important;
     * {
       color: $colorUsed !important;
     }
   }
   .#{$dark}border-#{$color}#{$tone},
-  .#{$dark}hover\:border-#{$color}#{$tone}:hover {
+  .#{$dark}active\:color-#{$color}#{$tone}:active,
+  .#{$dark}hover\:color-#{$color}#{$tone}:hover,
+  .#{$dark}focus\:color-#{$color}#{$tone}:focus,
+  .#{$dark}visited\:color-#{$color}#{$tone}:visited,
+  .#{$dark}focus-within\:color-#{$color}#{$tone}:focus-within {
     border-color: $colorUsed !important;
   }
   .#{$dark}fill-#{$color}#{$tone},
-  .#{$dark}hover\:fill-#{$color}#{$tone}:hover {
+  .#{$dark}active\:fill-#{$color}#{$tone}:active,
+  .#{$dark}hover\:fill-#{$color}#{$tone}:hover,
+  .#{$dark}focus\:fill-#{$color}#{$tone}:focus,
+  .#{$dark}visited\:fill-#{$color}#{$tone}:visited,
+  .#{$dark}focus-within\:fill-#{$color}#{$tone}:focus-within {
     fill: $colorUsed !important;
   }
   .#{$dark}stroke-#{$color}#{$tone},
-  .#{$dark}hover\:stroke-#{$color}#{$tone}:hover {
+  .#{$dark}active\:stroke-#{$color}#{$tone}:active,
+  .#{$dark}hover\:stroke-#{$color}#{$tone}:hover,
+  .#{$dark}focus\:stroke-#{$color}#{$tone}:focus,
+  .#{$dark}visited\:stroke-#{$color}#{$tone}:visited,
+  .#{$dark}focus-within\:stroke-#{$color}#{$tone}:focus-within {
     stroke: $colorUsed !important;
   }
   .#{$dark}afterNBefore-#{$color}#{$tone},
-  .#{$dark}hover\:afterNBefore-#{$color}#{$tone}:hover {
+  .#{$dark}active\:afterNBefore-#{$color}#{$tone}:active,
+  .#{$dark}hover\:afterNBefore-#{$color}#{$tone}:hover,
+  .#{$dark}focus\:afterNBefore-#{$color}#{$tone}:focus,
+  .#{$dark}visited\:afterNBefore-#{$color}#{$tone}:visited,
+  .#{$dark}focus-within\:afterNBefore-#{$color}#{$tone}:focus-within {
     &::before,
     &::after {
       background-color: $colorUsed !important;
@@ -202,7 +226,11 @@
       background-color: $colorUsed !important;
     }
 
-    &.hover\:contrast:hover {
+    &.active\:contrast:active,
+    &.hover\:contrast:hover,
+    &.focus\:contrast:focus,
+    &.visited\:contrast:visited,
+    &.focus-within\:contrast:focus-within {
       color: $colorContrast;
       fill: $colorContrast;
       * {
