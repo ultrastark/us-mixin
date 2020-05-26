@@ -460,3 +460,50 @@ $isUsingDarkTheme: false !default;
 } @else {
   @include initUsColors($us-color-settings);
 }
+
+// Default classes transparent & defaultColor
+.fill-transparent {
+  fill: transparent;
+}
+.stroke-transparent {
+  stroke: transparent;
+}
+.color-transparent {
+  color: transparent;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.border-transparent {
+  border-color: transparent;
+}
+.fill-none {
+  fill: none;
+}
+.stroke-none {
+  stroke: none;
+}
+.color-none {
+  color: none;
+}
+.bg-none {
+  background-color: none;
+}
+.border-none {
+  border-color: none;
+}
+.fill-currentColor {
+  fill: currentColor;
+}
+.stroke-currentColor {
+  stroke: currentColor;
+}
+.color-currentColor {
+  color: currentColor;
+}
+.bg-currentColor {
+  background-color: currentColor;
+}
+.border-currentColor {
+  border-color: currentColor;
+}

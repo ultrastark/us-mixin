@@ -52,11 +52,13 @@ $pushOnPress: true !default;
   transition: $transition;
   @if $animation {
     transform: translateY(-5px);
+    -webkit-backface-visibility: hidden;
+
     @include box-shadow($elevation, null, $color, $important);
 
     &:hover,
     &.active,
-    &.focus {
+    &:focus {
       @if ($pushOnPress == true) {
         &:not(:active) {
           @include box-shadow($animation, null, $color, $important);

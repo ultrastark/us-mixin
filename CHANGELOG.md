@@ -4,6 +4,14 @@
 ### add
   - utilities
     - colors
+      - default classes, transparent, currentColor & none
+
+
+## v1.2.2 - 2020-05-13
+
+### add
+  - utilities
+    - colors
       - add active:, focus:, visited:, focus-within: 
 
 
