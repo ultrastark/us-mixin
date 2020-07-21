@@ -1,4 +1,11 @@
 # Changelog
+## v1.2.4 - 2020-07-21
+
+### enhance
+  - mixins
+    - grid
+      - set variable as !default
+
 ## v1.2.2 - 2020-05-13
 
 ### add
