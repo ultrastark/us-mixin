@@ -319,7 +319,7 @@
           )
       {
         // Create root variables
-        @if #{$tone} == 'base' {
+        @if $tone == 'base' {
           --#{$keys}: #{$value};
         } @else {
           --#{$keys}-#{$tone}: #{$value};
