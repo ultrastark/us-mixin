@@ -46,18 +46,23 @@
 
 */
 $transition: all 250ms !default;
+$isSmartphoneAnimation: false !default;
 $pushOnPress: true !default;
 
 @mixin box-shadow($elevation: 1, $animation: null, $color: #000, $important: null) {
   transition: $transition;
   @if $animation {
-    transform: translateY(-5px);
+    @if $isSmartphoneAnimation == false {
+      transform: translateY(-5px);
+    }
+
     -webkit-backface-visibility: hidden;
 
     @include box-shadow($elevation, null, $color, $important);
 
     &:hover,
     &.active,
+    &:active,
     &:focus {
       @if ($pushOnPress == true) {
         &:not(:active) {
@@ -110,11 +115,15 @@ $pushOnPress: true !default;
 @mixin drop-shadow($elevation: 1, $animation: null, $color: #000, $important: null) {
   transition: $transition;
   @if $animation {
-    transform: translateY(-5px);
+    @if $isSmartphoneAnimation == false {
+      transform: translateY(-5px);
+    }
+
     @include drop-shadow($elevation, null, $color);
 
     &:hover,
     &.active,
+    &:active,
     &.focus {
       @if ($pushOnPress == true) {
         &:not(:active) {
