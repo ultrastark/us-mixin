@@ -1,10 +1,10 @@
 # Changelog
-## v1.2.6 - 2020-09-29
+## v1.2.7 - 2020-09-29
 
 ### add
   - mixins
     - shadow
-      - add $isSmartphoneAnimation: false !default to fix ios issues on ionic app
+      - add $isSmartphoneAnimation: false !default to inverse the animation logic on smartphone
 
 
 ## v1.2.4 - 2020-07-21

@@ -60,15 +60,20 @@ $pushOnPress: true !default;
 
     @include box-shadow($elevation, null, $color, $important);
 
-    &:hover,
-    &.active,
-    &:active,
-    &:focus {
-      @if ($pushOnPress == true) {
-        &:not(:active) {
+    @if ($isSmartphoneAnimation == false) {
+      &:hover,
+      &.active,
+      &:focus {
+        @if ($pushOnPress == true) {
+          &:not(:active) {
+            @include box-shadow($animation, null, $color, $important);
+          }
+        } @else {
           @include box-shadow($animation, null, $color, $important);
         }
-      } @else {
+      }
+    } @else {
+      &:active {
         @include box-shadow($animation, null, $color, $important);
       }
     }
@@ -121,16 +126,21 @@ $pushOnPress: true !default;
 
     @include drop-shadow($elevation, null, $color);
 
-    &:hover,
-    &.active,
-    &:active,
-    &.focus {
-      @if ($pushOnPress == true) {
-        &:not(:active) {
-          @include drop-shadow($animation, null, $color, $important);
+    @if ($isSmartphoneAnimation == false) {
+      &:hover,
+      &.active,
+      &:focus {
+        @if ($pushOnPress == true) {
+          &:not(:active) {
+            @include box-shadow($animation, null, $color, $important);
+          }
+        } @else {
+          @include box-shadow($animation, null, $color, $important);
         }
-      } @else {
-        @include drop-shadow($animation, null, $color, $important);
+      }
+    } @else {
+      &:active {
+        @include box-shadow($animation, null, $color, $important);
       }
     }
   } @else {
