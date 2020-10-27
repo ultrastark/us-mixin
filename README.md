@@ -4,16 +4,17 @@ More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/d
 
 **This repository is a beta version an may change in the future**
 
-## 1.2.0 Release
-`hover-color-primary` should now be written `hover:color-primary`
-
-## 1.1.0 Release
-**neumorphism**
-same use as box-shadow mixin -> https://docs.ultrastark.ch/docs/projects/us-mixin/mixins/neumorphism
-
+## 2.0.0 Release
 **Attention**
-* **us-mixin/mixin** doesn't need colors anymore (the `color()` have been remove in favor of the global variable (ex: `var(--primary)`)
-* A lot of default variables have been added to the us-mixin colors look [here](https://docs.ultrastark.ch/docs/projects/us-mixin/classes/color) form more informations
+* **us-mixin/grid** have no another sizing, see https://docs.ultrastark.ch/docs/projects/us-mixin/mixins/grid for me informations.
+* ex: @include `@include sm {}` should now be `@include md{}`, `@include md{}` should now be `@include lg{}`, ...
+* ex: @include `@include sm-md {}` should now be `@include sm-lg{}`, ...
+
+**Removed**
+* `xs` doesn't exist anymore since it was equal to 0
+* `@include smOnly{}` since it's equal to `@include sm{}`
+
+
 
 ## Quick start
 

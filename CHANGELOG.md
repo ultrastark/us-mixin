@@ -1,4 +1,12 @@
 # Changelog
+## v2.0.0 - 2020-10-27
+
+### enhance
+  - mixins
+    - grid
+      - New grid logic
+
+
 ## v1.2.7 - 2020-09-29
 
 ### add

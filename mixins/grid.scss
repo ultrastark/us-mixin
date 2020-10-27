@@ -2,86 +2,73 @@
 * @see https://getbootstrap.com/docs/4.0/layout/grid/
 */
 
-$xs: 0px !default;
-// xs
 $sm: 576px !default;
-// sm
 $md: 768px !default;
-// md
 $lg: 992px !default;
-// lg
 $xl: 1200px !default;
-// xl
 $xxl: 1500px !default;
-// xxl
-
-@mixin xs {
-  @media (max-width: #{$sm - 1px}) {
-    @content;
-  }
-}
-
-@mixin xsOnly {
-  @media (max-width: #{$sm - 1px}) {
-    @content;
-  }
-}
 
 @mixin sm {
-  @media (max-width: #{$md - 1px}) {
+  @media (max-width: #{$sm - 1px}) {
     @content;
   }
 }
 
 @mixin smUp {
-  @media (min-width: #{$sm - 1px}) {
-    @content;
-  }
-}
-
-@mixin smOnly {
-  @media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
+  @media (min-width: #{$sm}) {
     @content;
   }
 }
 
 @mixin sm-md {
-  @media (min-width: #{$sm}) and (max-width: #{$lg - 1px}) {
+  @media (min-width: #{$sm}) and (max-width: #{$lmdg - 1px}) {
     @content;
   }
 }
 
 @mixin sm-lg {
-  @media (min-width: #{$sm}) and (max-width: #{$xl - 1px}) {
+  @media (min-width: #{$sm}) and (max-width: #{$lg - 1px}) {
     @content;
   }
 }
 
 @mixin sm-xl {
+  @media (min-width: #{$sm}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin sm-xxl {
   @media (min-width: #{$sm}) and (max-width: #{$xxl - 1px}) {
     @content;
   }
 }
 
 @mixin md {
-  @media (max-width: #{$lg - 1px}) {
+  @media (max-width: #{$md - 1px}) {
     @content;
   }
 }
 
 @mixin mdUp {
-  @media (min-width: #{$md - 1px}) {
+  @media (min-width: #{$md}) {
     @content;
   }
 }
 
 @mixin mdOnly {
-  @media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+  @media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
     @content;
   }
 }
 
 @mixin md-lg {
+  @media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin md-xl {
   @media (min-width: #{$md}) and (max-width: #{$xl - 1px}) {
     @content;
   }
@@ -94,43 +81,61 @@ $xxl: 1500px !default;
 }
 
 @mixin lg {
-  @media (max-width: #{$xl - 1px}) {
+  @media (max-width: #{$lg - 1px}) {
     @content;
   }
 }
 
 @mixin lgUp {
-  @media (min-width: #{$lg - 1px}) {
+  @media (min-width: #{$lg}) {
     @content;
   }
 }
 
 @mixin lgOnly {
+  @media (min-width: #{$md}) and (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+@mixin lg-xl {
   @media (min-width: #{$lg}) and (max-width: #{$xl - 1px}) {
     @content;
   }
 }
 
+@mixin lg-xxl {
+  @media (min-width: #{$lg}) and (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
 @mixin xl {
-  @media (max-width: #{$xxl - 1px}) {
+  @media (max-width: #{$xl - 1px}) {
     @content;
   }
 }
 
 @mixin xlUp {
-  @media (min-width: #{$xl - 1px}) {
+  @media (min-width: #{$xl}) {
     @content;
   }
 }
 
 @mixin xlOnly {
-  @media (min-width: #{$xl - 1px}) {
+  @media (min-width: #{$lg}) and (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}
+
+@mixin xl-xxl {
+  @media (min-width: #{$xl}) and (max-width: #{$xxl - 1px}) {
     @content;
   }
 }
 
 @mixin xxlUp {
-  @media (min-width: #{$xxl - 1px}) {
+  @media (min-width: #{$xxl}) {
     @content;
   }
 }
