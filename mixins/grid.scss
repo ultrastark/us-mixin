@@ -21,7 +21,7 @@ $xxl: 1500px !default;
 }
 
 @mixin sm-md {
-  @media (min-width: #{$sm}) and (max-width: #{$lmdg - 1px}) {
+  @media (min-width: #{$sm}) and (max-width: #{$md - 1px}) {
     @content;
   }
 }
