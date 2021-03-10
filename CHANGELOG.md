@@ -1,4 +1,12 @@
 # Changelog
+## v2.0.4 - 2021-02-21
+
+### add
+  - utilities
+    - color
+      - add `current` color variable
+
+
 ## v2.0.0 - 2020-10-27
 
 ### enhance

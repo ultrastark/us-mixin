@@ -61,3 +61,11 @@ textarea:focus {
   }
   -ms-overflow-style: none;
 }
+
+body:not(.dark-mode):not(.light-mode) {
+  body.dark-mode {
+    .dark-invert {
+      filter: invert(1);
+    }
+  }
+}
