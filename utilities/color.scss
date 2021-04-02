@@ -492,18 +492,18 @@ $isUsingDarkTheme: false !default;
 .border-none {
   border-color: none;
 }
-.fill-currentColor {
-  fill: currentColor;
+.fill-current {
+  fill: var(--current);
 }
-.stroke-currentColor {
-  stroke: currentColor;
+.stroke-current {
+  stroke: var(--current);
 }
-.color-currentColor {
-  color: currentColor;
+.color-current {
+  color: var(--current);
 }
-.bg-currentColor {
-  background-color: currentColor;
+.bg-current {
+  background-color: var(--current);
 }
-.border-currentColor {
-  border-color: currentColor;
+.border-current {
+  border-color: var(--current);
 }

@@ -38,8 +38,13 @@
     display: none !important;
   }
 }
-@include xxlUp {
+@include xxl {
   .xxl-none {
+    display: none !important;
+  }
+}
+@include xxlUp {
+  .xxlUp-none {
     display: none !important;
   }
 }

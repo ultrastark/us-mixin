@@ -62,16 +62,6 @@ textarea:focus {
   -ms-overflow-style: none;
 }
 
-body.light-mode {
-  .light-invert {
-    filter: invert(1);
-  }
-}
-body:not(.dark-mode) {
-  .light-invert {
-    filter: invert(1);
-  }
-}
 body:not(.dark-mode):not(.light-mode) {
   .dark-invert {
     filter: invert(1);
