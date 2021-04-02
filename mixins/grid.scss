@@ -134,6 +134,12 @@ $xxl: 1500px !default;
   }
 }
 
+@mixin xxl {
+  @media (max-width: #{$xxl - 1px}) {
+    @content;
+  }
+}
+
 @mixin xxlUp {
   @media (min-width: #{$xxl}) {
     @content;
