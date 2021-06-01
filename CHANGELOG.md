@@ -1,4 +1,10 @@
 # Changelog
+## v2.1.0 - 2021-06-01
+### enhance
+  - utilities
+    - font
+      - add new font standard base on the [following website](https://www.impactplus.com/blog/best-font-size-for-website) 
+
 ## v2.0.4 - 2021-02-21
 
 ### add

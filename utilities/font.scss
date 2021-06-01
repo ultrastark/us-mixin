@@ -18,3 +18,92 @@
     font-weight: 700;
   }
 }
+
+// Copied from https://www.impactplus.com/blog/best-font-size-for-website
+
+h1 {
+  @include lgUp {
+    font-size: 3em;
+    line-height: 1.05em;
+  }
+  @include lg {
+    font-size: 2.5em;
+    line-height: 1.125em;
+  }
+  @include sm {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+}
+h2 {
+  @include lgUp {
+    font-size: 2.25em;
+    line-height: 1.25em;
+  }
+  @include lg {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+  @include sm {
+    font-size: 1.625em;
+    line-height: 1.15em;
+  }
+}
+h3 {
+  @include lgUp {
+    font-size: 1.75em;
+    line-height: 1.25em;
+  }
+  @include lg {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+  @include sm {
+    font-size: 1.375em;
+    line-height: 1.14em;
+  }
+}
+h4 {
+  @include smUp {
+    font-size: 1.125em;
+    line-height: 1.22em;
+  }
+  @include sm {
+    font-size: 1.125em;
+    line-height: 1.11em;
+  }
+}
+
+p {
+  @include smUp {
+    font-size: 1em;
+    line-height: 1.375em;
+  }
+  @include sm {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+}
+
+@media print {
+  h1 {
+    font-size: 36pt;
+    line-height: 1.25em;
+  }
+  h2 {
+    font-size: 24pt;
+    line-height: 1.25em;
+  }
+  h3 {
+    font-size: 18pt;
+    line-height: 1.25em;
+  }
+  h4 {
+    font-size: 14pt;
+    line-height: 1.25em;
+  }
+  h5 {
+    font-size: 12pt;
+    line-height: 1.345833333em;
+  }
+}
