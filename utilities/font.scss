@@ -74,7 +74,8 @@ h4 {
   }
 }
 
-p {
+p,
+a {
   @include smUp {
     font-size: 1em;
     line-height: 1.375em;
@@ -105,5 +106,10 @@ p {
   h5 {
     font-size: 12pt;
     line-height: 1.345833333em;
+  }
+  p,
+  a {
+    font-size: 12pt;
+    line-height: 1.25em;
   }
 }
