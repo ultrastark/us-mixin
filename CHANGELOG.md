@@ -1,4 +1,10 @@
 # Changelog
+## v2.2.0 - 2021-06-05
+### enhance
+  - utilities
+    - border
+      - news border global variable
+
 ## v2.1.0 - 2021-06-01
 ### enhance
   - utilities
