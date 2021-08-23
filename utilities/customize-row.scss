@@ -1,3 +1,5 @@
+@use '../mixins/grid' as *;
+
 @include sm {
   .row.mobile-hor-scroll {
     flex-direction: row;

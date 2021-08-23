@@ -1,3 +1,5 @@
+@use '../mixins/grid' as *;
+
 @include sm {
   .sm-none {
     display: none !important;

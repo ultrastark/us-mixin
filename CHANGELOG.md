@@ -1,5 +1,9 @@
 # Changelog
 ## v2.2.0 - 2021-06-05
+### optimize
+  - global
+    - @user & @forward instead of @import
+## v2.2.0 - 2021-06-05
 ### enhance
   - utilities
     - border

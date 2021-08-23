@@ -1,3 +1,5 @@
+@use '../mixins/browser' as *;
+
 // <div class="bg-full"> inside the target folder
 .bg-container {
   position: absolute;

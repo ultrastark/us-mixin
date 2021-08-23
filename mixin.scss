@@ -1,6 +1,6 @@
-@import './mixins/animation';
-@import './mixins/neumorphism';
-@import './mixins/shadow';
-@import './mixins/grid';
-@import './mixins/phoneGrid';
-@import './mixins/browser';
+@forward './mixins/animation';
+@forward './mixins/neumorphism';
+@forward './mixins/shadow';
+@forward './mixins/grid';
+@forward './mixins/phoneGrid';
+@forward './mixins/browser';

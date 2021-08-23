@@ -1,3 +1,5 @@
+@use '../mixins/grid' as *;
+
 .inner-lighter {
   * {
     font-weight: 300;
