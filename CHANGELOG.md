@@ -1,8 +1,14 @@
 # Changelog
-## v2.2.0 - 2021-06-05
+## v2.3.0 - 2021-08-25
+### Add
+  - utilities
+    - spacing from https://uxdesign.cc/ui-cheat-sheet-spacing-friendships-e37a6fccc407
+  
+## v2.2.0 - 2021-08-18
 ### optimize
   - global
     - @user & @forward instead of @import
+  
 ## v2.2.0 - 2021-06-05
 ### enhance
   - utilities
