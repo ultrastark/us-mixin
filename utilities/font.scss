@@ -22,68 +22,80 @@
 }
 
 // Copied from https://www.impactplus.com/blog/best-font-size-for-website
+:root {
+  --font-biggest: 3em;
+  --font-bigger: 2.25em;
+  --font-big: 1.75em;
+  --font-base: 1.125em;
+  --font-small: 12px;
+  --font-smaller: 10px;
+  --font-smallest: 8px;
+  @include lg {
+    --font-biggest: 2.5em;
+    --font-bigger: 2em;
+    --font-big: 1.5em;
+  }
+  @include sm {
+    --font-biggest: 2em;
+    --font-bigger: 1.625em;
+    --font-big: 1.375em;
+    --font-base: 1.125em;
+  }
+}
 
 h1 {
+  font-size: var(--font-biggest);
   @include lgUp {
-    font-size: 3em;
     line-height: 1.05em;
   }
   @include lg {
-    font-size: 2.5em;
     line-height: 1.125em;
   }
   @include sm {
-    font-size: 2em;
     line-height: 1.25em;
   }
 }
 h2 {
+  font-size: var(--font-bigger);
   @include lgUp {
-    font-size: 2.25em;
     line-height: 1.25em;
   }
   @include lg {
-    font-size: 2em;
     line-height: 1.25em;
   }
   @include sm {
-    font-size: 1.625em;
     line-height: 1.15em;
   }
 }
 h3 {
+  font-size: var(--font-big);
   @include lgUp {
-    font-size: 1.75em;
     line-height: 1.25em;
   }
   @include lg {
-    font-size: 1.5em;
     line-height: 1.25em;
   }
   @include sm {
-    font-size: 1.375em;
     line-height: 1.14em;
   }
 }
 h4 {
+  font-size: var(--font-base);
   @include smUp {
-    font-size: 1.125em;
     line-height: 1.22em;
   }
   @include sm {
-    font-size: 1.125em;
     line-height: 1.11em;
   }
 }
 
 p,
 a {
+  font-size: var(--font-small);
   @include smUp {
-    font-size: 1em;
     line-height: 1.375em;
   }
   @include sm {
-    font-size: 1em;
     line-height: 1.25em;
   }
 }
