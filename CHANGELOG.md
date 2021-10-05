@@ -1,4 +1,10 @@
 # Changelog
+## v2.5.0 - 2021-10-05
+## Add
+  - utilities
+    - font
+      - divers global css variable
+
 ## v2.3.0 - 2021-08-25
 ### Add
   - utilities
