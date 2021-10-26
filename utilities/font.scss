@@ -25,8 +25,11 @@
 :root {
   --h4: 1.125em; // 18px
   --p: 1em; // 16px
-  --p-small: 12px;
-  --p-smaller: 8px;
+  --h5: 0.83em // 13.28px
+  --h5-line-height: 1.4em;
+  --h6: 0.75em; // 12px
+  // --h6-line-height: 1.4em; // @TODO
+  --small: 8px;
 
   @include lgUp {
     --h1: 3em; // 48px
@@ -78,6 +81,14 @@ h4 {
   font-size: var(--h4);
   line-height: var(--h4-line-height);
 }
+h5 {
+  font-size: var(--h5);
+  line-height: var(--h5-line-height);
+}
+h6 {
+  font-size: var(--h6);
+  // line-height: var(--h6-line-height); //@TODO
+}
 
 p,
 a {
@@ -88,6 +99,10 @@ a {
 blockquote {
   font-size: var(--blockquote);
   line-height: var(--blockquote-line-height);
+}
+
+small {
+  font-size: var(--small);
 }
 
 @media print {
