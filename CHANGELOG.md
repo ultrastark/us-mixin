@@ -1,4 +1,11 @@
 # Changelog
+## v2.6.0 - 2021-10-25
+## Add
+  - utilities
+    - font
+      - Rename variable
+      - Optimize loading of variable
+
 ## v2.5.0 - 2021-10-05
 ## Add
   - utilities

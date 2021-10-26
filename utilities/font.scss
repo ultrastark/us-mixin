@@ -23,81 +23,71 @@
 
 // Copied from https://www.impactplus.com/blog/best-font-size-for-website
 :root {
-  --font-biggest: 3em;
-  --font-bigger: 2.25em;
-  --font-big: 1.75em;
-  --font-base: 1.125em;
-  --font-small: 1em;
-  --font-smaller: 10px;
-  --font-smallest: 8px;
+  --h4: 1.125em; // 18px
+  --p: 1em; // 16px
+  --p-small: 10px;
+  --p-smaller: 8px;
+
+  @include lgUp {
+    --h1: 3em; // 48px
+    --h1-line-height: 1.05em;
+    --h2: 2.25em; // 36px
+    --h3: 1.75em; // 28px
+  }
   @include lg {
-    --font-biggest: 2.5em;
-    --font-bigger: 2em;
-    --font-big: 1.5em;
+    --h1: 2.5em; // 40px
+    --h1-line-height: 1.125em;
+    --h2: 2em; // 32px
+    --h3: 1.5em; // 24px
+  }
+  @include smUp {
+    --h2-line-height: 1.25em;
+    --h3-line-height: 1.25em;
+    --h4-line-height: 1.222em;
+    --blockquote: 1.5em; // 24px
+    --blockquote-line-height: 1.458em;
+    --p-line-height: 1.375em;
   }
   @include sm {
-    --font-biggest: 2em;
-    --font-bigger: 1.625em;
-    --font-big: 1.375em;
-    --font-base: 1.125em;
+    --h1: 2em; // 32px
+    --h1-line-height: 1.25em;
+    --h2: 1.625em; // 26px
+    --h2-line-height: 1.154em;
+    --h3: 1.375em; // 22px
+    --h3-line-height: 1.136em;
+    --h4-line-height: 1.111em;
+    --p-line-height: 1.25em;
+    --blockquote: 1.25em; // 20px
+    --blockquote-line-height: 1.25em;
   }
 }
 
 h1 {
-  font-size: var(--font-biggest);
-  @include lgUp {
-    line-height: 1.05em;
-  }
-  @include lg {
-    line-height: 1.125em;
-  }
-  @include sm {
-    line-height: 1.25em;
-  }
+  font-size: var(--h1);
+  line-height: var(--h1-line-height);
 }
 h2 {
-  font-size: var(--font-bigger);
-  @include lgUp {
-    line-height: 1.25em;
-  }
-  @include lg {
-    line-height: 1.25em;
-  }
-  @include sm {
-    line-height: 1.15em;
-  }
+  font-size: var(--h2);
+  line-height: var(--h2-line-height);
 }
 h3 {
-  font-size: var(--font-big);
-  @include lgUp {
-    line-height: 1.25em;
-  }
-  @include lg {
-    line-height: 1.25em;
-  }
-  @include sm {
-    line-height: 1.14em;
-  }
+  font-size: var(--h3);
+  line-height: var(--h3-line-height);
 }
 h4 {
-  font-size: var(--font-base);
-  @include smUp {
-    line-height: 1.22em;
-  }
-  @include sm {
-    line-height: 1.11em;
-  }
+  font-size: var(--h4);
+  line-height: var(--h4-line-height);
 }
 
 p,
 a {
-  font-size: var(--font-small);
-  @include smUp {
-    line-height: 1.375em;
-  }
-  @include sm {
-    line-height: 1.25em;
-  }
+  font-size: var(--p);
+  line-height: var(--p-line-height);
+}
+
+blockquote {
+  font-size: var(--blockquote);
+  line-height: var(--blockquote-line-height);
 }
 
 @media print {
