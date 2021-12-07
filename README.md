@@ -4,16 +4,9 @@ More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/d
 
 **This repository is a beta version an may change in the future**
 
-## 2.0.0 Release
+## 2.7.0 Release
 **Attention**
-* **us-mixin/grid** have no another sizing, see https://docs.ultrastark.ch/docs/projects/us-mixin/mixins/grid for me informations.
-* ex: @include `@include sm {}` should now be `@include md{}`, `@include md{}` should now be `@include lg{}`, ...
-* ex: @include `@include sm-md {}` should now be `@include sm-lg{}`, ...
-
-**Removed**
-* `xs` doesn't exist anymore since it was equal to 0
-* `@include smOnly{}` since it's equal to `@include sm{}`
-
+* **us-mixin/reset**  of `li`, `ul` & `ol` are now only done on `nav` tag
 
 
 ## Quick start

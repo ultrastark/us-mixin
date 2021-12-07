@@ -1,4 +1,10 @@
 # Changelog
+## v2.7.0 - 2021-12-07
+## Add
+  - utilities
+    - reset
+      - reset li, ul, ol only within nav.
+
 ## v2.6.0 - 2021-10-25
 ## Add
   - utilities
