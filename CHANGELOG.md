@@ -1,4 +1,13 @@
 # Changelog
+## v2.7.1 - 2021-12-07
+## Add
+  - utilities
+    - z-index
+      -  --z-index-highest: 1000;
+      -  --z-index-higher: 100;
+      -  --z-index-high: 10;
+      -  --z-index-normal: 1;
+
 ## v2.7.0 - 2021-12-07
 ## Add
   - utilities
