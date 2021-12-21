@@ -1,4 +1,11 @@
 # Changelog
+## v2.7.2 - 2021-21-12
+## Add
+  - utilities
+    - border
+      - --border-smallest: 4px;
+      - --border-smaller: 8px;
+
 ## v2.7.1 - 2021-12-07
 ## Add
   - utilities
