@@ -501,32 +501,31 @@
 
     :root {
       @if $mode == 'lightMode' {
-        @media (prefers-color-scheme: light) {
-          body:not(.dark-mode) {
-            @each $tone,
-              $value
-                in createColourMap(
-                  $base,
-                  $contrast,
-                  $dark,
-                  $darker,
-                  $darkest,
-                  $light,
-                  $lighter,
-                  $lightest,
-                  $trans
-                )
-            {
-              // Create root variables
-              @if $tone == 'base' {
-                --changeable-#{$keys}: #{$value};
-              } @else {
-                --changeable-#{$keys}-#{$tone}: #{$value};
-              }
+        body:not(.dark-mode) {
+          @each $tone,
+            $value
+              in createColourMap(
+                $base,
+                $contrast,
+                $dark,
+                $darker,
+                $darkest,
+                $light,
+                $lighter,
+                $lightest,
+                $trans
+              )
+          {
+            // Create root variables
+            @if $tone == 'base' {
+              --changeable-#{$keys}: #{$value};
+            } @else {
+              --changeable-#{$keys}-#{$tone}: #{$value};
             }
           }
         }
       }
+
       @if $mode == 'darkMode' {
         @media (prefers-color-scheme: dark) {
           body:not(.light-mode) {
@@ -678,12 +677,12 @@ $isUsingDarkTheme: false !default;
       'success': (
         'dark': #007e33,
         'base': #00c851,
-        'contrast': #fff,
+        'contrast': #000,
       ),
       'info': (
         'dark': #0099cc,
         'base': #33b5e5,
-        'contrast': #fff,
+        'contrast': #000,
       ),
       'disabled': (
         'base': #e0e0e0,
