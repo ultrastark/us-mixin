@@ -645,7 +645,6 @@ $isUsingDarkTheme: false !default;
   @if $use-default-gray-map {
     $us-color-shade: (
       'light': (
-        'dark': #e0e0e0,
         'base': #f4f5f8,
         'contrast': #191919,
       ),
