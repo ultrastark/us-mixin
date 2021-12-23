@@ -4,10 +4,23 @@ More infos and example under https://docs.ultrastark.ch/docs/projects/us-mixin/d
 
 **This repository is a beta version an may change in the future**
 
-## 2.7.0 Release
-**Attention**
-* **us-mixin/reset**  of `li`, `ul` & `ol` are now only done on `nav` tag
+## 3.0.0 Release
+**Removed feature**
+The `Color()` mixin have been removed, in favor of the global variable.
 
+**New feature**
+* **$us-color-darkMode** together with **$isUsingDarkTheme: true;** let us set the new `--darkMode` or `--changeable` colors
+
+### Example
+`--darkMode-light` will set, when the user use dark mode, this color.   
+To be used as follow -> `background-color: var(--darkMode-dark, var(--light));`  
+Here, the color will be dark when the user us a dark mode.
+
+`--changeable-light` will change automatically the color when turning into dark mode.  
+To be used as follow -> `background-color: var(var(--changeable-light));`  
+Here, the color will be the declared light from `$us-color-darkMode` on dark mode, and `$us-color-settings` on light mode.
+
+`$us-color-darkMode` works the same as `$us-color-settings`
 
 ## Quick start
 

@@ -241,8 +241,8 @@
   }
 }
 
-@mixin initUsColors($us-color-global) {
-  @each $keys, $values in $us-color-global {
+@mixin initColors($colors) {
+  @each $keys, $values in $colors {
     $base: #000;
     $contrast: null;
     $dark: null;
@@ -345,6 +345,219 @@
   }
 }
 
+@mixin initDarkModeColors($colors, $invertExtension: 'darkMode') {
+  @each $keys, $values in $colors {
+    $base: #000;
+    $contrast: null;
+    $dark: null;
+    $darker: null;
+    $darkest: null;
+    $light: null;
+    $lighter: null;
+    $lightest: null;
+    $trans: null;
+
+    @each $key, $color in $values {
+      @if ($key) {
+        @if ($key == 'base') {
+          $base: $color;
+        } @else if ($key == 'contrast') {
+          $contrast: $color;
+        } @else if ($key == 'dark') {
+          $dark: $color;
+        } @else if ($key == 'darker') {
+          $darker: $color;
+        } @else if ($key == 'darkest') {
+          $darkest: $color;
+        } @else if ($key == 'light') {
+          $light: $color;
+        } @else if ($key == 'lighter') {
+          $lighter: $color;
+        } @else if ($key == 'lightest') {
+          $lightest: $color;
+        } @else if ($key == 'trans') {
+          $trans: $color;
+        }
+      }
+    }
+
+    // Set default colors (if they aren't set by the user)
+    @if ($contrast == null) {
+      $contrast: #fff;
+    }
+    @if ($dark == null) {
+      $dark: darken($base, $color-dark);
+    }
+    @if ($darker == null) {
+      $darker: darken($base, $color-darker);
+    }
+    @if ($darkest == null) {
+      $darkest: darken($base, $color-darkest);
+    }
+    @if ($light == null) {
+      $light: lighten($base, $color-light);
+    }
+    @if ($lighter == null) {
+      $lighter: lighten($base, $color-lighter);
+    }
+    @if ($lightest == null) {
+      $lightest: lighten($base, $color-lightest);
+    }
+    @if ($trans == null) {
+      $trans: transparentize($base, $color-opacity);
+    }
+
+    :root {
+      @media (prefers-color-scheme: dark) {
+        body:not(.light-mode) {
+          @each $tone,
+            $value
+              in createColourMap(
+                $base,
+                $contrast,
+                $dark,
+                $darker,
+                $darkest,
+                $light,
+                $lighter,
+                $lightest,
+                $trans
+              )
+          {
+            // Create root variables
+            @if $tone == 'base' {
+              --#{$invertExtension}-#{$keys}: #{$value};
+            } @else {
+              --#{$invertExtension}-#{$keys}-#{$tone}: #{$value};
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin initAdaptableColors($colors, $mode) {
+  @each $keys, $values in $colors {
+    $base: #000;
+    $contrast: null;
+    $dark: null;
+    $darker: null;
+    $darkest: null;
+    $light: null;
+    $lighter: null;
+    $lightest: null;
+    $trans: null;
+
+    @each $key, $color in $values {
+      @if ($key) {
+        @if ($key == 'base') {
+          $base: $color;
+        } @else if ($key == 'contrast') {
+          $contrast: $color;
+        } @else if ($key == 'dark') {
+          $dark: $color;
+        } @else if ($key == 'darker') {
+          $darker: $color;
+        } @else if ($key == 'darkest') {
+          $darkest: $color;
+        } @else if ($key == 'light') {
+          $light: $color;
+        } @else if ($key == 'lighter') {
+          $lighter: $color;
+        } @else if ($key == 'lightest') {
+          $lightest: $color;
+        } @else if ($key == 'trans') {
+          $trans: $color;
+        }
+      }
+    }
+
+    // Set default colors (if they aren't set by the user)
+    @if ($contrast == null) {
+      $contrast: #fff;
+    }
+    @if ($dark == null) {
+      $dark: darken($base, $color-dark);
+    }
+    @if ($darker == null) {
+      $darker: darken($base, $color-darker);
+    }
+    @if ($darkest == null) {
+      $darkest: darken($base, $color-darkest);
+    }
+    @if ($light == null) {
+      $light: lighten($base, $color-light);
+    }
+    @if ($lighter == null) {
+      $lighter: lighten($base, $color-lighter);
+    }
+    @if ($lightest == null) {
+      $lightest: lighten($base, $color-lightest);
+    }
+    @if ($trans == null) {
+      $trans: transparentize($base, $color-opacity);
+    }
+
+    :root {
+      @if $mode == 'lightMode' {
+        @media (prefers-color-scheme: light) {
+          body:not(.dark-mode) {
+            @each $tone,
+              $value
+                in createColourMap(
+                  $base,
+                  $contrast,
+                  $dark,
+                  $darker,
+                  $darkest,
+                  $light,
+                  $lighter,
+                  $lightest,
+                  $trans
+                )
+            {
+              // Create root variables
+              @if $tone == 'base' {
+                --changeable-#{$keys}: #{$value};
+              } @else {
+                --changeable-#{$keys}-#{$tone}: #{$value};
+              }
+            }
+          }
+        }
+      }
+      @if $mode == 'darkMode' {
+        @media (prefers-color-scheme: dark) {
+          body:not(.light-mode) {
+            @each $tone,
+              $value
+                in createColourMap(
+                  $base,
+                  $contrast,
+                  $dark,
+                  $darker,
+                  $darkest,
+                  $light,
+                  $lighter,
+                  $lightest,
+                  $trans
+                )
+            {
+              // Create root variables
+              @if $tone == 'base' {
+                --changeable-#{$keys}: #{$value};
+              } @else {
+                --changeable-#{$keys}-#{$tone}: #{$value};
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 // Variables
 $color-light: 12% !default;
 $color-lighter: 15% !default;
@@ -359,6 +572,12 @@ $isDeeper: true !default; // create lighter and darker
 $isDeepest: true !default; // create lightest and darkest
 
 $us-color-settings: map-remove(
+  (
+    x: x,
+  ),
+  x
+) !default; // overriden by the user
+$us-color-darkMode: map-remove(
   (
     x: x,
   ),
@@ -404,6 +623,10 @@ $isUsingDarkTheme: false !default;
       ),
       'black': (
         'base': #000,
+        'contrast': #fff,
+      ),
+      'current': (
+        'base': #000,
       ),
     );
     $temp-map: map-merge($temp-map, $us-color-base);
@@ -413,11 +636,11 @@ $isUsingDarkTheme: false !default;
     $us-color-shade: (
       'light': (
         'dark': #e0e0e0,
-        'base': #f5f5f5,
-        'contrast': #000,
+        'base': #f4f5f8,
+        'contrast': #191919,
       ),
       'medium': (
-        'base': #bfbfbf,
+        'base': #989aa2,
         'contrast': #000,
       ),
       'dark': (
@@ -434,6 +657,7 @@ $isUsingDarkTheme: false !default;
       'danger': (
         'dark': #cc0000,
         'base': #ff4444,
+        'contrast': #fff,
       ),
       'warning': (
         'dark': #ff8800,
@@ -443,10 +667,12 @@ $isUsingDarkTheme: false !default;
       'success': (
         'dark': #007e33,
         'base': #00c851,
+        'contrast': #fff,
       ),
       'info': (
         'dark': #0099cc,
         'base': #33b5e5,
+        'contrast': #fff,
       ),
       'disabled': (
         'base': #e0e0e0,
@@ -455,10 +681,74 @@ $isUsingDarkTheme: false !default;
     );
     $temp-map: map-merge($temp-map, $us-color-status);
   }
-  $us-color-global: map-merge($temp-map, $us-color-settings);
-  @include initUsColors($us-color-global);
+  $us-color-settings: map-merge($temp-map, $us-color-settings);
+  @include initColors($us-color-settings);
+
+  @if $isUsingDarkTheme {
+    $temp-invert-map: map-remove(
+      (
+        x: x,
+      ),
+      x
+    ); // empty map
+    @if $use-default-default-map {
+      // Normally will be overwritten by the user
+      $us-color-default: (
+        'primary': (
+          'base': #3880ff,
+        ),
+        'secondary': (
+          'base': #0cd1e8,
+        ),
+        'tertiary': (
+          'base': #7044ff,
+        ),
+      );
+      $temp-invert-map: $us-color-default;
+    }
+
+    @if $use-default-base-map {
+      $us-color-base: (
+        'white': (
+          'base': #000,
+          'contrast': #fff,
+        ),
+        'black': (
+          'base': #fff,
+          'contrast': #fff,
+        ),
+      );
+      $temp-invert-map: map-merge($temp-map, $us-color-base);
+    }
+
+    @if $use-default-gray-map {
+      $us-color-shade: (
+        'light': (
+          'base': #191919,
+          'contrast': #f4f5f8,
+        ),
+        'dark': (
+          'base': #f4f5f8,
+          'contrast': #191919,
+        ),
+      );
+      $temp-invert-map: map-merge($temp-invert-map, $us-color-shade);
+    }
+
+    $us-color-darkMode: map-merge($temp-invert-map, $us-color-darkMode);
+
+    @include initDarkModeColors($us-color-darkMode);
+    @include initAdaptableColors($us-color-settings, 'lightMode');
+    @include initAdaptableColors($us-color-darkMode, 'darkMode');
+  }
 } @else {
-  @include initUsColors($us-color-settings);
+  @include initColors($us-color-settings);
+
+  @if $isUsingDarkTheme {
+    @include initDarkModeColors($us-color-darkMode);
+    @include initAdaptableColors($us-color-settings, 'lightMode');
+    @include initAdaptableColors($us-color-darkMode, 'darkMode');
+  }
 }
 
 // Default classes transparent & defaultColor

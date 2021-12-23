@@ -1,4 +1,13 @@
 # Changelog
+## v3.0.0 - 2021-22-12
+## Add
+  - colors
+    - darkMode
+
+## Remove
+  - mixins
+    - color (entirely)
+
 ## v2.7.2 - 2021-21-12
 ## Add
   - utilities
