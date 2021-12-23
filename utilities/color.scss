@@ -571,18 +571,29 @@ $gradient-rotation: 200deg !default;
 $isDeeper: true !default; // create lighter and darker
 $isDeepest: true !default; // create lightest and darkest
 
+// Default always displayed color
 $us-color-settings: map-remove(
   (
     x: x,
   ),
   x
-) !default; // overriden by the user
+) !default; // overridden by the user
+
+// Only displayed on dark mode
 $us-color-darkMode: map-remove(
   (
     x: x,
   ),
   x
-) !default; // overriden by the user
+) !default; // overridden by the user
+
+// Only displayed on changeable value
+$us-color-invert: map-remove(
+  (
+    x: x,
+  ),
+  x
+) !default; // overridden by the user
 $use-default-colors-map: true !default;
 $use-default-default-map: true !default;
 $use-default-base-map: true !default;
@@ -735,19 +746,22 @@ $isUsingDarkTheme: false !default;
       $temp-invert-map: map-merge($temp-invert-map, $us-color-shade);
     }
 
-    $us-color-darkMode: map-merge($temp-invert-map, $us-color-darkMode);
+    $us-color-invert: map-merge($temp-invert-map, $us-color-invert);
+    $us-color-darkMode: map-merge($us-color-settings, $us-color-darkMode);
 
     @include initDarkModeColors($us-color-darkMode);
     @include initAdaptableColors($us-color-settings, 'lightMode');
-    @include initAdaptableColors($us-color-darkMode, 'darkMode');
+    @include initAdaptableColors($us-color-invert, 'darkMode');
   }
 } @else {
   @include initColors($us-color-settings);
 
   @if $isUsingDarkTheme {
+    $us-color-darkMode: map-merge($us-color-settings, $us-color-darkMode);
+
     @include initDarkModeColors($us-color-darkMode);
     @include initAdaptableColors($us-color-settings, 'lightMode');
-    @include initAdaptableColors($us-color-darkMode, 'darkMode');
+    @include initAdaptableColors($us-color-invert, 'darkMode');
   }
 }
 
