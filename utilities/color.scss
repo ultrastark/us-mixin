@@ -645,11 +645,12 @@ $isUsingDarkTheme: false !default;
   @if $use-default-gray-map {
     $us-color-shade: (
       'light': (
+        'dark': #e0e0e0,
         'base': #f4f5f8,
         'contrast': #191919,
       ),
       'medium': (
-        'base': #989aa2,
+        'base': #bfbfbf,
         'contrast': #000,
       ),
       'dark': (
@@ -737,6 +738,7 @@ $isUsingDarkTheme: false !default;
           'contrast': #f4f5f8,
         ),
         'dark': (
+          'dark': #e0e0e0,
           'base': #f4f5f8,
           'contrast': #191919,
         ),
