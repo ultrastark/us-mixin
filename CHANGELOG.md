@@ -1,4 +1,9 @@
 # Changelog
+## v3.0.6 - 2022-04-01
+## Add
+  - utilities
+    - width
+
 ## v3.0.0 - 2021-22-12
 ## Add
   - colors
