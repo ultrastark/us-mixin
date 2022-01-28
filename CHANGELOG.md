@@ -1,4 +1,10 @@
 # Changelog
+## v3.1.0 - 2022-28-01
+## Fix
+  - utilities
+    - colors
+      - darkMode when forced lightMode activated
+  
 ## v3.0.6 - 2022-04-01
 ## Add
   - utilities
