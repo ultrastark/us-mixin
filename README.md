@@ -49,7 +49,7 @@ If you use the `color mixin` and want custom color, you need another step: [wiki
 
 ## Authors
 
-- **Raphaël Balet** - _Initial work_ - [Ultrastark](https://ultrastark.ch)
+- **Raphaël Balet** - _Initial work_ - [Megaphone](https://megaphone.info)
 
 ## License
 
