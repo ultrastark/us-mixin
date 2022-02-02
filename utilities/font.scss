@@ -1,5 +1,7 @@
 @use '../mixins/grid' as *;
 
+$generate-font-root-value: true !default;
+
 .inner-lighter {
   * {
     font-weight: 300;
@@ -23,86 +25,119 @@
 
 // Copied from https://www.impactplus.com/blog/best-font-size-for-website
 :root {
-  --h4: 1.125em; // 18px
-  --p: 1em; // 16px
-  --h5: 0.83em; // 13.28px
-  --h5-line-height: 1.4em;
-  --h6: 0.75em; // 12px
-  // --h6-line-height: 1.4em; // @TODO
-  --small: 8px;
+  @if ($generate-font-root-value == true) {
+    --h4-size: 1.125em; // 18px
+    --p-size: 1em; // 16px
+    --button-size: 1em; // 16px
+    --h5-size: 0.83em; // 13.28px
+    --h5-line-height: 1.4em;
+    --h6-size: 0.75em; // 12px
+    // --h6-line-height: 1.4em; // @TODO
+    --small-size: 8px;
 
-  @include lgUp {
-    --h1: 3em; // 48px
-    --h1-line-height: 1.05em;
-    --h2: 2.25em; // 36px
-    --h3: 1.75em; // 28px
-  }
-  @include lg {
-    --h1: 2.5em; // 40px
-    --h1-line-height: 1.125em;
-    --h2: 2em; // 32px
-    --h3: 1.5em; // 24px
-  }
-  @include smUp {
-    --h2-line-height: 1.25em;
-    --h3-line-height: 1.25em;
-    --h4-line-height: 1.222em;
-    --blockquote: 1.5em; // 24px
-    --blockquote-line-height: 1.458em;
-    --p-line-height: 1.375em;
-  }
-  @include sm {
-    --h1: 2em; // 32px
-    --h1-line-height: 1.25em;
-    --h2: 1.625em; // 26px
-    --h2-line-height: 1.154em;
-    --h3: 1.375em; // 22px
-    --h3-line-height: 1.136em;
-    --h4-line-height: 1.111em;
-    --p-line-height: 1.25em;
-    --blockquote: 1.25em; // 20px
-    --blockquote-line-height: 1.25em;
+    @include lgUp {
+      --h1-size: 3em; // 48px
+      --h1-line-height: 1.05em;
+      --h2-size: 2.25em; // 36px
+      --h3-size: 1.75em; // 28px
+    }
+    @include lg {
+      --h1-size: 2.5em; // 40px
+      --h1-line-height: 1.125em;
+      --h2-size: 2em; // 32px
+      --h3-size: 1.5em; // 24px
+    }
+    @include smUp {
+      --h2-line-height: 1.25em;
+      --h3-line-height: 1.25em;
+      --h4-line-height: 1.222em;
+      --blockquote-size: 1.5em; // 24px
+      --blockquote-line-height: 1.458em;
+      --p-line-height: 1.375em;
+    }
+    @include sm {
+      --h1-size: 2em; // 32px
+      --h1-line-height: 1.25em;
+      --h2-size: 1.625em; // 26px
+      --h2-line-height: 1.154em;
+      --h3-size: 1.375em; // 22px
+      --h3-line-height: 1.136em;
+      --h4-line-height: 1.111em;
+      --p-line-height: 1.25em;
+      --blockquote-size: 1.25em; // 20px
+      --blockquote-line-height: 1.25em;
+    }
   }
 }
 
 h1 {
-  font-size: var(--h1);
+  color: var(--h1-color, var(--font-color));
+  font-family: var(--h1-family, var(--font-family));
+  font-size: var(--h1-size, 2em);
+  font-weight: var(--h1-weight, var(--font-weight, bold));
   line-height: var(--h1-line-height);
 }
 h2 {
-  font-size: var(--h2);
+  color: var(--h2-color, var(--font-color));
+  font-family: var(--h2-family, var(--font-family));
+  font-size: var(--h2-size, 1.5em);
+  font-weight: var(--h2-weight, var(--font-weight, bold));
   line-height: var(--h2-line-height);
 }
 h3 {
-  font-size: var(--h3);
+  color: var(--h3-color, var(--font-color));
+  font-family: var(--h3-family, var(--font-family));
+  font-size: var(--h3-size, 1.17em);
+  font-weight: var(--h3-weight, var(--font-weight, bold));
   line-height: var(--h3-line-height);
 }
 h4 {
-  font-size: var(--h4);
+  color: var(--h4-color, var(--font-color));
+  font-family: var(--h4-family, var(--font-family));
+  font-size: var(--h4-size, 1.33em);
+  font-weight: var(--h4-weight, var(--font-weight, bold));
   line-height: var(--h4-line-height);
 }
 h5 {
-  font-size: var(--h5);
+  color: var(--h5-color, var(--font-color));
+  font-family: var(--h5-family, var(--font-family));
+  font-size: var(--h5-size, 0.83em);
+  font-weight: var(--h5-weight, var(--font-weight, bold));
   line-height: var(--h5-line-height);
 }
 h6 {
-  font-size: var(--h6);
-  // line-height: var(--h6-line-height); //@TODO
+  color: var(--h6-color, var(--font-color));
+  font-family: var(--h6-family, var(--font-family));
+  font-size: var(--h6-size, 0.67em);
+  font-weight: var(--h6-weight, var(--font-weight, bold));
+  line-height: var(--h6-line-height);
 }
 
-p,
+p {
+  color: var(--p-color, var(--font-color));
+  font-family: var(--p-family, var(--font-family));
+  font-size: var(--p-size);
+  font-weight: var(--p-weight, var(--font-weight, bold));
+  line-height: var(--p-line-height);
+}
 a {
-  font-size: var(--p);
+  color: var(--a-color, var(--font-color));
+  font-family: var(--a-family, var(--font-family));
+  font-size: var(--p-size);
+  font-weight: var(--a-weight, var(--font-weight));
   line-height: var(--p-line-height);
 }
 
 blockquote {
-  font-size: var(--blockquote);
+  color: var(--blockquote-color, var(--font-color));
+  font-family: var(--blockquote-family, var(--font-family));
+  font-size: var(--blockquote-size);
+  font-weight: var(--blockquote-weight, var(--font-weight));
   line-height: var(--blockquote-line-height);
 }
 
 small {
-  font-size: var(--small);
+  font-size: var(--small-size);
 }
 
 @media print {

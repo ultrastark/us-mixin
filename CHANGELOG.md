@@ -1,4 +1,11 @@
 # Changelog
+## v3.2.0 - 2022-02-02
+## Fix
+  - utilities
+    - fonts
+      - use -size for the font size
+      - generate-font-root-value: true 
+
 ## v3.1.0 - 2022-28-01
 ## Fix
   - utilities
