@@ -117,7 +117,7 @@ p {
   color: var(--p-color, var(--font-color));
   font-family: var(--p-family, var(--font-family));
   font-size: var(--p-size);
-  font-weight: var(--p-weight, var(--font-weight, bold));
+  font-weight: var(--p-weight, var(--font-weight));
   line-height: var(--p-line-height);
 }
 a {
