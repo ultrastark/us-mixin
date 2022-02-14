@@ -4,7 +4,6 @@
   - utilities
     - fonts
       - generate-font-root-value into $generate-font-root-variables
-      - $set-font-values: true, disable it to not have default font size
 
 ## v3.2.0 - 2022-02-02
 ## Fix
