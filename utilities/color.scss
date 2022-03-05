@@ -664,11 +664,8 @@ $isUsingDarkTheme: false !default;
         'base': #3880ff,
       ),
       'secondary': (
-        'base': #0cd1e8,
+        'base': #0e0e0e,
         'contrast': #000,
-      ),
-      'tertiary': (
-        'base': #7044ff,
       ),
     );
     $temp-map: $us-color-default;
@@ -757,10 +754,7 @@ $isUsingDarkTheme: false !default;
           'base': #3880ff,
         ),
         'secondary': (
-          'base': #0cd1e8,
-        ),
-        'tertiary': (
-          'base': #7044ff,
+          'base': #0e0e0e,
         ),
       );
       $temp-invert-map: $us-color-default;

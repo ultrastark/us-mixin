@@ -1,4 +1,11 @@
 # Changelog
+## v3.3.2 - 2022-05-03
+## Fix
+  - utilities
+    - color
+      - Remove tertiary color 
+      - Update secondary color as dark color 
+
 ## v3.3.0 - 2022-14-02
 ## Fix
   - utilities
